@@ -22,7 +22,9 @@ const user = ref({
 });
 
 watchEffect(() => {
-  user.value = users.find(obj => obj.id === props.post.userId)
+  users.then(response => {
+    user.value = response.find(obj => obj.id === props.post.userId)
+  })
 })
 </script>
 <style scoped>

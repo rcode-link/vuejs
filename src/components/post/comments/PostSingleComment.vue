@@ -6,7 +6,7 @@
   </li>
 </template>
 <script setup>
-import {inject, ref, watchEffect} from "vue";
+import {ref} from "vue";
 
 const showMe = ref(false);
 
