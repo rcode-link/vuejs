@@ -1,0 +1,43 @@
+_id: req_28f948dd212f45ab97eaa27f5571deaf
+type: Request
+parentId: fld_1e4fe43b3dc9497cb6533f57ddfcba10
+modified: 1675365218814
+created: 1675365218814
+url: "{{baseUrl}}/me"
+name: Update Me
+description: ""
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+            "email": "teacher_one@email.com",
+            "first_name": "ipsum velit",
+            "last_name": "Excepteur velit dolore magna",
+            "type": "teacher",
+            "country_code": "mollit aliq",
+            "phone_number": "culpa",
+            "area": "dolore eiusmod",
+            "city": "deserunt aute ut",
+            "country": "Lorem consequat qui aliqua",
+            "postal_code": "enim Duis",
+            "street": "Sesamy",
+            "language": "en"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1675365160904
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,21 @@
+_id: req_dff758194f924a3b8d871bc0f4316de7
+type: Request
+parentId: fld_05c7db597d0b4c65b32a8ea00cf171c3
+modified: 1675365453994
+created: 1675365218818
+url: "{{ _.baseUrl }}/files/1673531780925-avatar-1.jpg"
+name: Check Image
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1675365160893
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

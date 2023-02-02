@@ -1,0 +1,27 @@
+_id: req_6403127428d14b498f670ae088dd2864
+type: Request
+parentId: fld_1a6351683239404a9b350c19bc0fc9e4
+modified: 1675365218800
+created: 1675365218800
+url: "{{baseUrl}}/chapter"
+name: GetChapter
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: subjectId
+    value: "{{subject_id}}"
+    disabled: false
+  - name: classId
+    value: "{{class_id}}"
+    disabled: false
+headers: []
+authentication: {}
+metaSortKey: -1675365160897
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

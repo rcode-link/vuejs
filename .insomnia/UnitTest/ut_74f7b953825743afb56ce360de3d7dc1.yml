@@ -1,0 +1,10 @@
+_id: ut_74f7b953825743afb56ce360de3d7dc1
+type: UnitTest
+parentId: uts_c00d66a153f14bbcb98b658ebac70f11
+modified: 1675365562361
+created: 1675365556474
+requestId: req_51140af5109c40ff945f197b3a7449bb
+name: Check if user gets token
+code: |-
+  const response1 = await insomnia.send();
+  expect(JSON.parse(response1.data).data).to.be.an('string')

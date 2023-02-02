@@ -1,0 +1,21 @@
+_id: fld_05c7db597d0b4c65b32a8ea00cf171c3
+type: RequestGroup
+parentId: wrk_632fc0f16d2a423c885eb8d89f38cc22
+modified: 1675365218793
+created: 1675365218793
+name: Teacher
+description: ""
+environment:
+  baseUrl: http://localhost:3001/api/v1
+  bearerToken: ""
+  class_id: ""
+  subject_id: ""
+  chapter_id: ""
+environmentPropertyOrder:
+  "&":
+    - baseUrl
+    - bearerToken
+    - class_id
+    - subject_id
+    - chapter_id
+metaSortKey: -1000000000

@@ -1,0 +1,37 @@
+_id: req_bf69587c9dfb4b4faa666948454d9685
+type: Request
+parentId: fld_1a6351683239404a9b350c19bc0fc9e4
+modified: 1675365218798
+created: 1675365218798
+url: "{{baseUrl}}/chapter/:id"
+name: Update Chapter
+description: ""
+method: PUT
+body:
+  mimeType: ""
+  text: |-
+    {
+        "title": "culpa consectetur",
+        "parentId": null,
+        "subject": {
+            "name": "sit ad officia",
+            "_id": "{{subject_id}}"
+        },
+        "class": {
+            "name": "in sunt qui",
+            "_id": "{{class_id}}"
+        }
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1675365160896
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
