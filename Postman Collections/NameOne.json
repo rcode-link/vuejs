@@ -1,0 +1,1383 @@
+{
+	"info": {
+		"_postman_id": "e938610e-6730-4503-9f7d-bc6685029c73",
+		"name": "Teacher",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Me",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3c8a4c4a-59da-44c4-a321-703c0a434ec9",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Are all params same\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data).to.have.property('_id')",
+									"    pm.expect(jsonData.data).to.have.property('email')",
+									"    pm.expect(jsonData.data).to.have.property('first_name')",
+									"    pm.expect(jsonData.data).to.have.property('last_name')",
+									"    pm.expect(jsonData.data).to.have.property('type')",
+									"    pm.expect(jsonData.data).to.have.property('country_code')",
+									"    pm.expect(jsonData.data).to.have.property('phone_number')",
+									"    pm.expect(jsonData.data).to.have.property('area')",
+									"    pm.expect(jsonData.data).to.have.property('city')",
+									"    pm.expect(jsonData.data).to.have.property('country')",
+									"    pm.expect(jsonData.data).to.have.property('postal_code')",
+									"    pm.expect(jsonData.data).to.have.property('street')",
+									"    pm.expect(jsonData.data).to.have.property('language')",
+									"    pm.expect(jsonData.data).to.have.property('avatar_url')",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "bff6a287-7438-4ef4-9566-281ec4f1c202",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearerToken}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/me"
+					},
+					"response": [
+						{
+							"id": "646818aa-7998-4a8b-90f0-15b83f038efb",
+							"name": "Ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"ok\",\n    \"data\": {\n        \"_id\": \"63a31e1a703f4fb1c6b02485\",\n        \"email\": \"teacher_one@email.com\",\n        \"first_name\": \"ipsum velit\",\n        \"last_name\": \"Excepteur velit dolore magna\",\n        \"type\": \"teacher\",\n        \"country_code\": \"mollit aliq\",\n        \"phone_number\": \"culpa\",\n        \"area\": \"dolore eiusmod\",\n        \"city\": \"deserunt aute ut\",\n        \"country\": \"Lorem consequat qui aliqua\",\n        \"postal_code\": \"enim Duis\",\n        \"street\": \"ut veniam\",\n        \"language\": \"tempor ut labore\",\n        \"avatar_url\": \"/files/1673531780925-avatar-1.jpg\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/me"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": \"ok\",\n    \"data\": {\n        \"_id\": \"63a31e1a703f4fb1c6b02485\",\n        \"email\": \"teacher_one@email.com\",\n        \"first_name\": \"ipsum velit\",\n        \"last_name\": \"Excepteur velit dolore magna\",\n        \"type\": \"teacher\",\n        \"country_code\": \"mollit aliq\",\n        \"phone_number\": \"culpa\",\n        \"area\": \"dolore eiusmod\",\n        \"city\": \"deserunt aute ut\",\n        \"country\": \"Lorem consequat qui aliqua\",\n        \"postal_code\": \"enim Duis\",\n        \"street\": \"Sesamy\",\n        \"language\": \"en\",\n        \"avatar_url\": \"/files/1673531780925-avatar-1.jpg\"\n    }\n}"
+						},
+						{
+							"id": "56b91116-73dc-4614-b7d0-33414e18cbd3",
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/me"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:27:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"Forbidden\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Me",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5e102cbf-f232-4f2c-9a80-e7f6f592f8c5",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test('Is response ok', function(){",
+									"    const data = pm.response.json()",
+									"    console.log(data)",
+									"    pm.expect(data.status).to.eql('ok')",
+									"})",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "e8f83b4f-6ba3-4808-8164-101117ccb90a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearerToken}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"email\": \"teacher_one@email.com\",\n        \"first_name\": \"ipsum velit\",\n        \"last_name\": \"Excepteur velit dolore magna\",\n        \"type\": \"teacher\",\n        \"country_code\": \"mollit aliq\",\n        \"phone_number\": \"culpa\",\n        \"area\": \"dolore eiusmod\",\n        \"city\": \"deserunt aute ut\",\n        \"country\": \"Lorem consequat qui aliqua\",\n        \"postal_code\": \"enim Duis\",\n        \"street\": \"Sesamy\",\n        \"language\": \"en\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/me"
+					},
+					"response": [
+						{
+							"id": "35bd8d8e-ec14-4200-bb5e-597679de2234",
+							"name": "Ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"email\": \"teacher_one@email.com\",\n        \"first_name\": \"ipsum velit\",\n        \"last_name\": \"Excepteur velit dolore magna\",\n        \"type\": \"teacher\",\n        \"country_code\": \"mollit aliq\",\n        \"phone_number\": \"culpa\",\n        \"area\": \"dolore eiusmod\",\n        \"city\": \"deserunt aute ut\",\n        \"country\": \"Lorem consequat qui aliqua\",\n        \"postal_code\": \"enim Duis\",\n        \"street\": \"Sesamy\",\n        \"language\": \"en\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/me"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "15"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:11:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": \"ok\"\n}"
+						},
+						{
+							"id": "743dfead-e852-4d65-821d-d7ffcd05301f",
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/me"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:27:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"Forbidden\"\n}"
+						}
+					]
+				}
+			],
+			"_postman_id": "12e2dd1e-271a-44d4-92eb-3097b6ad90e2"
+		},
+		{
+			"name": "Class",
+			"item": [
+				{
+					"name": "Get",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c60affc6-6704-4c5c-a301-960e60393020",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Check data format\", function(){",
+									"    const data = pm.response.json();",
+									"    pm.collectionVariables.set('class_id', data.data[0]._id)",
+									"    pm.expect(data.data).to.be.an('array')",
+									"});",
+									"",
+									"pm.test('Check class properties', function(){",
+									"    const data = pm.response.json();",
+									"    _.each(data.data,obj => {",
+									"    pm.expect(obj).to.have.property('_id')",
+									"    pm.expect(obj).to.have.property('class_name')",
+									"    pm.expect(obj).to.have.property('class_letter')",
+									"    pm.expect(obj).to.have.property('classroom_no')",
+									"    pm.expect(obj).to.have.property('class_color')",
+									"    pm.expect(obj.subjects).to.be.an('array')",
+									"    pm.expect(obj.students).to.be.an('array')",
+									"    pm.expect(obj.headTeacher).to.be.an('object')",
+									"",
+									"    })",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "94f9d30a-f1ef-41d8-9bb4-e2d762ae9f8e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearerToken}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/class"
+					},
+					"response": []
+				},
+				{
+					"name": "GetClassById",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bdb66033-0086-4a31-92ea-095c9578d9c4",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Check class properties', function(){",
+									"    const data = pm.response.json();",
+									"    pm.expect(data._id).to.be.eql(pm.collectionVariables.get('class_id'))",
+									"",
+									"    pm.collectionVariables.set(\"subject_id\", data.subjects[0]._id)",
+									"",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "d0e4415c-55a5-4fbf-b6f2-174be697e831",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearerToken}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/class/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"class",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{class_id}}",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "1272dcc7-1791-4bb5-984e-bb13a643fbab",
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/me"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:27:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"Forbidden\"\n}"
+						},
+						{
+							"id": "eac1f66e-dc6c-4ff5-9a55-6bfbc6173012",
+							"name": "Validation Failed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/class/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"class",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "89"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:32:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \":id\",\n            \"msg\": \"The id is not valid\",\n            \"param\": \"id\",\n            \"location\": \"params\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "89925508-979c-4357-b379-0e498c83f2cf",
+							"name": "Ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/class/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"class",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{class_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "563"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:33:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"_id\": \"63d7eecf983de7ab13aecd29\",\n    \"class_name\": \"Class One\",\n    \"class_letter\": \"string\",\n    \"subjects\": [\n        {\n            \"_id\": \"63ce4a8bf2d77a0756627509\",\n            \"name\": \"English A\",\n            \"teacher\": {\n                \"_id\": \"63a31e1a703f4fb1c6b02485\",\n                \"email\": \"teacher_one@email.com\",\n                \"first_name\": \"Michale\",\n                \"last_name\": \"Scott\",\n                \"type\": \"teacher\"\n            }\n        }\n    ],\n    \"classroom_no\": 1,\n    \"headTeacher\": {\n        \"_id\": \"63ce4500b939fb02f7a63529\",\n        \"first_name\": \"Michale\",\n        \"last_name\": \"Scott\",\n        \"type\": \"teacher\"\n    },\n    \"students\": [\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"email\": \"student_one@email.com\",\n            \"first_name\": \"V\",\n            \"last_name\": \"G\",\n            \"type\": \"student\"\n        }\n    ],\n    \"class_color\": \"red\"\n}"
+						}
+					]
+				}
+			],
+			"_postman_id": "7bbf5cb2-5b1c-48a5-a138-1e5a2fe04da6"
+		},
+		{
+			"name": "Chapter",
+			"item": [
+				{
+					"name": "Create Chapter",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2e60f676-f5a1-4c06-bfbe-f30202896647",
+								"exec": [
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Check response data\", function(){",
+									"    pm.expect(response.data).to.eql('ok')",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "d27f089b-161c-4f15-926b-32d41f3b9d02",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"culpa consectetur\",\n    \"parentId\": null,\n    \"subject\": {\n        \"name\": \"sit ad officia\",\n        \"_id\": \"{{subject_id}}\"\n    },\n    \"class\": {\n        \"name\": \"in sunt qui\",\n        \"_id\": \"{{class_id}}\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/chapter"
+					},
+					"response": [
+						{
+							"id": "bd1212ee-08dd-4793-93ec-8364690630d0",
+							"name": "Ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/chapter?subjectId={{subject_id}}&classId={{class_id}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter"
+									],
+									"query": [
+										{
+											"key": "subjectId",
+											"value": "{{subject_id}}"
+										},
+										{
+											"key": "classId",
+											"value": "{{class_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1009"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:49:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"chapters\": [\n        {\n            \"_id\": \"63dbb72febf1ed19013bdd84\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb740ebf1ed19013bdd96\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb786ebf1ed19013bdda8\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb79febf1ed19013bddbd\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb8ba2abc9ddd6f7d5623\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbbe84be6c1529295db4bd\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        }\n    ],\n    \"assignments\": []\n}"
+						},
+						{
+							"id": "7ba67ee2-258e-43d4-b655-2ba04b772d4b",
+							"name": "ValidationErrors",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"culpa consectetur\",\n  \"parentId\": \"reprehenderit pariatur\",\n  \"subject\": {\n    \"name\": \"sit ad officia\",\n    \"_id\": \"anim esse laboris qui\"\n  },\n  \"class\": {\n    \"name\": \"in sunt qui\",\n    \"_id\": \"in Excepteur consectetur\"\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/chapter"
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "317"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:54:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"reprehenderit pariatur\",\n            \"msg\": \"The id is not valid\",\n            \"param\": \"parentId\",\n            \"location\": \"body\"\n        },\n        {\n            \"value\": \"anim esse laboris qui\",\n            \"msg\": \"The id is not valid\",\n            \"param\": \"subject._id\",\n            \"location\": \"body\"\n        },\n        {\n            \"value\": \"in Excepteur consectetur\",\n            \"msg\": \"The id is not valid\",\n            \"param\": \"class._id\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "GetChapter",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2e60f676-f5a1-4c06-bfbe-f30202896647",
+								"exec": [
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"check params\", function(){",
+									"    pm.collectionVariables.set('chapter_id', response.chapters[response.chapters.length - 1]._id)",
+									"    pm.expect(response.chapters).to.be.an('array')",
+									"    pm.expect(response.assignments).to.be.an('array')",
+									"})",
+									"",
+									"pm.test(\"check chapters params\", function(){",
+									"    _.each(response.chapters, obj => {",
+									"        pm.expect(obj).to.have.property('_id')",
+									"        pm.expect(obj).to.have.property('title')",
+									"        pm.expect(obj).to.have.property('parentId')",
+									"        pm.expect(obj).to.have.property('subject')",
+									"        pm.expect(obj).to.have.property('class')",
+									"    })",
+									"})",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "1e639b68-7afe-4c7e-b11f-71facf799713",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/chapter?subjectId={{subject_id}}&classId={{class_id}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"chapter"
+							],
+							"query": [
+								{
+									"key": "subjectId",
+									"value": "{{subject_id}}"
+								},
+								{
+									"key": "classId",
+									"value": "{{class_id}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "650c38ca-b769-4d38-bd99-a9f091eef697",
+							"name": "ValidationErrors",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/chapter?subjectId={{class_id}}&classId={{subject_id}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter"
+									],
+									"query": [
+										{
+											"key": "subjectId",
+											"value": "{{class_id}}"
+										},
+										{
+											"key": "classId",
+											"value": "{{subject_id}}"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "230"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:46:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"63d7eecf983de7ab13aecd29\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"subjectId\",\n            \"location\": \"query\"\n        },\n        {\n            \"value\": \"63ce4a8bf2d77a0756627509\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"classId\",\n            \"location\": \"query\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "2edc2b9f-6b59-477a-9afd-fd756bcb0215",
+							"name": "Ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/chapter?subjectId={{subject_id}}&classId={{class_id}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter"
+									],
+									"query": [
+										{
+											"key": "subjectId",
+											"value": "{{subject_id}}"
+										},
+										{
+											"key": "classId",
+											"value": "{{class_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1009"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:49:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"chapters\": [\n        {\n            \"_id\": \"63dbb72febf1ed19013bdd84\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb740ebf1ed19013bdd96\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb786ebf1ed19013bdda8\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb79febf1ed19013bddbd\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb8ba2abc9ddd6f7d5623\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbbe84be6c1529295db4bd\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        }\n    ],\n    \"assignments\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Chapter",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1b0ba61d-b49b-47c3-b797-f12d3bd50d3f",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Check if response is Ok', function(){",
+									"    const data = pm.response.json()",
+									"",
+									"console.log(data)",
+									"    pm.expect(data.data).to.eql('ok')",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "0ab19f26-44ae-4028-8e32-f7a4ed3a6ba1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"culpa consectetur\",\n    \"parentId\": null,\n    \"subject\": {\n        \"name\": \"sit ad officia\",\n        \"_id\": \"{{subject_id}}\"\n    },\n    \"class\": {\n        \"name\": \"in sunt qui\",\n        \"_id\": \"{{class_id}}\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/chapter/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"chapter",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{chapter_id}}",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "07a1689f-e80f-42c7-b2ec-e055077a37f0",
+							"name": "ValidationRespone",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"culpa consectetur update\",\n    \"parentId\": null,\n    \"subject\": {\n        \"name\": \"sit ad officia\",\n        \"_id\": \"{{subject_id}}\"\n    },\n    \"class\": {\n        \"name\": \"in sunt qui\",\n        \"_id\": \"{{class_id}}\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/chapter/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{chapter_id}}"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "425"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:58:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": [\n        {\n            \"msg\": \"Invalid value\",\n            \"param\": \"title\",\n            \"location\": \"body\"\n        },\n        {\n            \"msg\": \"Invalid value\",\n            \"param\": \"subject.name\",\n            \"location\": \"body\"\n        },\n        {\n            \"msg\": \"The record does not exist\",\n            \"param\": \"subject._id\",\n            \"location\": \"body\"\n        },\n        {\n            \"msg\": \"Invalid value\",\n            \"param\": \"class.name\",\n            \"location\": \"body\"\n        },\n        {\n            \"msg\": \"The record does not exist\",\n            \"param\": \"class._id\",\n            \"location\": \"body\"\n        },\n        {\n            \"value\": \":id\",\n            \"msg\": \"The id is not valid\",\n            \"param\": \"id\",\n            \"location\": \"params\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "86e61b20-9543-44dd-ab7e-08c20a225d9d",
+							"name": "Ok",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"culpa consectetur\",\n    \"parentId\": null,\n    \"subject\": {\n        \"name\": \"sit ad officia\",\n        \"_id\": \"{{subject_id}}\"\n    },\n    \"class\": {\n        \"name\": \"in sunt qui\",\n        \"_id\": \"{{class_id}}\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/chapter/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{chapter_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "13"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 16:02:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"ok\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Chapter",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "59ab95fc-db34-466e-a8e9-00c5b4fe77a2",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Check if response is Ok', function(){",
+									"    const data = pm.response.json()",
+									"",
+									"    pm.expect(data.data).to.eql('ok')",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "a4d57c84-9f44-4b26-a3b3-586a311389e3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/chapter/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"chapter",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{chapter_id}}",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "b6b6ec5e-7fbd-441b-a9c6-6c9156eb397e",
+							"name": "Ok",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/chapter/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{chapter_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "13"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 16:05:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"ok\"\n}"
+						},
+						{
+							"id": "a0b41f01-21f4-4409-98c1-274b3f80352b",
+							"name": "ValidationError",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/chapter/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{chapter_id}}"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "116"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 16:08:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"63dbdff812f07578e540d576\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"id\",\n            \"location\": \"params\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			],
+			"_postman_id": "aa6e0ad2-7889-46b0-94f7-cf0c9eba05da",
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": "{{bearerToken}}"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d457aa9d-011d-4126-ac3f-dfc8e7be182b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "199ebfc0-26f5-4147-aa3e-84f2850b8d82",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Check Image",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "23e252d3-4867-411a-a577-b5be8e7e6ca2",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "9fb81964-e91f-49d1-a883-53f14f3b88dc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/files/1673531780925-avatar-1.jpg"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{bearerToken}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "23fcbc97-ca2f-4943-9125-42b0630b6481",
+				"type": "text/javascript",
+				"exec": [
+					"const loginRequest = {",
+					"    url: pm.collectionVariables.get(\"baseUrl\")+ '/login',",
+					"    method: 'POST',",
+					"    header: 'Content-Type: application/json',",
+					"    body: {",
+					"        mode: 'application/json',",
+					"        raw: JSON.stringify({        ",
+					"            \"email\": \"teacher_one@email.com\",",
+					"            \"password\": \"password_123\"",
+					"        })",
+					"    }",
+					"};",
+					"",
+					"pm.sendRequest(loginRequest, function (err, response) {",
+					"    console.log('response', response);",
+					"    console.log('error', err);",
+					"    const data = response.json();",
+					"    pm.collectionVariables.set(\"bearerToken\", data.data);",
+					"});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c244985c-e877-42c8-b7d7-5ccb2c7f2fc6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "4dc445fa-7d83-445e-8f58-074632b704e5",
+			"key": "baseUrl",
+			"value": "http://localhost:3001/api/v1",
+			"type": "string"
+		},
+		{
+			"id": "a6fcda34-161a-4191-adab-7d65f18e6293",
+			"key": "bearerToken",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "4f134312-00fe-453a-9eb2-bb2e6f8a0d19",
+			"key": "class_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "7213cf03-d5c6-4714-b43d-d058a048e673",
+			"key": "subject_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "896207b4-9bd0-4de6-9de2-ff6db767974a",
+			"key": "chapter_id",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
