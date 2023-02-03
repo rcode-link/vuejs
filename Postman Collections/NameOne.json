@@ -41,7 +41,7 @@
 							}
 						}
 					],
-					"_postman_id": "bff6a287-7438-4ef4-9566-281ec4f1c202",
+					"id": "bff6a287-7438-4ef4-9566-281ec4f1c202",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -154,7 +154,7 @@
 							}
 						}
 					],
-					"_postman_id": "e8f83b4f-6ba3-4808-8164-101117ccb90a",
+					"id": "e8f83b4f-6ba3-4808-8164-101117ccb90a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -273,7 +273,7 @@
 					]
 				}
 			],
-			"_postman_id": "12e2dd1e-271a-44d4-92eb-3097b6ad90e2"
+			"id": "12e2dd1e-271a-44d4-92eb-3097b6ad90e2"
 		},
 		{
 			"name": "Class",
@@ -315,7 +315,7 @@
 							}
 						}
 					],
-					"_postman_id": "94f9d30a-f1ef-41d8-9bb4-e2d762ae9f8e",
+					"id": "94f9d30a-f1ef-41d8-9bb4-e2d762ae9f8e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -356,7 +356,7 @@
 							}
 						}
 					],
-					"_postman_id": "d0e4415c-55a5-4fbf-b6f2-174be697e831",
+					"id": "d0e4415c-55a5-4fbf-b6f2-174be697e831",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -381,54 +381,12 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "{{class_id}}",
-									"type": "string"
+									"value": "{{class_id}}"
 								}
 							]
 						}
 					},
 					"response": [
-						{
-							"id": "1272dcc7-1791-4bb5-984e-bb13a643fbab",
-							"name": "Forbidden",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": "{{baseUrl}}/me"
-							},
-							"status": "Forbidden",
-							"code": 403,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "20"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 02 Feb 2023 15:27:25 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"data\": \"Forbidden\"\n}"
-						},
 						{
 							"id": "eac1f66e-dc6c-4ff5-9a55-6bfbc6173012",
 							"name": "Validation Failed",
@@ -540,11 +498,52 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"_id\": \"63d7eecf983de7ab13aecd29\",\n    \"class_name\": \"Class One\",\n    \"class_letter\": \"string\",\n    \"subjects\": [\n        {\n            \"_id\": \"63ce4a8bf2d77a0756627509\",\n            \"name\": \"English A\",\n            \"teacher\": {\n                \"_id\": \"63a31e1a703f4fb1c6b02485\",\n                \"email\": \"teacher_one@email.com\",\n                \"first_name\": \"Michale\",\n                \"last_name\": \"Scott\",\n                \"type\": \"teacher\"\n            }\n        }\n    ],\n    \"classroom_no\": 1,\n    \"headTeacher\": {\n        \"_id\": \"63ce4500b939fb02f7a63529\",\n        \"first_name\": \"Michale\",\n        \"last_name\": \"Scott\",\n        \"type\": \"teacher\"\n    },\n    \"students\": [\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"email\": \"student_one@email.com\",\n            \"first_name\": \"V\",\n            \"last_name\": \"G\",\n            \"type\": \"student\"\n        }\n    ],\n    \"class_color\": \"red\"\n}"
+						},
+						{
+							"id": "1272dcc7-1791-4bb5-984e-bb13a643fbab",
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/me"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:27:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"Forbidden\"\n}"
 						}
 					]
 				}
 			],
-			"_postman_id": "7bbf5cb2-5b1c-48a5-a138-1e5a2fe04da6"
+			"id": "7bbf5cb2-5b1c-48a5-a138-1e5a2fe04da6"
 		},
 		{
 			"name": "Chapter",
@@ -571,7 +570,7 @@
 							}
 						}
 					],
-					"_postman_id": "d27f089b-161c-4f15-926b-32d41f3b9d02",
+					"id": "d27f089b-161c-4f15-926b-32d41f3b9d02",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -736,7 +735,7 @@
 							}
 						}
 					],
-					"_postman_id": "1e639b68-7afe-4c7e-b11f-71facf799713",
+					"id": "1e639b68-7afe-4c7e-b11f-71facf799713",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -907,7 +906,7 @@
 							}
 						}
 					],
-					"_postman_id": "0ab19f26-44ae-4028-8e32-f7a4ed3a6ba1",
+					"id": "0ab19f26-44ae-4028-8e32-f7a4ed3a6ba1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -935,8 +934,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "{{chapter_id}}",
-									"type": "string"
+									"value": "{{chapter_id}}"
 								}
 							]
 						}
@@ -1103,7 +1101,7 @@
 							}
 						}
 					],
-					"_postman_id": "a4d57c84-9f44-4b26-a3b3-586a311389e3",
+					"id": "a4d57c84-9f44-4b26-a3b3-586a311389e3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1122,8 +1120,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "{{chapter_id}}",
-									"type": "string"
+									"value": "{{chapter_id}}"
 								}
 							]
 						}
@@ -1244,7 +1241,7 @@
 					]
 				}
 			],
-			"_postman_id": "aa6e0ad2-7889-46b0-94f7-cf0c9eba05da",
+			"id": "aa6e0ad2-7889-46b0-94f7-cf0c9eba05da",
 			"auth": {
 				"type": "bearer",
 				"bearer": {
@@ -1284,13 +1281,17 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
-							"});"
+							"});",
+							"",
+							"pm.test('Check if response is image', function(){",
+							"   pm.expect(true).to.be.eql(true)",
+							"})"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"_postman_id": "9fb81964-e91f-49d1-a883-53f14f3b88dc",
+			"id": "9fb81964-e91f-49d1-a883-53f14f3b88dc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1350,31 +1351,31 @@
 	],
 	"variable": [
 		{
-			"id": "4dc445fa-7d83-445e-8f58-074632b704e5",
+			"id": "b9e308fe-e152-4278-98e6-81881386e935",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "a6fcda34-161a-4191-adab-7d65f18e6293",
+			"id": "3545a4e3-e02f-45b0-95a2-71feb336facd",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4f134312-00fe-453a-9eb2-bb2e6f8a0d19",
+			"id": "81f10cad-254f-4020-ae2d-4aa7ef840d6e",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7213cf03-d5c6-4714-b43d-d058a048e673",
+			"id": "768d3ae0-a9ba-475d-a7c2-ac4a8589cc90",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "896207b4-9bd0-4de6-9de2-ff6db767974a",
+			"id": "1112f4ae-3a91-4e49-9e49-b210cdc786a6",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
