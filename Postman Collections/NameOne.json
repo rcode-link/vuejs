@@ -1959,7 +1959,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b6df6ec7-7115-4485-9a1a-5c9de4612e3b",
+				"id": "4ccc6b31-5759-4c2c-9ddc-37203da802ab",
 				"type": "text/javascript",
 				"exec": [
 					"const loginRequest = {",
@@ -1985,7 +1985,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "0e5c4c89-4f5c-45e5-b2e4-f0eabbd7f27e",
+				"id": "ba64541f-153b-481b-8c47-dd971db2a563",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1995,38 +1995,44 @@
 	],
 	"variable": [
 		{
-			"id": "8e2a2a43-d878-436c-afe9-3d1542e0b698",
+			"id": "fb48ddac-b144-4683-9d62-725314f02848",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "e29d7388-2b6d-4fac-bd35-d1f1b2781ab9",
+			"id": "357444d3-4b11-4611-ba9d-d09e989a64df",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e751b34d-131f-4f80-aec0-073f6741ce6f",
+			"id": "b8061489-514b-4b41-bb1d-e9c8f78e57c6",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5e30d5b0-3dbe-4295-bfd1-55cfd9b6f962",
+			"id": "d1be0953-2bb4-4614-8cd9-bf703302a427",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7059ee43-e7ff-4a62-bbeb-8bacac979bf4",
+			"id": "e8105e24-f7da-433b-874d-0191e8c5bb7c",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "92e6e4a6-7d20-4ad5-a75a-8ce8aa6895d4",
+			"id": "122f7cb6-a494-4f9f-a768-56c76a1e18a1",
 			"key": "assignment_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "d700db40-b8d4-4b50-ac39-8aaca8e12bf5",
+			"key": "note_id",
 			"value": "",
 			"type": "string"
 		}
