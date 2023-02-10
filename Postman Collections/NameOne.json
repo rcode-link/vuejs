@@ -310,7 +310,8 @@
 									"                    \"class_name\",",
 									"                    \"class_letter\",",
 									"                    \"_id\",",
-									"                    \"userId\"",
+									"                    \"classroom_no\",",
+									"                    ",
 									"                ],",
 									"                \"properties\": {",
 									"                    \"_id\": {",
@@ -1728,37 +1729,37 @@
 	],
 	"variable": [
 		{
-			"id": "47daecd8-337b-4e5d-bc1c-44a46e1a43fe",
+			"id": "89172cbb-2465-4339-bc27-c791852e0ace",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "a54c9710-340c-4ee6-b9ef-1e3c59240018",
+			"id": "35962a36-3666-4a02-9453-2bca99d95f1d",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ac7d8a02-0710-4550-811f-bb46510bb30c",
+			"id": "51d9a45a-d261-4774-822e-2f5358378d43",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "639cd71f-d7db-4c52-af82-b8c1e73c8b9d",
+			"id": "48558660-fc37-41fe-8d27-63a50f6f4f3e",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1a875ef4-3d68-422b-82d0-f184576e243c",
+			"id": "b92b548b-2d9e-4078-bc73-3824e013bf7a",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "59e86373-0ff9-4ba0-ae50-3ed45998f5e3",
+			"id": "9b44b4a2-6a2f-45c2-9143-b4c24e35e503",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
