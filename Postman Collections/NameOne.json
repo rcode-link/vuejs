@@ -1278,7 +1278,7 @@
 			]
 		},
 		{
-			"name": "New Folder",
+			"name": "Assignment",
 			"item": [],
 			"id": "ace5518f-4bf4-4f50-950a-0d6ee6d88963"
 		},
@@ -1362,31 +1362,31 @@
 	],
 	"variable": [
 		{
-			"id": "dace3097-971e-4819-b9c2-c3539a91be93",
+			"id": "045a95ff-7246-45ce-bfb0-ff9db75286de",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "0ed2088a-2732-42c4-91be-e017ac030c1f",
+			"id": "ef52a23c-9a3c-42da-bbd9-a2b76d333bc2",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b6e4ced4-4158-4d14-b516-40faa81efb53",
+			"id": "6f871d55-7ae9-4eee-bedc-af8cc0e8cee2",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ba0a7347-c868-44b8-bd1a-0df7d86e3c0c",
+			"id": "6c422ce1-3b15-429b-8be6-ce2243fc2fc2",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9b159cb7-473f-48a6-8390-f4bc6797c796",
+			"id": "a824798a-f17a-4c20-b123-4b81c81cc985",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
