@@ -1625,6 +1625,21 @@
 				},
 				{
 					"name": "New Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3611c4f0-b491-4588-985b-28abbf951548",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "04ca08b2-b3f2-450c-b446-2c6165af8532",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1993,43 +2008,43 @@
 	],
 	"variable": [
 		{
-			"id": "e63e36c6-00dc-4e44-8724-613ad5b4b2c9",
+			"id": "a73fca1e-caa4-45cf-acac-b66633f5a5d7",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "3c3879d9-adf7-409c-a594-112f1991df94",
+			"id": "e8907501-f3d9-4f3e-9de4-e0ac80468af9",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f07dd08b-64d7-4ce6-8668-9b7e61c8db58",
+			"id": "e5376674-876a-4cb5-a819-041fd7c391e3",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "46de44c2-7416-4076-9c97-6145a4157a55",
+			"id": "f38520db-c507-425c-81e3-c27f91d248d0",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d463b672-64cc-4990-a935-84cb742ef30c",
+			"id": "cb44848d-c2ba-4509-b81c-5fdaaa99450d",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a28be240-f800-4637-a27c-45b427576f71",
+			"id": "dac5a450-ae62-4393-a302-7909404c4ce3",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3b58bd72-2a97-460a-a18b-a78edbf56a5e",
+			"id": "302cd738-bcd5-4c8f-9e5f-4f3557d15599",
 			"key": "note_id",
 			"value": "",
 			"type": "string"
