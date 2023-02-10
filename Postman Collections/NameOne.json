@@ -1340,7 +1340,9 @@
 							"script": {
 								"id": "4f33cd8d-60f6-4c34-9c38-a37d9134a438",
 								"exec": [
-									""
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -1651,37 +1653,37 @@
 	],
 	"variable": [
 		{
-			"id": "ddec4560-a640-4eb6-a693-d8c838ed5122",
+			"id": "060c6e22-c31d-41aa-a44f-1f39f8719719",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "23fa68d5-5cc5-4488-a365-fe191b3e98f7",
+			"id": "2366faa6-4328-44fa-9b6a-eb8b9feb5441",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6fec2538-b3a9-440e-9140-334f4a77e0e4",
+			"id": "e57863e3-c3ae-4b5a-b185-f803e5d03a71",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "58504753-6ace-4661-afb0-5d7fae881ec3",
+			"id": "bd98f229-a034-4a83-b27c-a22f8b01e706",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "995770f3-8db9-4a91-a6ba-e8d2d83efb27",
+			"id": "5cd72341-7527-4b68-bd0c-5820b7b5d46d",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2b7a8e5b-a6fe-4844-9714-8d45105e49dc",
+			"id": "e73d65dc-7874-410a-a147-ef95bce0cd0b",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
