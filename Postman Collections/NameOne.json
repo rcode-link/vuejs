@@ -1387,25 +1387,18 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
-									"",
 									"var schema = {",
-									"        \"type\": \"object\",",
-									"        \"properties\": {",
-									"          \"content\": {",
-									"            \"type\": \"string\"",
-									"          },",
-									"          \"studyId\": {",
-									"            \"type\": \"string\"",
-									"          }",
-									"        }",
-									"      };",
+									"    \"items\": {",
+									"        \"type\": \"boolean\"",
+									"    }",
+									"};",
 									"",
+									"var data1 = [true, false];",
+									"var data2 = [true, 123];",
 									"",
 									"pm.test('Schema is valid', function () {",
-									"const response = pm.response.json();",
-									"    console.log(response,schema,tv4.validate(schema,{}))",
-									"",
-									"    pm.expect(tv4.validate(response, {})).to.be.true;",
+									"    pm.expect(tv4.validate(data1, schema)).to.be.true;",
+									"    pm.expect(tv4.validate(data2, schema)).to.be.true;",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1681,37 +1674,37 @@
 	],
 	"variable": [
 		{
-			"id": "26cd963d-2caa-452f-90f9-1e89b9746785",
+			"id": "b67a6500-a067-4081-9c62-0b7ef5acea54",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "d2ac3c62-168e-4a48-95ea-ac445ba8dc96",
+			"id": "c2e2b528-251b-446b-bd6f-38dd74487407",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fcba12c3-0b68-4de6-b766-b813ab127a07",
+			"id": "1b3345a2-62d3-4466-822a-a3a479f2f82f",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c7a87fe6-2b2e-430a-a48b-7265693e7af5",
+			"id": "f289ebd3-e586-499d-b5ad-f80dd7429ff6",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "86ac38bc-36dc-497f-8051-ec2c3e93c7e8",
+			"id": "b445c6d2-af36-4045-bfed-46b6b30ef80d",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "987ced46-e939-47f7-990a-0a293afbac06",
+			"id": "3912a420-edcf-4b90-a926-5f9b17b28dee",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
