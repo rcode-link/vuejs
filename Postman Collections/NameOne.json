@@ -331,6 +331,20 @@
 									"                    \"class_color\": {",
 									"                        \"type\": \"string\"",
 									"                    },",
+									"                    \"subjects\": {",
+									"                        type: \"array\",",
+									"                        items:{",
+									"                            \"type\": \"object\",",
+									"                            \"properties\": {",
+									"                            \"_id\": {",
+									"                                \"type\": \"string\"",
+									"                            },",
+									"                            \"name\": {",
+									"                                \"type\": \"string\"",
+									"                            }",
+									"                            }",
+									"                        }",
+									"                    },",
 									"                    \"headTeacher\":  {",
 									"                        \"type\": \"object\",",
 									"                        \"properties\": {",
@@ -1781,37 +1795,37 @@
 	],
 	"variable": [
 		{
-			"id": "4181019e-3568-44a0-83d0-518580f9b739",
+			"id": "50acf43b-c300-418e-bc38-16df380951dd",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "b07fa45e-f59b-48b4-9067-d66fe251b6e3",
+			"id": "a6dd6eb7-8413-46ad-8374-bf7b541505c6",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e81fcc17-15fd-4738-abc6-9cc832cf19e3",
+			"id": "4157385b-87b7-4be5-9251-c57ea9540600",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c691bbbe-837e-43f6-afee-a5056b8b1fe0",
+			"id": "c4b110ca-2e01-40d8-9613-28b9c33b1d30",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a6cc71df-299e-4b1b-b249-8730dad2c10f",
+			"id": "b32c7da1-ea72-46c1-a796-8fdb293e9133",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "29100f95-4f99-44c2-ae44-11b449d67054",
+			"id": "52069fd7-6ad5-4b0f-8012-71ef578faad3",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
