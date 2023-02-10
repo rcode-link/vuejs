@@ -828,7 +828,13 @@
 									"  type: 'object',",
 									"  required: ['chapters', 'assignments'],",
 									"  properties: {",
-									"    chapters: {},",
+									"    chapters: {",
+									"      type: 'array',",
+									"      items: {",
+									"        type: 'object',",
+									"        required: ['_id', 'title', 'parentId', 'type']",
+									"      }",
+									"    },",
 									"    assignments: {",
 									"      type: 'array',",
 									"      items: {",
@@ -852,7 +858,6 @@
 									"    }",
 									"  }",
 									"}",
-									"",
 									"var Ajv = require('ajv'),",
 									"    ajv = new Ajv({logger: console, allErrors: true});",
 									"",
@@ -1824,37 +1829,37 @@
 	],
 	"variable": [
 		{
-			"id": "e85ec03d-ea19-4b96-86d5-63b9124fcb7f",
+			"id": "181dd67a-a994-41c5-8b44-3c6f2c620e3e",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "fba4a7ff-4eb8-4f9c-87c6-6c138a811384",
+			"id": "157b0c98-dcd7-47cf-90c6-62bd88b19265",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b660bf46-b2aa-4c8e-82d7-1e93dc6d6a52",
+			"id": "9d4d406c-819b-47dc-b57a-0b8f8451fc75",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "347b65fd-7489-44d9-a0e5-6fcc912cbcd5",
+			"id": "ece47c53-c0fe-4698-8580-36a0dfc658a7",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1ba4f127-aa24-4c5e-97f4-fb95f6699b69",
+			"id": "b9613d75-5b03-44aa-b168-9a7d1f3946a5",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "35833574-07b6-437f-be00-20a6f6cc0a4a",
+			"id": "644bcd26-251d-44e6-9f42-d4156ee07110",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
