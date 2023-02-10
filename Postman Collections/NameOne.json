@@ -1170,6 +1170,7 @@
 							"script": {
 								"id": "79377472-8d6b-4302-84ef-c53b30f93be8",
 								"exec": [
+									"const response = pm.response.json();",
 									"pm.test(\"Get Assignment ID\", function(){",
 									"    pm.collectionVariables.set('assignment_id', response.assignments[0]._id)",
 									"})",
@@ -1674,37 +1675,37 @@
 	],
 	"variable": [
 		{
-			"id": "2cc368f4-725d-426d-bf24-4edc3388a2cb",
+			"id": "1bc149b6-c406-4a13-b5c3-d5d3a74ada63",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "a54f668f-d68d-4d8c-b943-b2c4ea518967",
+			"id": "bc003463-8a23-4635-b82e-ffbc5d6c7b48",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3dc37b96-84ac-4301-81e6-58744a011bc4",
+			"id": "e46552d6-ee64-42f8-9e2b-066a2a78eb05",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b3b31bfd-a61e-4122-8b5a-48642803dc9c",
+			"id": "aed026c6-b268-4508-bf75-8bd7c22629a1",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a4988104-2f8a-4cdc-9945-744966c187ea",
+			"id": "b8ad939f-a102-4f80-82ed-1066ab6a0fc6",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ec142791-1ab4-40f0-b41a-cb509ea3b745",
+			"id": "c931571d-52ac-4b1f-a359-bcf9aea7831d",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
