@@ -1388,14 +1388,6 @@
 									"});",
 									"",
 									"var schema = {",
-									"    \"$schema\": \"http://json-schema.org/draft-04/schema#\",",
-									"    \"type\" : \"object\",",
-									"    \"properties\":{",
-									"        \"data\": {",
-									"            \"type\":\"array\",",
-									"        \"items\": {",
-									"        \"type\": \"object\",",
-									"            \"properties\": {",
 									"                \"content_1\": {",
 									"                    \"type\": \"string\"",
 									"                },",
@@ -1409,12 +1401,7 @@
 									"                    \"type\": \"string\",",
 									"                    \"required\": true",
 									"                }",
-									"            }",
-									"        }",
-									"        }",
-									"    }",
-									"   ",
-									"};",
+									"            };",
 									"",
 									"pm.test('Schema is valid', function () {",
 									"    const response = pm.response.json();",
@@ -1698,37 +1685,37 @@
 	],
 	"variable": [
 		{
-			"id": "dbb77b9c-ba18-478d-bb1c-a0e7bdcbd47b",
+			"id": "258e6b35-a1d9-46d1-bea2-5146187b29d3",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "8ff9fb68-7838-4b46-9d7a-e55091565f04",
+			"id": "e8ca10de-c552-4aad-a163-51df04ef769f",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c9011a55-ce62-4d1f-a4f3-09f3746a5c1a",
+			"id": "c73b75ae-e055-452d-aa8c-fbeb77d78b8b",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "446baaba-32cc-4dac-b134-afa1e32e6fa3",
+			"id": "61c3adbe-5712-4035-b597-7d0693427d2d",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7ca12eff-762d-4392-8cc4-f1cdcdc3f48f",
+			"id": "506e8ea9-c549-466f-a22d-20baf247e7c7",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "18d90352-c54f-4cad-8c5a-1aede1faf1cc",
+			"id": "dc0bbfed-9b49-47d7-aae8-dea4dd3aa0b0",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
