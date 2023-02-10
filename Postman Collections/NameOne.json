@@ -1279,7 +1279,20 @@
 		},
 		{
 			"name": "Assignment",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "be18c68f-b20b-4b2e-bb03-6f94af6b657d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "ace5518f-4bf4-4f50-950a-0d6ee6d88963"
 		},
 		{
@@ -1362,31 +1375,31 @@
 	],
 	"variable": [
 		{
-			"id": "045a95ff-7246-45ce-bfb0-ff9db75286de",
+			"id": "e41f18fe-1f2a-4ac6-89f2-190b8752e947",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "ef52a23c-9a3c-42da-bbd9-a2b76d333bc2",
+			"id": "ff0e6f7f-4fca-478b-a605-ced5c28beabc",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6f871d55-7ae9-4eee-bedc-af8cc0e8cee2",
+			"id": "849e9066-0c83-482b-9774-dcb7bcbcce49",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6c422ce1-3b15-429b-8be6-ce2243fc2fc2",
+			"id": "cb7c62ca-218f-4ed3-b6af-1c9a5a188c29",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a824798a-f17a-4c20-b123-4b81c81cc985",
+			"id": "8c65b388-a84e-48fa-aae4-1b00af16cd21",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
