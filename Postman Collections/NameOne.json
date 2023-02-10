@@ -353,6 +353,32 @@
 									"                                \"type\": \"string\"",
 									"                            }",
 									"                        }",
+									"                    },",
+									"                    \"students\": {",
+									"                        type: \"array\",",
+									"                        items: {",
+									"                        \"type\": \"object\",",
+									"                        \"properties\": {",
+									"                            \"_id\": {",
+									"                                \"type\": \"string\"",
+									"                            },",
+									"                            \"email\": {",
+									"                                \"type\": \"string\"",
+									"                            },",
+									"                            \"first_name\": {",
+									"                                \"type\": \"string\"",
+									"                            },",
+									"                            \"last_name\": {",
+									"                                \"type\": \"string\"",
+									"                            },",
+									"                            \"profile_image_id\": {",
+									"                                \"type\": \"string\"",
+									"                            },",
+									"                            \"type\": {",
+									"                                \"type\": \"string\"",
+									"                            }",
+									"                        }",
+									"                    }",
 									"                    }",
 									"                }",
 									"            }",
@@ -1755,37 +1781,37 @@
 	],
 	"variable": [
 		{
-			"id": "7d6ca9ca-6e97-4409-8fa7-79d5dadfd7ca",
+			"id": "9eb62f16-862c-4c98-94cf-fa385e7c3751",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "509c797f-86ce-4862-8ff4-b95997ad010e",
+			"id": "23b55cbc-720c-4d26-9464-c0e0dd0be7d1",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aaf36a4d-0009-4e18-a794-0b9c0e88bebf",
+			"id": "bf443f02-6f09-4f0c-a25f-bab7589b2b74",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "37a77361-36f7-403b-af7f-935c4500d38c",
+			"id": "4c62716f-1b70-4d46-a76f-ea5ff1239302",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cf3fac96-f4bc-482f-b2a0-2d360631bf05",
+			"id": "3a218bef-9e96-43bf-b6a0-80172d99ba3d",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "22358401-318a-4225-be56-c29988fa77e5",
+			"id": "758a8227-ab65-4b8f-8e18-184d379ee116",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
