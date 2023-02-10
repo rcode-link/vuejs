@@ -575,6 +575,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearerToken}}"
+							}
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -1356,31 +1362,31 @@
 	],
 	"variable": [
 		{
-			"id": "834b731c-4786-40a2-8a2e-5099be16afa4",
+			"id": "fff43bf7-d664-4f44-9ddb-43b60607102c",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "181fba78-5c6e-40b3-8845-a2d59c7a089f",
+			"id": "28276119-9b0b-44ed-ac66-1bccaad08fdc",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e694ff87-02f7-448b-992f-f6e9a1bdc28c",
+			"id": "e6031fd9-066b-4761-a833-3aff53c14c81",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9a1e8da1-c254-4292-b60f-aad1ad320eed",
+			"id": "97cc68f5-7789-473a-b8d9-02df882739a9",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1e0b52b0-8c5c-43c9-b57b-041d154bae0a",
+			"id": "ed4ce082-dc8a-4408-972c-3386f297a88a",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
