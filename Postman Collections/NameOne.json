@@ -336,12 +336,12 @@
 									"                        items:{",
 									"                            \"type\": \"object\",",
 									"                            \"properties\": {",
-									"                            \"_id\": {",
-									"                                \"type\": \"string\"",
-									"                            },",
-									"                            \"name\": {",
-									"                                \"type\": \"string\"",
-									"                            }",
+									"                                \"_id\": {",
+									"                                    \"type\": \"string\"",
+									"                                },",
+									"                                \"name\": {",
+									"                                    \"type\": \"string\"",
+									"                                }",
 									"                            }",
 									"                        }",
 									"                    },",
@@ -1795,37 +1795,37 @@
 	],
 	"variable": [
 		{
-			"id": "50acf43b-c300-418e-bc38-16df380951dd",
+			"id": "03770211-eca4-4fdc-852e-382a787c1982",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "a6dd6eb7-8413-46ad-8374-bf7b541505c6",
+			"id": "f990556f-f0a9-4cd4-81d8-9a5c87736099",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4157385b-87b7-4be5-9251-c57ea9540600",
+			"id": "d74b6f75-813d-45b6-8357-30b4070a8f7d",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c4b110ca-2e01-40d8-9613-28b9c33b1d30",
+			"id": "380f3521-f5b1-4208-aaf6-0f817747ed47",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b32c7da1-ea72-46c1-a796-8fdb293e9133",
+			"id": "4da3a678-8668-40b7-9f25-4c37436984f3",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "52069fd7-6ad5-4b0f-8012-71ef578faad3",
+			"id": "c720310d-3090-457f-9742-40f04bbf4466",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
