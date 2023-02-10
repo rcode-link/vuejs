@@ -1121,7 +1121,20 @@
 			"item": [
 				{
 					"name": "Notes",
-					"item": [],
+					"item": [
+						{
+							"name": "Get Notes",
+							"id": "b11e729b-d6fe-42b0-bc53-78ffcc46e41e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "5cf903d6-a228-4a01-8b70-ba4d748ab5b0"
 				},
 				{
@@ -1575,31 +1588,31 @@
 	],
 	"variable": [
 		{
-			"id": "553f9612-ecd1-49d8-ab1d-1db6763a98d2",
+			"id": "ee7f5157-b293-42bb-9259-2f035e5da075",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "aa7351ea-a354-4fab-8f1a-14b29631f3e3",
+			"id": "2109ae8f-753e-409a-b3a2-06eaf9eaa804",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "301f3b91-f306-491e-a671-f552b80a58bf",
+			"id": "dfc5a15a-07bb-4afa-9a7d-5f370e676de7",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f0ba8340-e73b-45b2-bcf0-cd7aa050e79e",
+			"id": "d0891782-1b2e-41cb-a531-2a73ddc56d25",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dd7282cf-89ca-4a74-bf42-92e7c6150d6d",
+			"id": "caf35014-e2d4-4a51-89ff-c1052ce8ba29",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
