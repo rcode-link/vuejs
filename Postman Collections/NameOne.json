@@ -1691,6 +1691,32 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "937e10b0-15a5-4305-a09b-ed7b1e12f5ae",
+								"exec": [
+									"const loginRequest = {",
+									"    url: pm.collectionVariables.get(\"baseUrl\")+ '/grade',",
+									"    method: 'POST',",
+									"    header: 'Content-Type: application/json',",
+									"    body: {",
+									"        mode: 'application/json',",
+									"        raw: JSON.stringify({        ",
+									"            \"email\": \"teacher_one@email.com\",",
+									"            \"password\": \"password_123\"",
+									"        })",
+									"    }",
+									"};",
+									"",
+									"pm.sendRequest(loginRequest, function (err, response) {",
+									"    const data = response.json();",
+									"    pm.collectionVariables.set(\"bearerToken\", data.data);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
 					"id": "0396c3dc-f982-4c77-8dd6-714fb9bec212",
@@ -2285,42 +2311,42 @@
 	],
 	"variable": [
 		{
-			"id": "a83ac43b-702e-4a89-a43d-00bb18c03a8c",
+			"id": "55878528-4b0b-48a0-b5bf-cff1fd9e6a34",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "4a97a5a1-b821-4724-97fe-585d1d364009",
+			"id": "9a1f5434-9a9a-4c58-b457-8b310d9d7b14",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "b9a1d6d7-9bcc-4d97-b8b5-41c94451ebf9",
+			"id": "7754d963-ef7a-4372-8bd9-c0e293ada2c6",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "fc49d7a5-c350-4069-97b2-82c48e3c1d2c",
+			"id": "29a1873d-c852-4f46-a150-893b87779404",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "00440e1f-945b-4f0b-94ad-df5493263d0d",
+			"id": "a6285296-9abf-4c23-beea-8549e34767b6",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "27e8c0e4-f56b-4378-906d-6a8108d0c628",
+			"id": "83ef036a-dd80-4e7d-a3f0-f9427c60aa1c",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "ea0fb7a4-55e0-4ab4-b1cb-69d7346817f3",
+			"id": "9724a8ff-ab24-4d22-b6fd-4978a5e63fd4",
 			"key": "note_id",
 			"value": ""
 		},
 		{
-			"id": "5f4189cc-0c17-47f7-9554-521c3878bf0c",
+			"id": "ec699c69-fff2-4c2c-9c25-2f8060fc3eca",
 			"key": "student_id",
 			"value": ""
 		}
