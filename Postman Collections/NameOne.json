@@ -1395,9 +1395,7 @@
 									"        \"items\": {",
 									"        \"type\": \"object\",",
 									"            \"properties\": {",
-									"                \"content\": {",
-									"                    \"type\": \"string\"",
-									"                },",
+									"                ",
 									"                \"studyId\": {",
 									"                    \"type\": \"string\"",
 									"                },",
@@ -1695,37 +1693,37 @@
 	],
 	"variable": [
 		{
-			"id": "102a7d36-b431-4430-a993-499f4322568e",
+			"id": "f9f9bb7f-2d20-474a-a8c5-6b7b54ac8372",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "e1fff74a-93d4-4d00-b3be-68c40f4b79c1",
+			"id": "c1782bd1-9467-43e7-990c-a016397d2c09",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8e810f4f-b465-4e9f-bd3d-5edb1f3c92dd",
+			"id": "d4e5a257-f0c0-41e2-a763-6d032368193a",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d7f66a64-f5b2-4ab4-a840-5612307f6658",
+			"id": "2f4e142f-b761-4a48-8fa7-943082965fe3",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d269a9f2-e6e0-45f4-b00e-1f5c0a40fe87",
+			"id": "1368e2f5-a31b-4964-957a-3a080101bd30",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "281cf70a-8b96-4449-b3c4-b8b9c365f3a6",
+			"id": "9585e970-9e0c-41f0-b509-8a5cf7b123e2",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
