@@ -1390,6 +1390,8 @@
 									"    ajv = new Ajv({logger: console, allErrors: true});",
 									"",
 									"var schema = {",
+									"    \"type\": \"object\",",
+									"    \"required\": [ \"categories\"],",
 									"                \"content_1\": {",
 									"                    \"required\": true,",
 									"                    \"type\": \"string\"",
@@ -1686,37 +1688,37 @@
 	],
 	"variable": [
 		{
-			"id": "e0c378dc-2fc5-4756-a7eb-5b061d8b9056",
+			"id": "368ec1ac-3672-4bd3-81ac-088e16bb9287",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "80a0ce10-1351-4e19-a234-a9468a0bf7d3",
+			"id": "88cd70ee-ec0f-4b1a-8130-a3a448ff693c",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "81849f7e-8df8-45d2-99f4-a9ea847114a6",
+			"id": "cab88c92-a62d-4f0f-8e4f-eab222a3869b",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "af8efbad-3656-4a03-bfe7-8c16215d7633",
+			"id": "adabfed9-ae56-45eb-99a3-b05baafde146",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "670807fa-519c-4711-8177-7bed9b9be25d",
+			"id": "c88f6a9d-4b01-4a4f-8831-8fa7b664173d",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d50808ba-07e4-460b-ab02-33a54e06f758",
+			"id": "23b1c5e6-a2ea-4f8e-8368-4a0c8946992f",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
