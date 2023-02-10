@@ -1471,6 +1471,25 @@
 				},
 				{
 					"name": "Update Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2a8aa677-18f2-4ab6-80e9-4a0224a57357",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Check if response is Ok', function(){",
+									"    const data = pm.response.json()",
+									"    pm.expect(data.data).to.eql('ok')",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "14da9cac-8909-4743-bf5e-4e38d637e4a4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1860,37 +1879,37 @@
 	],
 	"variable": [
 		{
-			"id": "5598c1e2-37bd-4320-94c8-393e6f0d16b6",
+			"id": "23fb0fbf-bd20-482a-992f-19a97e39a9cd",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "508f485b-8162-43ec-b930-047c0b39d6be",
+			"id": "8234b7ae-c1b3-4b46-be25-9f2ebb8e8228",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "744bb5d7-6ca8-4066-878b-c861ef07a65f",
+			"id": "b0082d6a-ffd9-4889-a937-638293de8062",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "776a7d3e-61f1-4aec-89b4-7bf3f6f8d377",
+			"id": "bd9558ff-6a55-43d0-9c41-c878253674fa",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bcb65958-1176-4388-b2cf-d707845e42fd",
+			"id": "672aff7e-c942-499c-a960-0ef5065d729b",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6881f03c-eb87-468e-bcbb-d4b0080e39dc",
+			"id": "532f3366-f1c8-4bdf-a266-8b70c1d6c97c",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
