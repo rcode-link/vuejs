@@ -1291,7 +1291,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\n  \"title\": \"voluptate ut fugiat do esse\",\n  \"duration\": 34393406,\n  \"due_date\": \"1991-02-17\",\n  \"due_time\": \"enim dolore dol\",\n  \"content\": \"nulla reprehenderit veniam irure officia\",\n  \"grade_type\": \"exam\",\n  \"type\": \"goal\",\n  \"for_subject\": {\n    \"_id\": \"63ce4a8bf2d77a0756627509\",\n    \"title\": \"minim pariatur\"\n  },\n  \"for_chapter\": {\n    \"_id\": \"63dbb786ebf1ed19013bdda8\",\n    \"title\": \"sunt eu dolor mollit\"\n  },\n  \"for_class\": {\n    \"_id\": \"63e0ca1425c2fd91a955690f\",\n    \"title\": \"ut ipsum velit est commodo\"\n  },\n  \"documents\": [],\n  \"students\": [\n    {\n      \"_id\": \"63a313f433ac01ba7b9c9a97\",\n      \"first_name\": \"dolor aliquip culpa\",\n      \"last_name\": \"aute nisi\"\n    },\n    {\n      \"_id\": \"63a31df4703f4fb1c6b0247f\",\n      \"first_name\": \"culpa aliqua\",\n      \"last_name\": \"reprehe\"\n    }\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1385,31 +1385,31 @@
 	],
 	"variable": [
 		{
-			"id": "8d7272c5-e68b-4e99-a912-ad3792faccf2",
+			"id": "675ad904-4d37-4aa3-a2d5-8dce25107d4e",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "55fa4eeb-ca14-4b8d-95e1-15e867f40102",
+			"id": "2f1b4bb2-7096-45aa-b1e1-bd7b4351eaca",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e58e676f-6a2d-490b-8062-e99f47a274c6",
+			"id": "e309a8e8-f5a7-4c42-8c63-5ed50e7b3136",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5d27b371-6bb2-497e-af4b-e0e43b79b809",
+			"id": "c2baa0a2-b743-4336-82bc-f17cfae67abd",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f68ae059-c05c-4aba-863d-be7c6b4486fd",
+			"id": "f51d9aa5-35f8-48fc-bed4-e109699cdcf8",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
