@@ -1281,7 +1281,7 @@
 			"name": "Assignment",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Create Assigmnet",
 					"id": "be18c68f-b20b-4b2e-bb03-6f94af6b657d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1375,31 +1375,31 @@
 	],
 	"variable": [
 		{
-			"id": "e41f18fe-1f2a-4ac6-89f2-190b8752e947",
+			"id": "29c8a6bd-296d-46bc-9e8b-9bf596f58531",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "ff0e6f7f-4fca-478b-a605-ced5c28beabc",
+			"id": "23f22669-61fb-45e9-ac44-d1c7a58d92bf",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "849e9066-0c83-482b-9774-dcb7bcbcce49",
+			"id": "b2efbcb7-e9c9-4e91-a18a-d3355668ef5f",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cb7c62ca-218f-4ed3-b6af-1c9a5a188c29",
+			"id": "f6321d60-b965-48dd-b3bd-85f8c2f96308",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8c65b388-a84e-48fa-aae4-1b00af16cd21",
+			"id": "bf488f36-ecc0-40f5-847b-495ed7cf3b34",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
