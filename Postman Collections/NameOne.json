@@ -1479,7 +1479,7 @@
 								"exec": [
 									"const response = pm.response.json();",
 									"pm.test(\"Get Assignment ID\", function(){",
-									"    pm.collectionVariables.set('student_id', response.assignments[0]._id)",
+									"    pm.collectionVariables.set('student_id', response.data[0].students[0]._id)",
 									"})",
 									"",
 									"",
@@ -2285,37 +2285,37 @@
 	],
 	"variable": [
 		{
-			"id": "df5cf279-c83e-4f72-b561-485a68c94235",
+			"id": "fc67decd-c15c-48ad-b3d4-362daca145b9",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "8a465aa7-8d45-4415-9769-948e0ace74fb",
+			"id": "02cc09cb-6cc2-46d4-9153-f0269d22d9e7",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "ae3d4bae-b425-4d52-a68e-0fa44c4b7df9",
+			"id": "a9473622-e035-4a68-8893-68e3742e4336",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "73306270-7e93-4e5b-9eac-c4e539e0e841",
+			"id": "c5a1f3d7-3d44-4bf7-a8b0-4f4caee9ca18",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "9b22d357-2c00-44d5-8405-c7d03c77fcfe",
+			"id": "b978f58a-5c29-405c-bbd8-dbaf4321ed44",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "5d5089cf-8880-470f-a18e-4e115f2c382e",
+			"id": "6907b831-6e7d-4a11-81c5-87d687b0187c",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "2aa07fb7-d401-4eeb-84fe-6a54a9990c34",
+			"id": "49756e8e-f0b4-4d8b-badc-5e433ceae4d0",
 			"key": "note_id",
 			"value": ""
 		}
