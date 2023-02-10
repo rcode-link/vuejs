@@ -1334,6 +1334,18 @@
 			"item": [
 				{
 					"name": "Create Notes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4f33cd8d-60f6-4c34-9c38-a37d9134a438",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "0c4557d5-edae-4624-97c0-d1dd5f076699",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1341,6 +1353,15 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"content\": \"ullamco nulla elit \",\n  \"studyId\": \"{{assignment_id}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": ""
 					},
 					"response": []
@@ -1601,37 +1622,37 @@
 	],
 	"variable": [
 		{
-			"id": "82590453-b51e-4f40-a033-ad87117fbc46",
+			"id": "2b3c3fc1-ec8d-4840-99c8-cb46f7c2864c",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "e58a48ea-df09-4657-9b9c-44557a3d99aa",
+			"id": "6de10a27-894c-4e36-8e4d-ad85124e075b",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e63d9bd6-4aa1-444c-abb3-d594b32ee9ac",
+			"id": "97008f9a-4a16-4baa-a9b4-f312d6477672",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "73150cc3-b67b-4eea-91e9-70c28149e0e6",
+			"id": "d5ef78e0-78cc-4871-831d-ea595478df16",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e3506beb-252f-49bd-99f9-f85167755b41",
+			"id": "05ec3bce-5a20-468c-8d0a-8041d0f7cb19",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e98878ec-bad6-46fc-b708-29726c62295a",
+			"id": "5cd7c90b-3ace-4916-af05-cab772f40acf",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
