@@ -1699,15 +1699,8 @@
 								"exec": [
 									"const loginRequest = {",
 									"    url: pm.collectionVariables.get(\"baseUrl\")+ '/grade',",
-									"    method: 'POST',",
+									"    method: 'GET',",
 									"    header: 'Content-Type: application/json',",
-									"    body: {",
-									"        mode: 'application/json',",
-									"        raw: JSON.stringify({        ",
-									"            \"email\": \"teacher_one@email.com\",",
-									"            \"password\": \"password_123\"",
-									"        })",
-									"    }",
 									"};",
 									"",
 									"pm.sendRequest(loginRequest, function (err, response) {",
@@ -2311,42 +2304,42 @@
 	],
 	"variable": [
 		{
-			"id": "55878528-4b0b-48a0-b5bf-cff1fd9e6a34",
+			"id": "7e207134-4873-4319-ba01-33b5023fa2cd",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "9a1f5434-9a9a-4c58-b457-8b310d9d7b14",
+			"id": "c788e12e-3071-4d30-ad8c-8d2d187a477d",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "7754d963-ef7a-4372-8bd9-c0e293ada2c6",
+			"id": "69360a7c-20af-4423-98bb-5dd355e28631",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "29a1873d-c852-4f46-a150-893b87779404",
+			"id": "1b5b1c5e-1e09-452a-a90a-5560380ca3cd",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "a6285296-9abf-4c23-beea-8549e34767b6",
+			"id": "66d61d73-50d7-4ac3-aed1-e1e776931f40",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "83ef036a-dd80-4e7d-a3f0-f9427c60aa1c",
+			"id": "9c8c4a74-6291-4a5f-8841-ba3fad269656",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "9724a8ff-ab24-4d22-b6fd-4978a5e63fd4",
+			"id": "f0531ff6-25a0-4c0e-b249-d87eece55aa5",
 			"key": "note_id",
 			"value": ""
 		},
 		{
-			"id": "ec699c69-fff2-4c2c-9c25-2f8060fc3eca",
+			"id": "302e6d3a-eeed-43ee-aa5f-d03a10065dac",
 			"key": "student_id",
 			"value": ""
 		}
