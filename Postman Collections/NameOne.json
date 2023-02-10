@@ -1282,6 +1282,27 @@
 			"item": [
 				{
 					"name": "Create Assigmnet",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dbe41295-8122-41e4-a83d-9e1f839283b4",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Check if response is Ok', function(){",
+									"    const data = pm.response.json()",
+									"",
+									"console.log(data)",
+									"    pm.expect(data.data).to.eql('ok')",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "be18c68f-b20b-4b2e-bb03-6f94af6b657d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1385,31 +1406,31 @@
 	],
 	"variable": [
 		{
-			"id": "675ad904-4d37-4aa3-a2d5-8dce25107d4e",
+			"id": "1f8dbb14-e32e-477c-b248-28a3e9d2efb4",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "2f1b4bb2-7096-45aa-b1e1-bd7b4351eaca",
+			"id": "d809dde8-594a-494e-a41f-9672b23aac3b",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e309a8e8-f5a7-4c42-8c63-5ed50e7b3136",
+			"id": "e8574de4-aaa4-4c7c-840b-f6e0bc546aa7",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c2baa0a2-b743-4336-82bc-f17cfae67abd",
+			"id": "12e16048-d6a4-4b9f-af53-4a95ed2acc1b",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f51d9aa5-35f8-48fc-bed4-e109699cdcf8",
+			"id": "21f599ed-5f32-4baa-935a-47fdb7ad9f0e",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
