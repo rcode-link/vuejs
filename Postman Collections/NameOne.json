@@ -1404,7 +1404,8 @@
 									"          \"userId\": {",
 									"            \"type\": \"string\"",
 									"          }",
-									"        }",
+									"        },",
+									"         required: [\"foo\", \"bar\"],",
 									"      };",
 									"",
 									"pm.test('Schema is valid', function () {",
@@ -1685,37 +1686,37 @@
 	],
 	"variable": [
 		{
-			"id": "0187a384-3369-4ba2-bdc6-c6833a89c0fb",
+			"id": "3118e4bc-b2f9-42fe-a175-0d22388bb24a",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "7dd2703b-276c-41e3-b456-361fa0fb0b7c",
+			"id": "8df9a076-35ca-4d17-ba81-e7eace0cf0c8",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bb8316c9-6905-4e62-a3c3-9c41cd11a13e",
+			"id": "007c697f-54ea-433c-96e0-a2f3e5b7203c",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "42296c95-bfdb-4311-9e30-98d791ffb3c6",
+			"id": "8c5d7406-e4d0-45fd-a3f2-dbe9e6629109",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "abee233a-0ae7-4014-86fb-bdd79d5dc4b5",
+			"id": "10563200-6d92-49e6-94d5-c4bf794f1c06",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "45dbd60c-58dd-4c0e-8fc5-1de9fe51be7c",
+			"id": "b25da90a-49e4-4ff4-a802-16871a2c2f22",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
