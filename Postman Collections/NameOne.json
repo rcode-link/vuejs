@@ -1605,7 +1605,7 @@
 									"",
 									"pm.test('Schema is valid', function () {",
 									"    const response = pm.response.json();",
-									"    pm.collectionVariables.set('note_id', response.data[0]._id)",
+									"    pm.collectionVariables.set('note_id', response.data[0]._id);",
 									"     pm.expect(ajv.validate(schema, response), JSON.stringify(ajv.errors)).to.be.true",
 									"});"
 								],
