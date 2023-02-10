@@ -1700,7 +1700,7 @@
 									"const loginRequest = {",
 									"    url: pm.collectionVariables.get(\"baseUrl\")+ '/grade',",
 									"    method: 'GET',",
-									"    header: 'Content-Type: application/json;Authorization: Bearer' + pm.collectionVariables.get(\"bearerToken\"),",
+									"    header: 'Authorization: Bearer' + pm.collectionVariables.get(\"bearerToken\"),",
 									"",
 									"};",
 									"",
@@ -2305,42 +2305,42 @@
 	],
 	"variable": [
 		{
-			"id": "dfcd2348-3b7c-48cc-8c80-4d015bd9fab2",
+			"id": "a8bb151e-bfed-4def-a506-0bc0eb529589",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "e287d97d-e3bf-4042-b102-6056fcf3547b",
+			"id": "22a0ed75-d174-4d54-a2b4-c3b02179284a",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "ae634caa-1f4e-45af-8449-0b7dee89fd80",
+			"id": "9b76a622-d700-4636-8f07-e6af3f5385c4",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "d9e6b391-dada-4fcf-93b3-7d7f040a3b87",
+			"id": "70fe9ceb-8dd3-4507-9015-179a7c33d0ac",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "c5c3628c-77b2-4408-ba33-c000d34da85c",
+			"id": "280cc1ea-6e0a-4831-93ee-bd31154f6f52",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "ce7b4b36-33d1-4371-ba22-60e70b0704df",
+			"id": "3187ed6a-86cc-4d6f-8ec1-9e22bf8cd193",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "39226da1-ebc2-4d6a-9841-830c37fdab94",
+			"id": "e14f8070-ae51-4d83-8a7e-1913dcd3d8cf",
 			"key": "note_id",
 			"value": ""
 		},
 		{
-			"id": "ff3ebf8d-be76-4034-b5f4-64e659f91f22",
+			"id": "08f0b5e8-f99f-4979-ba66-603290580115",
 			"key": "student_id",
 			"value": ""
 		}
