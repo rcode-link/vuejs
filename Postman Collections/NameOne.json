@@ -326,7 +326,7 @@
 									"          headTeacher: {",
 									"            type: 'object',",
 									"            required: [",
-									"              '_id',",
+									"              '__id',",
 									"              'email',",
 									"              'first_name',",
 									"              'last_name',",
@@ -1748,37 +1748,37 @@
 	],
 	"variable": [
 		{
-			"id": "fd0689e1-d49b-4f19-bc2f-61fb3d41f448",
+			"id": "ece76a7b-65d3-452b-9fa6-ec0b52a0e0ab",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "d0685dcb-c096-44ca-ab50-2b15959ce983",
+			"id": "1f48bb75-536c-4bdc-8caf-6937934c09bf",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "41d8f430-67b0-4db9-a980-a133366296d2",
+			"id": "f5722b95-499f-48a6-a571-1a7309e032c9",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "afe73df3-ea38-4052-95ab-fe272da46cf2",
+			"id": "463da035-f0aa-4b1b-9f98-0206dc1b9cc9",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c61c27d3-e503-42d0-aeb6-389460291a2c",
+			"id": "375b4d30-4396-47b4-a0ab-93f28d8d4b67",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bf26d4da-935d-4c39-98ee-ddbcfa35d9df",
+			"id": "bbeb52c9-48d2-445e-9978-e0db145659c3",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
