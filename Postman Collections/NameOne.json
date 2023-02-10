@@ -1641,6 +1641,118 @@
 			"id": "5cf903d6-a228-4a01-8b70-ba4d748ab5b0"
 		},
 		{
+			"name": "Discussion",
+			"item": [
+				{
+					"name": "Create Notes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4f33cd8d-60f6-4c34-9c38-a37d9134a438",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "7798fad3-d66f-4447-9086-fd1576f61c2d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"content\": \"ullamco nulla elit \",\n  \"studyId\": \"{{assignment_id}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/note"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Notes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e903ad42-9fda-421b-af6b-ab1630b37505",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"var Ajv = require('ajv'),",
+									"    ajv = new Ajv({logger: console, allErrors: true});",
+									"",
+									"var schema = {",
+									"        \"type\": \"object\",",
+									"        \"properties\": {",
+									"          \"data\": {",
+									"            \"type\": \"array\",",
+									"            \"items\": {",
+									"              \"type\": \"object\",",
+									"              \"required\": [",
+									"                \"content\",",
+									"                \"studyId\",",
+									"                \"_id\",",
+									"                \"userId\"",
+									"              ],",
+									"            }",
+									"          }",
+									"        },",
+									"        \"required\": [",
+									"          \"data\"",
+									"        ]",
+									"      };",
+									"",
+									"pm.test('Schema is valid', function () {",
+									"    const response = pm.response.json();",
+									"     pm.expect(ajv.validate(schema, response), JSON.stringify(ajv.errors)).to.be.true",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "dffd894b-9332-4eec-bef8-1d505d489970",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/note?studyId={{assignment_id}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "studyId",
+									"value": "{{assignment_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "ed7c2261-7ac7-45ff-888d-6c7b8707b4d1"
+		},
+		{
 			"name": "Check Image",
 			"event": [
 				{
@@ -1879,37 +1991,37 @@
 	],
 	"variable": [
 		{
-			"id": "b4dc677f-4bec-4942-9301-fe17e0745725",
+			"id": "1e61d1c3-2d4b-44b4-8c7e-3d4b1843b21d",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "7f3096ce-4e10-49c5-bf59-99dcfe49af83",
+			"id": "4aa577a8-79bc-4982-aa7d-13a1bf9ec820",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5f6d6554-63d7-4323-8c76-5f9eb1039edb",
+			"id": "10eac896-f2c0-4cc8-bd6d-00a356946943",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3925dec3-9b08-4c85-ada3-65426aaeaead",
+			"id": "af5108d2-ed22-4fbc-9818-c8df1804b242",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bb2c8746-ed72-4994-a3a9-2bfc277819c3",
+			"id": "a8f61624-31eb-4872-baa9-367f6ff3dfed",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "67effbcf-0008-4665-8001-4b68499add89",
+			"id": "9298dc9a-9444-4c4c-a96c-1087113a2f00",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
