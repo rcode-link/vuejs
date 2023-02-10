@@ -1721,7 +1721,7 @@
 									"});",
 									"",
 									"pm.test(\"Get note id\", function(){",
-									"",
+									"    pm.collectionVariables.set('note_id', response.data[0]._id)",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1995,37 +1995,37 @@
 	],
 	"variable": [
 		{
-			"id": "e6d54c9a-bdce-441a-b21e-4e56f123527e",
+			"id": "8e2a2a43-d878-436c-afe9-3d1542e0b698",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "96b6661b-9df4-46f3-a068-2f0649d65744",
+			"id": "e29d7388-2b6d-4fac-bd35-d1f1b2781ab9",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9f26dc0d-b6be-45cd-9fd6-df0f8b9bfa3d",
+			"id": "e751b34d-131f-4f80-aec0-073f6741ce6f",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1e0e894f-8000-4f97-87cf-5ef2e83b63b5",
+			"id": "5e30d5b0-3dbe-4295-bfd1-55cfd9b6f962",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f5c0de22-f7ef-498d-846d-46764fbd763b",
+			"id": "7059ee43-e7ff-4a62-bbeb-8bacac979bf4",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "48326a37-c873-465b-bf92-a91c54e1b5bd",
+			"id": "92e6e4a6-7d20-4ad5-a75a-8ce8aa6895d4",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
