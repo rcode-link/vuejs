@@ -2094,5 +2094,12 @@
 				]
 			}
 		}
+	],
+	"variable": [
+		{
+			"id": "6fcf0c83-852a-4b11-b173-b7ba02ba8ba1",
+			"key": "baseUrl",
+			"value": "http://localhost:3001/api/v1"
+		}
 	]
 }
