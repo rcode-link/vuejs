@@ -296,8 +296,7 @@
 									"    pm.expect(data.data).to.be.an('array')",
 									"});",
 									"",
-									"var Ajv = require('ajv'),",
-									"    ajv = new Ajv({logger: console, allErrors: true});",
+									"",
 									"",
 									"const schema = {",
 									"  type: 'object',",
@@ -349,6 +348,9 @@
 									"    }",
 									"  }",
 									"}",
+									"",
+									"var Ajv = require('ajv'),",
+									"    ajv = new Ajv({logger: console, allErrors: true});",
 									"",
 									"pm.test('Check class properties', function(){",
 									"      const response = pm.response.json();",
@@ -1744,37 +1746,37 @@
 	],
 	"variable": [
 		{
-			"id": "b1f6dd80-e5b8-4250-b612-dd2ef929f059",
+			"id": "4b0ee73c-e090-4de4-974d-c86474f04208",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "8b44c190-ff41-488f-8fee-eeebf3472793",
+			"id": "03a26d30-b6a5-429e-a2fe-3c0811583b89",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3de99be6-1cce-4e5c-beff-51e06fa8351d",
+			"id": "580a1261-9bb5-4bb7-ba62-105946c404e0",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1943b79d-5f32-4e9b-b691-96d435445f14",
+			"id": "61f584c9-6182-4151-b31d-db56aa8ed446",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c6a3b4c5-a7c2-4004-8bca-be5592e3fa1e",
+			"id": "09e1ec96-ab3c-49a4-87b7-cfbe04bcfbb7",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a4606eee-979b-4463-9d19-0fdcd7a2aa9f",
+			"id": "771772e1-48aa-408a-81d4-28e53a7efc56",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
