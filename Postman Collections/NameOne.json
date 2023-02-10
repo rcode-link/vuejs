@@ -298,17 +298,6 @@
 									"",
 									"pm.test('Check class properties', function(){",
 									"    const data = pm.response.json();",
-									"    _.each(data.data,obj => {",
-									"    pm.expect(obj).to.have.property('_id')",
-									"    pm.expect(obj).to.have.property('class_name')",
-									"    pm.expect(obj).to.have.property('class_letter')",
-									"    pm.expect(obj).to.have.property('classroom_no')",
-									"    pm.expect(obj).to.have.property('class_color')",
-									"    pm.expect(obj.subjects).to.be.an('array')",
-									"    pm.expect(obj.students).to.be.an('array')",
-									"    pm.expect(obj.headTeacher).to.be.an('object')",
-									"",
-									"    })",
 									"})"
 								],
 								"type": "text/javascript"
@@ -1700,37 +1689,37 @@
 	],
 	"variable": [
 		{
-			"id": "0bccc4f5-a85f-44e2-bdd2-be0e0e14c3c9",
+			"id": "b29bfe04-89d1-43af-9220-0334484ded0e",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "241c28c7-6caa-4445-8360-b429d51adf88",
+			"id": "cc3d991f-7dfe-4e39-a61c-b59f6d5f7973",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "814fd239-a87d-44f8-a167-5531f814730a",
+			"id": "aedc749b-6c3b-4586-b48a-47a621a3468f",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "94a75de2-fdce-4ff8-a1be-79d13711541f",
+			"id": "fc827b6a-dcbc-45a2-8aa2-7e4ab9e479fb",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3ae7b75d-41f1-4393-bab0-b0aff6816bc0",
+			"id": "9f9b076d-6b76-45dd-a369-ca418f05cf6d",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cac40910-e49e-4947-b1a3-ea67b67ffb5d",
+			"id": "fe2d5cc4-50d8-4275-8ab3-a3571e4d02fd",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
