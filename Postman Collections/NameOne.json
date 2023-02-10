@@ -721,7 +721,7 @@
 									"});",
 									"",
 									"pm.test(\"check params\", function(){",
-									"    pm.collectionVariables.set('chapter_id', response.chapters[response.chapters.length - 1]._id)",
+									"    pm.collectionVariables.set('chapter_id', response.chapters[0]._id)",
 									"    pm.expect(response.chapters).to.be.an('array')",
 									"    pm.expect(response.assignments).to.be.an('array')",
 									"})",
@@ -1151,7 +1151,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"voluptate ut fugiat do esse\",\n    \"duration\": 34393406,\n    \"due_date\": \"1991-02-17\",\n    \"due_time\": \"enim dolore dol\",\n    \"content\": \"nulla reprehenderit veniam irure officia\",\n    \"grade_type\": \"exam\",\n    \"type\": \"goal\",\n    \"for_subject\": {\n        \"_id\": \"{{subject_id}}\",\n        \"title\": \"minim pariatur\"\n    },\n    \"for_chapter\": {\n        \"name\": \"sit ad officia\",\n        \"_id\": \"{{chapter_id}}\"\n    },\n    \"for_class\": {\n        \"_id\": \"{{class_id}}\",\n        \"title\": \"ut ipsum velit est commodo\"\n    },\n    \"documents\": [],\n    \"students\": [\n        {\n            \"_id\": \"63a313f433ac01ba7b9c9a97\",\n            \"first_name\": \"dolor aliquip culpa\",\n            \"last_name\": \"aute nisi\"\n        },\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"first_name\": \"culpa aliqua\",\n            \"last_name\": \"reprehe\"\n        }\n    ]\n}",
+							"raw": "{\n    \"title\": \"voluptate ut fugiat do esse\",\n    \"duration\": 34393406,\n    \"due_date\": \"1991-02-17\",\n    \"due_time\": \"enim dolore dol\",\n    \"content\": \"nulla reprehenderit veniam irure officia\",\n    \"grade_type\": \"exam\",\n    \"type\": \"goal\",\n    \"for_subject\": {\n        \"_id\": \"{{subject_id}}\",\n        \"title\": \"minim pariatur\"\n    },\n    \"for_chapter\": {\n        \"title\": \"sit ad officia\",\n        \"_id\": \"{{chapter_id}}\"\n    },\n    \"for_class\": {\n        \"_id\": \"{{class_id}}\",\n        \"title\": \"ut ipsum velit est commodo\"\n    },\n    \"documents\": [],\n    \"students\": [\n        {\n            \"_id\": \"63a313f433ac01ba7b9c9a97\",\n            \"first_name\": \"dolor aliquip culpa\",\n            \"last_name\": \"aute nisi\"\n        },\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"first_name\": \"culpa aliqua\",\n            \"last_name\": \"reprehe\"\n        }\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1161,9 +1161,278 @@
 						"url": "{{baseUrl}}/assignment"
 					},
 					"response": []
+				},
+				{
+					"name": "GetChapter Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "79377472-8d6b-4302-84ef-c53b30f93be8",
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Get Assignment ID\", function(){",
+									"    pm.collectionVariables.set('assignment_id', response.assignments[0]._id)",
+									"})",
+									"",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "1d15d6e0-9c50-4c85-974e-d59adc11e5a6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/chapter?subjectId={{subject_id}}&classId={{class_id}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"chapter"
+							],
+							"query": [
+								{
+									"key": "subjectId",
+									"value": "{{subject_id}}"
+								},
+								{
+									"key": "classId",
+									"value": "{{class_id}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "b98cf9ae-b323-49bb-83dd-1f71ed5c2832",
+							"name": "ValidationErrors",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/chapter?subjectId={{class_id}}&classId={{subject_id}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter"
+									],
+									"query": [
+										{
+											"key": "subjectId",
+											"value": "{{class_id}}"
+										},
+										{
+											"key": "classId",
+											"value": "{{subject_id}}"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "230"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:46:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"63d7eecf983de7ab13aecd29\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"subjectId\",\n            \"location\": \"query\"\n        },\n        {\n            \"value\": \"63ce4a8bf2d77a0756627509\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"classId\",\n            \"location\": \"query\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "a953219d-a855-4087-ad43-7c1e522a4ad1",
+							"name": "Ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/chapter?subjectId={{subject_id}}&classId={{class_id}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter"
+									],
+									"query": [
+										{
+											"key": "subjectId",
+											"value": "{{subject_id}}"
+										},
+										{
+											"key": "classId",
+											"value": "{{class_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1009"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:49:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"chapters\": [\n        {\n            \"_id\": \"63dbb72febf1ed19013bdd84\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb740ebf1ed19013bdd96\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb786ebf1ed19013bdda8\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb79febf1ed19013bddbd\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb8ba2abc9ddd6f7d5623\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbbe84be6c1529295db4bd\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        }\n    ],\n    \"assignments\": []\n}"
+						}
+					]
 				}
 			],
 			"id": "ace5518f-4bf4-4f50-950a-0d6ee6d88963"
+		},
+		{
+			"name": "Notes",
+			"item": [
+				{
+					"name": "Create Notes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4f33cd8d-60f6-4c34-9c38-a37d9134a438",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "0c4557d5-edae-4624-97c0-d1dd5f076699",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"content\": \"ullamco nulla elit \",\n  \"studyId\": \"{{assignment_id}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/note"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Notes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e903ad42-9fda-421b-af6b-ab1630b37505",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"var schema = {",
+									"    \"items\": {",
+									"        \"type\": \"boolean\"",
+									"    }",
+									"};",
+									"",
+									"var data1 = [true, false];",
+									"var data2 = [true, 123];",
+									"",
+									"pm.test('Schema is valid', function () {",
+									"    pm.expect(tv4.validate(data1, schema)).to.be.true;",
+									"    pm.expect(tv4.validate(data2, schema)).to.be.true;",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "b11e729b-d6fe-42b0-bc53-78ffcc46e41e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/note?studyId={{assignment_id}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "studyId",
+									"value": "{{assignment_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "5cf903d6-a228-4a01-8b70-ba4d748ab5b0"
 		},
 		{
 			"name": "Check Image",
@@ -1368,7 +1637,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "23fcbc97-ca2f-4943-9125-42b0630b6481",
+				"id": "4de0945c-abb7-482b-8860-6cb406089752",
 				"type": "text/javascript",
 				"exec": [
 					"const loginRequest = {",
@@ -1396,7 +1665,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "c244985c-e877-42c8-b7d7-5ccb2c7f2fc6",
+				"id": "87edcb8a-d45c-45b0-bd8a-7c0ac0d36397",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1406,32 +1675,38 @@
 	],
 	"variable": [
 		{
-			"id": "359284f9-5c96-4c5a-934b-cbaae1eda67f",
+			"id": "a9b3dabf-64cb-40bd-bcf4-807cb49bc60b",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "25f95ae8-4487-4e22-ab23-e981a9df66d9",
+			"id": "a4fe8db7-9e0c-4a22-91f7-e6e67d0d7590",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4d183d9a-7bda-46d3-91b8-e96042765fc0",
+			"id": "51be7fb4-89c1-45d0-bf69-52877af25764",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e88105a6-063a-4dd7-8b5c-ef7fe0d87975",
+			"id": "c49d329d-ed47-44aa-822a-22768496c062",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7b6bd6e4-7ed4-4f58-b20d-548cfe50eed6",
+			"id": "e59824e6-1b04-41de-b939-a51e54bdf690",
 			"key": "chapter_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "b1b7e65e-5f03-466c-a7d4-73ad693460ee",
+			"key": "assignment_id",
 			"value": "",
 			"type": "string"
 		}
