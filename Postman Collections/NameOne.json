@@ -1689,37 +1689,37 @@
 	],
 	"variable": [
 		{
-			"id": "06e75767-e5b9-48db-9d67-26c02d811c5d",
+			"id": "65903e19-a42e-4e96-9edd-145a7ab338b1",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "6a8921a5-2e29-4ab4-9b4f-746c725d1165",
+			"id": "44b19ddf-2d95-4573-b1ae-60a2370e798c",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "95587c11-0259-49c5-9e3d-b738a294a047",
+			"id": "86f196c0-7b2d-4a6b-9d55-e3b5644626f7",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "21abcdbf-24cc-47d3-8e8c-fea6f9540577",
+			"id": "44e43a88-445a-4848-a407-98a20e566499",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d8ed0989-ed77-41d0-98d4-b475a6e1ac3f",
+			"id": "1c45d74d-f968-453e-a432-eb8695f4f9d7",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6ee8adcc-4f64-4f3c-bbde-ec9aae69138b",
+			"id": "f90fe295-ec7f-4b27-ace9-7c1ba65f1fd4",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
