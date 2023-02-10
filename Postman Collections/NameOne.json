@@ -1480,6 +1480,15 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"voluptate ut fugiat do esse\",\n    \"duration\": 34393406,\n    \"due_date\": \"1991-02-17\",\n    \"due_time\": \"enim dolore dol\",\n    \"content\": \"nulla reprehenderit veniam irure officia\",\n    \"grade_type\": \"exam\",\n    \"type\": \"goal\",\n    \"for_subject\": {\n        \"_id\": \"{{subject_id}}\",\n        \"title\": \"minim pariatur\"\n    },\n    \"for_chapter\": {\n        \"title\": \"sit ad officia\",\n        \"_id\": \"{{chapter_id}}\"\n    },\n    \"for_class\": {\n        \"_id\": \"{{class_id}}\",\n        \"title\": \"ut ipsum velit est commodo\"\n    },\n    \"documents\": [],\n    \"students\": [\n        {\n            \"_id\": \"63a313f433ac01ba7b9c9a97\",\n            \"first_name\": \"dolor aliquip culpa\",\n            \"last_name\": \"aute nisi\"\n        },\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"first_name\": \"culpa aliqua\",\n            \"last_name\": \"reprehe\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{baseUrl}}/assignment/:id",
 							"host": [
@@ -1853,37 +1862,37 @@
 	],
 	"variable": [
 		{
-			"id": "0295ea1c-450b-40a1-9c86-890eeb19ebcd",
+			"id": "54d97efc-3558-4698-82b1-31708c5c4328",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "056df77d-9a97-40a2-83d3-fb031d28c9ff",
+			"id": "a97a58bf-096d-4d12-8b58-acfa9eab3286",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "33db28e9-8923-4bf5-81f7-b1fe9433b703",
+			"id": "2e6c1a3c-d030-431f-a22d-4164227cd840",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7e7a5ac3-b41e-4b60-8dc5-43f7b6097e7f",
+			"id": "9c44c767-71b8-4973-8732-e67ea3dc19b4",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b6d9ae01-d35a-4f1d-84a1-7d667c8195ad",
+			"id": "1c64cbce-2175-4659-bebc-53a55f43eb5e",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5825dc7f-6b7e-4ff0-92bd-053c9b3fce79",
+			"id": "395f63a5-150a-44d7-9e7c-56c6d7789bd9",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
