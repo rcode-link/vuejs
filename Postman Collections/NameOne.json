@@ -1368,6 +1368,20 @@
 				},
 				{
 					"name": "Get Notes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e903ad42-9fda-421b-af6b-ab1630b37505",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "b11e729b-d6fe-42b0-bc53-78ffcc46e41e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1637,37 +1651,37 @@
 	],
 	"variable": [
 		{
-			"id": "22e7c411-ae18-4a4f-ad7a-73f68e2f132c",
+			"id": "e1c5d9c2-d4a6-40e9-9924-eec0451da836",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "7f7e33c5-b882-42cf-b0ac-c3bcb749de4a",
+			"id": "6d5ae4b3-b47b-466e-895a-5f76a8b138cb",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "38566b64-805f-4128-9a61-5535923e0f3b",
+			"id": "51950838-6d2e-4c22-972e-74cb3b69bd64",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ee008997-2e67-496b-820f-bf603e018e7f",
+			"id": "6367f413-49e7-4fb2-96c5-b89fc664896b",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e0959fd8-3d2d-4b3c-bb84-47082be5ea01",
+			"id": "58a7edd2-bfaa-418e-b35b-9a30dfc96687",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "acecf6e9-0c3e-4d93-beee-4ad7c28383f6",
+			"id": "7ae5cad2-2051-4c68-8c29-f39145e3d6d2",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
