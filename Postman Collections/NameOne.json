@@ -1498,25 +1498,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseUrl}}/chapter?subjectId={{subject_id}}&classId={{class_id}}",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"chapter"
-							],
-							"query": [
-								{
-									"key": "subjectId",
-									"value": "{{subject_id}}"
-								},
-								{
-									"key": "classId",
-									"value": "{{class_id}}"
-								}
-							]
-						}
+						"url": "{{baseUrl}}/assignment/{{assignment_id}}"
 					},
 					"response": [
 						{
@@ -2303,37 +2285,37 @@
 	],
 	"variable": [
 		{
-			"id": "ee351534-da56-4c22-ba06-962c2abe526a",
+			"id": "c80fe8a1-4c07-42c3-b8be-14393db280ea",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "4e1c2354-1623-4d6d-bd05-1936a56f87c7",
+			"id": "3e4648e2-f5b9-43fc-8323-69d444fe6906",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "9cd91609-8d88-43f7-8c37-be39dc5030af",
+			"id": "57daf9ad-0c84-44df-8cc8-debc79cd7ef4",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "0621d52a-478d-4e03-8c98-1810601e19f5",
+			"id": "99470855-0e4e-4e6c-87d1-959c9a89f9e0",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "9cb5dbcd-0acd-43b6-8d52-1bae32af9fe4",
+			"id": "e2e73424-5dff-4285-8d3d-590a5582069e",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "fe15ccde-157f-46dd-8d79-f1c5f3331212",
+			"id": "69a1991a-002a-45a5-b6c6-e78e6312b6ea",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "e54c256d-495c-405b-91bf-f35f845723d4",
+			"id": "16cbad67-14a7-4fe0-be27-8d6b1e680b08",
 			"key": "note_id",
 			"value": ""
 		}
