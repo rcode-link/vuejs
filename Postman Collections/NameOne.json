@@ -1705,7 +1705,7 @@
 								"id": "cf3683a2-6773-465a-a7b5-b0956c42439b",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
-									"    pm.collectionVariables.clear('note_id')",
+									"    pm.collectionVariables.unset('note_id')",
 									"    pm.response.to.have.status(200);",
 									"});"
 								],
