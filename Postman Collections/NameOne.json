@@ -1472,7 +1472,7 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "Update Request",
 					"id": "14da9cac-8909-4743-bf5e-4e38d637e4a4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1837,37 +1837,37 @@
 	],
 	"variable": [
 		{
-			"id": "77b788f0-4bf1-4014-b747-f36fcc9ba31c",
+			"id": "87184795-dab6-4870-892d-1b2cd581627e",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "7b202f29-61b6-4a85-8fd2-a8f89b3c774d",
+			"id": "37e1928a-d5e0-4187-98f2-7d26762600af",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c4595dcf-4075-474d-800e-b2cc64c47ff6",
+			"id": "4d83e42c-32fd-4fd7-8de9-399c6e6a7e3d",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2f41de15-70aa-47e9-9a3b-0587e9048cdb",
+			"id": "c9356d5f-6cdf-41ea-96b0-46fc4341f46f",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3cab7f5f-90c1-43ec-ac46-5ebb08af6145",
+			"id": "a61142ef-a92f-419d-aac6-a30fe63fa134",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c840868b-ef9f-4ec9-9b10-e8e27a0d2f25",
+			"id": "5b92d117-b01c-446a-a761-05df8a73e23d",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
