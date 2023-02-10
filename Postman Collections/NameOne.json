@@ -1312,7 +1312,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"title\": \"voluptate ut fugiat do esse\",\n  \"duration\": 34393406,\n  \"due_date\": \"1991-02-17\",\n  \"due_time\": \"enim dolore dol\",\n  \"content\": \"nulla reprehenderit veniam irure officia\",\n  \"grade_type\": \"exam\",\n  \"type\": \"goal\",\n  \"for_subject\": {\n    \"_id\": \"63ce4a8bf2d77a0756627509\",\n    \"title\": \"minim pariatur\"\n  },\n  \"for_chapter\": {\n    \"_id\": \"63dbb786ebf1ed19013bdda8\",\n    \"title\": \"sunt eu dolor mollit\"\n  },\n  \"for_class\": {\n    \"_id\": \"63e0ca1425c2fd91a955690f\",\n    \"title\": \"ut ipsum velit est commodo\"\n  },\n  \"documents\": [],\n  \"students\": [\n    {\n      \"_id\": \"63a313f433ac01ba7b9c9a97\",\n      \"first_name\": \"dolor aliquip culpa\",\n      \"last_name\": \"aute nisi\"\n    },\n    {\n      \"_id\": \"63a31df4703f4fb1c6b0247f\",\n      \"first_name\": \"culpa aliqua\",\n      \"last_name\": \"reprehe\"\n    }\n  ]\n}",
+							"raw": "{\n    \"title\": \"voluptate ut fugiat do esse\",\n    \"duration\": 34393406,\n    \"due_date\": \"1991-02-17\",\n    \"due_time\": \"enim dolore dol\",\n    \"content\": \"nulla reprehenderit veniam irure officia\",\n    \"grade_type\": \"exam\",\n    \"type\": \"goal\",\n    \"for_subject\": {\n        \"_id\": \"{{subject_id}}\",\n        \"title\": \"minim pariatur\"\n    },\n    \"for_chapter\": {\n        \"name\": \"sit ad officia\",\n        \"_id\": \"{{chapter_id}}\"\n    },\n    \"for_class\": {\n        \"_id\": \"{{class_id}}\",\n        \"title\": \"ut ipsum velit est commodo\"\n    },\n    \"documents\": [],\n    \"students\": [\n        {\n            \"_id\": \"63a313f433ac01ba7b9c9a97\",\n            \"first_name\": \"dolor aliquip culpa\",\n            \"last_name\": \"aute nisi\"\n        },\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"first_name\": \"culpa aliqua\",\n            \"last_name\": \"reprehe\"\n        }\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1406,31 +1406,31 @@
 	],
 	"variable": [
 		{
-			"id": "958efd98-4f07-47c5-9c1d-2d9f91709132",
+			"id": "42db480b-cdba-4d4c-b072-820c505782df",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "2aade69d-f207-400a-bd0c-237e6a9750e6",
+			"id": "b83213da-c240-4670-8edd-9602e5839b56",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ddbefc35-4edc-45bc-97f8-c0b04d240d9e",
+			"id": "0d909e86-4e17-4b73-ae82-2a2b4a8a9593",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "89d3a1a5-146b-4a90-a49f-b50e8a271401",
+			"id": "791312df-3d80-43d7-a839-3703203490c5",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "adc9cc48-6e3c-4482-8e69-46bf28d61fe1",
+			"id": "22d27e5b-c971-43fd-b4ca-2b79133484c6",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
