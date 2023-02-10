@@ -1391,7 +1391,8 @@
 									"    \"$schema\": \"http://json-schema.org/draft-04/schema#\",",
 									"    \"type\" : \"object\",",
 									"    \"properties\":{",
-									"        \"type\":\"array\",",
+									"        \"data\": {",
+									"            \"type\":\"array\",",
 									"        \"items\": {",
 									"        \"type\": \"object\",",
 									"            \"properties\": {",
@@ -1408,6 +1409,7 @@
 									"                    \"type\": \"string\"",
 									"                }",
 									"            }",
+									"        }",
 									"        }",
 									"    }",
 									"   ",
@@ -1695,37 +1697,37 @@
 	],
 	"variable": [
 		{
-			"id": "fe58b647-de63-4c39-9206-ad0b5f26ec81",
+			"id": "50477cfd-bfea-4136-8428-8b6f38bc27cc",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "d5a6976b-e083-4453-9026-2829d734ee1a",
+			"id": "d7dacdcb-b580-4b31-8577-6c0db31688d6",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9025fd85-4a06-40f5-849b-0b233103d27f",
+			"id": "a2326e58-b28c-432e-93af-05b6fd90424d",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2939a53e-b084-4efa-acf4-e8c43889a3e0",
+			"id": "80d2ea6e-36b4-48bd-8e02-1d2e74bd6b17",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0889974c-c023-4989-b1f7-3d364aa70240",
+			"id": "79a7fd51-9bcf-48ed-9a0b-4254c9805333",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8d47f993-db01-43ab-b25b-d31fd3504394",
+			"id": "79a3942b-a7bc-4728-adad-02d8913e5898",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
