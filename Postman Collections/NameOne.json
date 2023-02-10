@@ -1084,167 +1084,6 @@
 							"body": "{\n    \"data\": \"ok\"\n}"
 						}
 					]
-				},
-				{
-					"name": "Delete Chapter",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "59ab95fc-db34-466e-a8e9-00c5b4fe77a2",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test('Check if response is Ok', function(){",
-									"    const data = pm.response.json()",
-									"",
-									"    pm.expect(data.data).to.eql('ok')",
-									"})"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "a4d57c84-9f44-4b26-a3b3-586a311389e3",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "{{baseUrl}}/chapter/:id",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"chapter",
-								":id"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": "{{chapter_id}}"
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"id": "b6b6ec5e-7fbd-441b-a9c6-6c9156eb397e",
-							"name": "Ok",
-							"originalRequest": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/chapter/:id",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"chapter",
-										":id"
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": "{{chapter_id}}"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "13"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 02 Feb 2023 16:05:46 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"data\": \"ok\"\n}"
-						},
-						{
-							"id": "a0b41f01-21f4-4409-98c1-274b3f80352b",
-							"name": "ValidationError",
-							"originalRequest": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/chapter/:id",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"chapter",
-										":id"
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": "{{chapter_id}}"
-										}
-									]
-								}
-							},
-							"status": "Unprocessable Entity",
-							"code": 422,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "116"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 02 Feb 2023 16:08:41 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"63dbdff812f07578e540d576\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"id\",\n            \"location\": \"params\"\n        }\n    ]\n}"
-						}
-					]
 				}
 			],
 			"id": "aa6e0ad2-7889-46b0-94f7-cf0c9eba05da",
@@ -1356,6 +1195,167 @@
 				"url": "{{baseUrl}}/files/1673531780925-avatar-1.jpg"
 			},
 			"response": []
+		},
+		{
+			"name": "Delete Chapter",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "59ab95fc-db34-466e-a8e9-00c5b4fe77a2",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('Check if response is Ok', function(){",
+							"    const data = pm.response.json()",
+							"",
+							"    pm.expect(data.data).to.eql('ok')",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "a4d57c84-9f44-4b26-a3b3-586a311389e3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/chapter/:id",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"chapter",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "{{chapter_id}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "b6b6ec5e-7fbd-441b-a9c6-6c9156eb397e",
+					"name": "Ok",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/chapter/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"chapter",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{chapter_id}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Feb 2023 16:05:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"data\": \"ok\"\n}"
+				},
+				{
+					"id": "a0b41f01-21f4-4409-98c1-274b3f80352b",
+					"name": "ValidationError",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/chapter/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"chapter",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{chapter_id}}"
+								}
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "116"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Feb 2023 16:08:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"errors\": [\n        {\n            \"value\": \"63dbdff812f07578e540d576\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"id\",\n            \"location\": \"params\"\n        }\n    ]\n}"
+				}
+			]
 		}
 	],
 	"auth": {
@@ -1406,31 +1406,31 @@
 	],
 	"variable": [
 		{
-			"id": "a7295a28-8295-4493-a125-3f87fa225f50",
+			"id": "141c3fef-503a-446a-bffd-fec6b8d368ad",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "1c3894bf-2f4f-45fa-8703-66d131be8446",
+			"id": "7585984f-bccf-4ea7-890b-d0ef7c5b32fd",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "234b32a9-afa1-4050-aca3-07b25547486e",
+			"id": "0199ed0a-9136-4486-b1c3-688c29d73aa3",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "99220357-20f7-4498-9ddf-5a54df5cb8b1",
+			"id": "a0c55971-eb36-4043-9f20-d2e91185cc2a",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "16cdb2a1-c518-4f3a-8e42-a33c2808c10b",
+			"id": "ec3461e9-acba-4f12-a8bc-2bf8651d3100",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
