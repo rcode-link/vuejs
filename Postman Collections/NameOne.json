@@ -1702,7 +1702,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"assigmentId\": \"{{assignment_id}}\",\n  \"students\": [\n    {\n      \"_id\": \"string\",\n      \"first_name\": \"string\",\n      \"last_name\": \"string\",\n      \"grade\": {\n        \"_id\": \"string\",\n        \"title\": \"string\",\n        \"value\": 0,\n        \"description\": \"string\"\n      }\n    }\n  ]\n}",
+							"raw": "{\n  \"assigmentId\": \"{{assignment_id}}\",\n  \"students\": [\n    {\n      \"_id\": \"{{student_id}}\",\n      \"first_name\": \"string\",\n      \"last_name\": \"string\",\n      \"grade\": {\n        \"_id\": \"string\",\n        \"title\": \"string\",\n        \"value\": 0,\n        \"description\": \"string\"\n      }\n    }\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2285,42 +2285,42 @@
 	],
 	"variable": [
 		{
-			"id": "a1e9c443-b25a-4b5e-acbe-422f91b9f6f9",
+			"id": "d830ad77-9f1e-47ed-9cdb-3520ec2bfe60",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "23fbb7dc-71ae-4257-80b6-7eb433d1f25e",
+			"id": "d43c8291-8eec-49c4-9f8b-48046189f15f",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "1ae1ecc8-1122-423f-a646-dfce93a278eb",
+			"id": "e928adbf-f37b-4c1f-9f4a-c187d80e2add",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "08902b9d-7435-4c67-b714-44ee1530de72",
+			"id": "adfb2b15-2ecc-468d-9afe-41bcdf2c42c1",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "80912e7b-64a9-43c6-bd50-d74ef2eb172e",
+			"id": "780f02ae-edf5-48d6-b008-11042876e38e",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "17f8dc6a-5999-4d30-a3b1-65b8c7d130e2",
+			"id": "c7953f5c-de51-42f4-a13f-bf7d4e69b3d9",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "b66b7104-85e3-49d8-8c06-d1ee1cb8c673",
+			"id": "b4ef9432-7e0e-4447-8361-1473787d5ed4",
 			"key": "note_id",
 			"value": ""
 		},
 		{
-			"id": "c6d0c23a-be94-4379-b2cf-54b52a87cf56",
+			"id": "65a92eeb-b944-4d02-b37f-c8d6dd9134d3",
 			"key": "student_id",
 			"value": ""
 		}
