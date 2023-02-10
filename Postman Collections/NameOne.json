@@ -298,7 +298,7 @@
 									"",
 									"var Ajv = require('ajv'),",
 									"    ajv = new Ajv({logger: console, allErrors: true});",
-									"    ",
+									"",
 									"const schema = {",
 									"    \"type\": \"object\",",
 									"    \"properties\":{",
@@ -306,6 +306,12 @@
 									"            type: \"array\",",
 									"            items:{",
 									"                type: \"object\",",
+									"                \"required\": [",
+									"                \"content\",",
+									"                \"studyId\",",
+									"                \"_id\",",
+									"                \"userId\"",
+									"              ],",
 									"                \"properties\": {",
 									"                    \"_id\": {",
 									"                        \"type\": \"string\"",
@@ -1722,37 +1728,37 @@
 	],
 	"variable": [
 		{
-			"id": "fa11982e-76a7-47c0-99d9-91957b3bb8f3",
+			"id": "33c1622d-39c0-40ee-9d6f-d9782f8f94d0",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "c3792141-3251-4e37-834d-7e2770e977e1",
+			"id": "762048e2-6807-436d-be92-37b564044fc7",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8e5f9984-8743-4bcc-9425-4502cd9a158c",
+			"id": "91275265-387b-483d-8b36-ad39ccd36f3f",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b59edc66-733a-4975-80cf-7615bcef55aa",
+			"id": "d16be5cc-1c93-4ad6-af5a-b09a0921ba97",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1e78c324-221e-4f63-b217-045b09c43ef2",
+			"id": "21f6c041-5cab-4b13-9b70-536d7732c9be",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b8a54718-a3a6-40af-8caa-03da0b740e70",
+			"id": "87190d2b-c824-497f-b451-c72b49046c56",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
