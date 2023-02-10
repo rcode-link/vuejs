@@ -2097,9 +2097,14 @@
 	],
 	"variable": [
 		{
-			"id": "6fcf0c83-852a-4b11-b173-b7ba02ba8ba1",
+			"id": "f63a4748-1b7a-44b0-89ed-86078b5de46d",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
+		},
+		{
+			"id": "6c94e28e-588b-44dd-97d8-a4de32847d1a",
+			"key": "bearerToken",
+			"value": ""
 		}
 	]
 }
