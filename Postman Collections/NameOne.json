@@ -1171,7 +1171,7 @@
 								"id": "79377472-8d6b-4302-84ef-c53b30f93be8",
 								"exec": [
 									"pm.test(\"Get Assignment ID\", function(){",
-									"    pm.collectionVariables.set('assignments', response.assignments[0]._id)",
+									"    pm.collectionVariables.set('assignment_id', response.assignments[0]._id)",
 									"})"
 								],
 								"type": "text/javascript"
@@ -1669,37 +1669,37 @@
 	],
 	"variable": [
 		{
-			"id": "5004d2b1-2692-4946-92c6-2364bb493b02",
+			"id": "9f6ead83-ca3a-42f4-9dba-06dadaf84ec1",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "910870fd-4465-45c8-b0b8-effdcc5a5e3e",
+			"id": "585fb758-d9ed-4429-b1f5-c2fb2142272b",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "063f50fc-2f09-4aa3-9ef5-eac9451bd3cf",
+			"id": "b2be6aa7-535a-4df2-a5fb-5bc89b584c7b",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8e74d36f-c8a6-4e47-987f-f825812104ef",
+			"id": "fd1d3263-0cda-4fb9-8d57-983c89c63da3",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3bcaccc1-0d53-4b79-8841-05a00d66d280",
+			"id": "a27ad1c1-4c84-4b03-8b7a-61139e02604f",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b20bd554-178a-4968-992a-6c9f676e0c02",
+			"id": "2fafad8d-2e2c-4d8b-a213-4542db9ece3b",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
