@@ -1470,6 +1470,18 @@
 							"body": "{\n    \"chapters\": [\n        {\n            \"_id\": \"63dbb72febf1ed19013bdd84\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb740ebf1ed19013bdd96\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb786ebf1ed19013bdda8\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb79febf1ed19013bddbd\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb8ba2abc9ddd6f7d5623\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbbe84be6c1529295db4bd\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        }\n    ],\n    \"assignments\": []\n}"
 						}
 					]
+				},
+				{
+					"name": "New Request",
+					"id": "14da9cac-8909-4743-bf5e-4e38d637e4a4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "ace5518f-4bf4-4f50-950a-0d6ee6d88963"
@@ -1825,37 +1837,37 @@
 	],
 	"variable": [
 		{
-			"id": "f0d5efb0-4210-480c-9af7-89e04081ce11",
+			"id": "77b788f0-4bf1-4014-b747-f36fcc9ba31c",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "0a75fed5-6bd9-4e5d-a7f6-ae2984029df8",
+			"id": "7b202f29-61b6-4a85-8fd2-a8f89b3c774d",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cd3fc445-616e-4361-bbda-158042db7612",
+			"id": "c4595dcf-4075-474d-800e-b2cc64c47ff6",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1703fa2b-6c6f-4ae4-a1d6-293fb213b94b",
+			"id": "2f41de15-70aa-47e9-9a3b-0587e9048cdb",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9237c419-8562-4730-847c-eb589f4886f3",
+			"id": "3cab7f5f-90c1-43ec-ac46-5ebb08af6145",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e8476e1b-0a34-4922-ad10-0e6f2cf3e163",
+			"id": "c840868b-ef9f-4ec9-9b10-e8e27a0d2f25",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
