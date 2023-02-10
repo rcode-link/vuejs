@@ -1333,6 +1333,18 @@
 			"name": "Notes",
 			"item": [
 				{
+					"name": "Create Notes",
+					"id": "0c4557d5-edae-4624-97c0-d1dd5f076699",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
 					"name": "Get Notes",
 					"id": "b11e729b-d6fe-42b0-bc53-78ffcc46e41e",
 					"protocolProfileBehavior": {
@@ -1588,37 +1600,37 @@
 	],
 	"variable": [
 		{
-			"id": "b10b9dc1-5b53-4ac3-982a-86ff2717cd5c",
+			"id": "5eb76c8a-a486-4221-b7f5-17dfcc5b2f47",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "973c48a6-6fb4-447f-9e4a-f7be1aa05888",
+			"id": "e350228d-ce7f-4ded-99a1-6d8649c4ce0e",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5e610971-ea85-494c-924b-220774335019",
+			"id": "483f8eda-9224-4214-bea7-6299a0a67aea",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ea242e6e-e2a0-4a01-9621-07ed91567df2",
+			"id": "e8ff4a1f-8b02-450e-9a1a-804f0a8a5f30",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5cdeb0d8-34ba-446c-8a60-64448b432c51",
+			"id": "25f20b2c-9178-436d-afe4-ebd1e947eea1",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4e9d3277-3d9d-4955-8ea9-7fee479d57b0",
+			"id": "80a66840-fb20-4a87-8d4e-fe88fa7fc4df",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
