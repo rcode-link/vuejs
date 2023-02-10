@@ -1412,7 +1412,8 @@
 									"const response = pm.response.json();",
 									"",
 									"pm.test('Schema is valid', function () {",
-									"    console.log(response)",
+									"    console.log(tv4.validate(response, schema))",
+									"",
 									"    pm.expect(tv4.validate(response, schema)).to.be.true;",
 									"});"
 								],
@@ -1689,37 +1690,37 @@
 	],
 	"variable": [
 		{
-			"id": "1fb221f5-ccb4-44d3-b0ef-8e4a27c38914",
+			"id": "9acd0c90-f94e-4d44-826f-a5281541664b",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "74180840-896d-4ca9-b160-dca23b7b3332",
+			"id": "6c3f3ec0-356c-41f5-8fdc-6b428c7777b2",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "04b23a64-3133-46bb-9f44-b48d52236362",
+			"id": "b197748b-be6e-4d64-8e6b-e51a846d28ad",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "78259e95-b719-47ba-a3e5-cc629357c127",
+			"id": "ea3733b4-4955-4ef6-b811-debc7fd6b2a2",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5a619ae3-b096-4c89-aadf-d6bd51057a31",
+			"id": "44d30f51-94eb-4116-96af-3975abf3e11d",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "690be08c-f6d1-4fd8-97e1-930c11adca3b",
+			"id": "45b2069d-0338-407e-a564-6cefac269687",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
