@@ -721,7 +721,7 @@
 									"});",
 									"",
 									"pm.test(\"check params\", function(){",
-									"    pm.collectionVariables.set('chapter_id', response.chapters[response.chapters.length - 1]._id)",
+									"    pm.collectionVariables.set('chapter_id', response.chapters[0]._id)",
 									"    pm.expect(response.chapters).to.be.an('array')",
 									"    pm.expect(response.assignments).to.be.an('array')",
 									"})",
@@ -1406,31 +1406,31 @@
 	],
 	"variable": [
 		{
-			"id": "d7617317-6d85-41b0-b714-4e81e70c07db",
+			"id": "20dbae5b-384e-42a7-983e-3fbbc3a3a587",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "5348cc19-b609-4930-8865-79d83e1f326e",
+			"id": "7e934954-5d58-4ae8-8baf-28f6ecbe5017",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5bfdf3e7-363f-4731-b188-3e2f35b278ff",
+			"id": "cb065125-8016-4a18-b40f-89172bfc623a",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1c729f3b-e8d6-4dd9-98ae-42f62792e2a1",
+			"id": "2c482792-ed27-403f-852a-a26adb045f01",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8e357efc-837a-466e-82f8-560517a4a7a7",
+			"id": "e11065df-2fcf-4e49-8d14-e7dce10304c9",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
