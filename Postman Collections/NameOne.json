@@ -2094,42 +2094,5 @@
 				]
 			}
 		}
-	],
-	"variable": [
-		{
-			"id": "d0c84ef8-d1cb-4102-b2e3-d187e7a1cf95",
-			"key": "baseUrl",
-			"value": "http://localhost:3001/api/v1"
-		},
-		{
-			"id": "0794b923-2e42-426e-bd06-fe959b0f0fc2",
-			"key": "bearerToken",
-			"value": ""
-		},
-		{
-			"id": "0b3e446e-1e19-4596-93a4-c4dce3d9d525",
-			"key": "class_id",
-			"value": ""
-		},
-		{
-			"id": "15ac3f42-dffb-4f27-83c5-a1bc07e992a3",
-			"key": "subject_id",
-			"value": ""
-		},
-		{
-			"id": "15e56f85-268b-44dd-8862-106ad114c1bb",
-			"key": "chapter_id",
-			"value": ""
-		},
-		{
-			"id": "092f4a96-3054-4e77-a758-ee515f6de84b",
-			"key": "assignment_id",
-			"value": ""
-		},
-		{
-			"id": "49dea417-74dd-49e4-a1b1-3853b28c933a",
-			"key": "note_id",
-			"value": ""
-		}
 	]
 }
