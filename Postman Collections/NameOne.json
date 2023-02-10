@@ -1120,22 +1120,47 @@
 			"name": "Assignment",
 			"item": [
 				{
-					"name": "Notes",
-					"item": [
+					"name": "Create Assigmnet",
+					"event": [
 						{
-							"name": "Get Notes",
-							"id": "b11e729b-d6fe-42b0-bc53-78ffcc46e41e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
+							"listen": "test",
+							"script": {
+								"id": "dbe41295-8122-41e4-a83d-9e1f839283b4",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Check if response is Ok', function(){",
+									"    const data = pm.response.json()",
+									"",
+									"console.log(data)",
+									"    pm.expect(data.data).to.eql('ok')",
+									"})"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
-					"id": "5cf903d6-a228-4a01-8b70-ba4d748ab5b0"
+					"id": "be18c68f-b20b-4b2e-bb03-6f94af6b657d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"voluptate ut fugiat do esse\",\n    \"duration\": 34393406,\n    \"due_date\": \"1991-02-17\",\n    \"due_time\": \"enim dolore dol\",\n    \"content\": \"nulla reprehenderit veniam irure officia\",\n    \"grade_type\": \"exam\",\n    \"type\": \"goal\",\n    \"for_subject\": {\n        \"_id\": \"{{subject_id}}\",\n        \"title\": \"minim pariatur\"\n    },\n    \"for_chapter\": {\n        \"title\": \"sit ad officia\",\n        \"_id\": \"{{chapter_id}}\"\n    },\n    \"for_class\": {\n        \"_id\": \"{{class_id}}\",\n        \"title\": \"ut ipsum velit est commodo\"\n    },\n    \"documents\": [],\n    \"students\": [\n        {\n            \"_id\": \"63a313f433ac01ba7b9c9a97\",\n            \"first_name\": \"dolor aliquip culpa\",\n            \"last_name\": \"aute nisi\"\n        },\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"first_name\": \"culpa aliqua\",\n            \"last_name\": \"reprehe\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/assignment"
+					},
+					"response": []
 				},
 				{
 					"name": "GetChapter Copy",
@@ -1300,52 +1325,27 @@
 							"body": "{\n    \"chapters\": [\n        {\n            \"_id\": \"63dbb72febf1ed19013bdd84\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb740ebf1ed19013bdd96\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb786ebf1ed19013bdda8\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb79febf1ed19013bddbd\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb8ba2abc9ddd6f7d5623\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbbe84be6c1529295db4bd\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        }\n    ],\n    \"assignments\": []\n}"
 						}
 					]
-				},
+				}
+			],
+			"id": "ace5518f-4bf4-4f50-950a-0d6ee6d88963"
+		},
+		{
+			"name": "Notes",
+			"item": [
 				{
-					"name": "Create Assigmnet",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "dbe41295-8122-41e4-a83d-9e1f839283b4",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test('Check if response is Ok', function(){",
-									"    const data = pm.response.json()",
-									"",
-									"console.log(data)",
-									"    pm.expect(data.data).to.eql('ok')",
-									"})"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "be18c68f-b20b-4b2e-bb03-6f94af6b657d",
+					"name": "Get Notes",
+					"id": "b11e729b-d6fe-42b0-bc53-78ffcc46e41e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"title\": \"voluptate ut fugiat do esse\",\n    \"duration\": 34393406,\n    \"due_date\": \"1991-02-17\",\n    \"due_time\": \"enim dolore dol\",\n    \"content\": \"nulla reprehenderit veniam irure officia\",\n    \"grade_type\": \"exam\",\n    \"type\": \"goal\",\n    \"for_subject\": {\n        \"_id\": \"{{subject_id}}\",\n        \"title\": \"minim pariatur\"\n    },\n    \"for_chapter\": {\n        \"title\": \"sit ad officia\",\n        \"_id\": \"{{chapter_id}}\"\n    },\n    \"for_class\": {\n        \"_id\": \"{{class_id}}\",\n        \"title\": \"ut ipsum velit est commodo\"\n    },\n    \"documents\": [],\n    \"students\": [\n        {\n            \"_id\": \"63a313f433ac01ba7b9c9a97\",\n            \"first_name\": \"dolor aliquip culpa\",\n            \"last_name\": \"aute nisi\"\n        },\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"first_name\": \"culpa aliqua\",\n            \"last_name\": \"reprehe\"\n        }\n    ]\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseUrl}}/assignment"
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}
 			],
-			"id": "ace5518f-4bf4-4f50-950a-0d6ee6d88963"
+			"id": "5cf903d6-a228-4a01-8b70-ba4d748ab5b0"
 		},
 		{
 			"name": "Check Image",
@@ -1550,7 +1550,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "23fcbc97-ca2f-4943-9125-42b0630b6481",
+				"id": "4de0945c-abb7-482b-8860-6cb406089752",
 				"type": "text/javascript",
 				"exec": [
 					"const loginRequest = {",
@@ -1578,7 +1578,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "c244985c-e877-42c8-b7d7-5ccb2c7f2fc6",
+				"id": "87edcb8a-d45c-45b0-bd8a-7c0ac0d36397",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1588,32 +1588,38 @@
 	],
 	"variable": [
 		{
-			"id": "ee7f5157-b293-42bb-9259-2f035e5da075",
+			"id": "b10b9dc1-5b53-4ac3-982a-86ff2717cd5c",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "2109ae8f-753e-409a-b3a2-06eaf9eaa804",
+			"id": "973c48a6-6fb4-447f-9e4a-f7be1aa05888",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dfc5a15a-07bb-4afa-9a7d-5f370e676de7",
+			"id": "5e610971-ea85-494c-924b-220774335019",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d0891782-1b2e-41cb-a531-2a73ddc56d25",
+			"id": "ea242e6e-e2a0-4a01-9621-07ed91567df2",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "caf35014-e2d4-4a51-89ff-c1052ce8ba29",
+			"id": "5cdeb0d8-34ba-446c-8a60-64448b432c51",
 			"key": "chapter_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "4e9d3277-3d9d-4955-8ea9-7fee479d57b0",
+			"key": "assignment_id",
 			"value": "",
 			"type": "string"
 		}
