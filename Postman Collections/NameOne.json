@@ -1425,7 +1425,7 @@
 									"    const response = pm.response.json();",
 									"    console.log(response, schema);",
 									"",
-									"    const data = tv4.validate(response, schema);",
+									"    const data = tv4.validateResult(response, schema);",
 									"    console.log(tv4.error, tv4.missing)",
 									"    pm.expect(data).to.be.true;",
 									"});"
@@ -1703,37 +1703,37 @@
 	],
 	"variable": [
 		{
-			"id": "54c32d62-c8bf-4b9d-be02-7618be54e7c0",
+			"id": "7987e119-c817-45ef-a071-8cf01b56d5ab",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "a0fc2af2-b1ab-430c-adec-2b20001488bf",
+			"id": "194578dc-d34c-4bd0-8a68-2a391e08cb24",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cc256943-82af-4d4b-8d9e-3c6aac6743f2",
+			"id": "315cdff9-9c7c-4f4e-b335-dfd1ba92a158",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "63b29661-21b2-424c-9109-e5e5c4206469",
+			"id": "ca4aae87-5c77-45b6-a635-3224f6b3ffbf",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1646ed64-2194-472a-9625-9a074d3688ac",
+			"id": "3c052625-a3a4-4880-8da9-ef954bd6313c",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6ae09133-0db7-4033-8fbe-77cf4bc1f4fc",
+			"id": "a4baeca4-1cec-4ec5-99c6-55ef4cf291ba",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
