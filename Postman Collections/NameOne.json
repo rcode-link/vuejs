@@ -1399,8 +1399,8 @@
 									"pm.test('Schema is valid', function () {",
 									"    const response = pm.response.json();",
 									"",
-									"    pm.expect(tv4.validate(data1, schema)).to.be.true;",
-									"    pm.expect(tv4.validate(data2, schema)).to.be.true;",
+									"    pm.expect(tv4.validate(response, schema)).to.be.true;",
+									"    pm.expect(tv4.validate(response, schema)).to.be.true;",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1676,37 +1676,37 @@
 	],
 	"variable": [
 		{
-			"id": "abe1753f-0d7a-42a9-a87a-d2ecb9c65738",
+			"id": "2185397f-f58a-45e9-b29f-64bbb88d91d8",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "4d2cfa54-8e78-41ca-b05e-e85b7bb6cd0d",
+			"id": "de597479-f854-45f6-ac45-1983df5720ab",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c072ec9f-89a8-4c6d-a3e5-3961128c8843",
+			"id": "2c65c9cc-c238-480e-87b5-b3a5715f162b",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0f77a73e-c22f-4532-8f3a-104df13bbf20",
+			"id": "74f3aeae-a8ec-401f-abe3-baca440fcd95",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "edbd2ab1-be50-4413-b1c2-ff8ba0ab1ef8",
+			"id": "d58265d8-155b-424d-a3b0-ba26a5a31d5f",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "40fe6924-ed2e-4a91-b968-9b01f7abe6f0",
+			"id": "a5cfae93-075b-461c-915e-0c07f28230c1",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
