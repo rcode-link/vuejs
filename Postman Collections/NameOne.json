@@ -1696,7 +1696,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Delete",
 					"id": "d2ed81eb-aeff-47f9-b748-77766006a3c8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -2065,43 +2065,43 @@
 	],
 	"variable": [
 		{
-			"id": "c38bfdee-998b-4c49-bf9d-502f45933078",
+			"id": "f847db34-5abd-446b-9f6f-24a2e77f5d28",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "51f85384-423f-4d40-be7d-11665b4aa44b",
+			"id": "3ba2d125-4abd-453a-81d6-3c0ab5726334",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f2404448-55de-4121-a080-4d1d1645f1f0",
+			"id": "cb1ef208-4a17-4849-a2ec-b8c95ac0e328",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "197621e2-2346-4f1c-89ae-c657a251727d",
+			"id": "90f1147e-2718-4f99-ba02-cabc0fbe69ab",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "22cbf837-b716-4f99-a5e1-d04f069846d3",
+			"id": "3ce20bb2-494b-460a-b644-b85191e4ea11",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a9cd202a-3b63-4c43-af42-6a84eb11b34c",
+			"id": "73b84a02-c332-4cf8-a8c3-2ae17a39f7c8",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "187617dd-aae4-4408-84ba-5b73d565ed46",
+			"id": "544b9637-969c-4fc8-bc6a-9e90f647aa0d",
 			"key": "note_id",
 			"value": "",
 			"type": "string"
