@@ -296,6 +296,36 @@
 									"    pm.expect(data.data).to.be.an('array')",
 									"});",
 									"",
+									"const schema = {",
+									"    \"type\": \"object\",",
+									"    \"properties\":{",
+									"        \"data\": {",
+									"            type: \"array\",",
+									"            items:{",
+									"                type: \"object\",",
+									"                \"properties\": {",
+									"                    \"_id\": {",
+									"                        \"type\": \"string\"",
+									"                    },",
+									"                    \"class_name\": {",
+									"                        \"type\": \"string\"",
+									"                    },",
+									"                    \"class_letter\": {",
+									"                        \"type\": \"string\"",
+									"                    },",
+									"                    \"classroom_no\": {",
+									"                        \"type\": \"string\"",
+									"                    },",
+									"                    \"class_color\": {",
+									"                        \"type\": \"string\"",
+									"                    }",
+									"                }",
+									"            }",
+									"        }",
+									"    }",
+									"}",
+									"",
+									"",
 									"pm.test('Check class properties', function(){",
 									"    const data = pm.response.json();",
 									"})"
@@ -1689,37 +1719,37 @@
 	],
 	"variable": [
 		{
-			"id": "c654a559-0140-44ec-af80-1fe617642487",
+			"id": "befe001c-d369-454c-b08c-4cf6e7e4b661",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"type": "string"
 		},
 		{
-			"id": "6c7ef648-1c03-4740-881c-7d3c49d07e1d",
+			"id": "1e179264-74e9-4a44-a1c1-f643671834bf",
 			"key": "bearerToken",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c7d24615-8a02-41ca-b65f-657079cb1013",
+			"id": "e3fbb157-eb12-41d4-8cd5-19b4bf62403f",
 			"key": "class_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d7efe4af-12a0-4186-9df7-4b8e0fbd530f",
+			"id": "36ea0d01-2561-41dd-bdbc-8dfce14c30a1",
 			"key": "subject_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b76ae8f7-e534-441d-99f4-9d2020e7cf88",
+			"id": "fa804a5c-e806-4249-bb10-6a72699b9d7d",
 			"key": "chapter_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5a0cd60b-a3b0-4c72-be97-336c3ded76c6",
+			"id": "1c214711-11bc-4cac-8b6c-32ab5c622680",
 			"key": "assignment_id",
 			"value": "",
 			"type": "string"
