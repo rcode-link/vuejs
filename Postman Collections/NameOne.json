@@ -1652,7 +1652,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"voluptate ut fugiat do esse Updated\",\n    \"duration\": 34393406,\n    \"due_date\": \"1991-02-17\",\n    \"due_time\": \"enim dolore dol\",\n    \"content\": \"nulla reprehenderit veniam irure officia\",\n    \"grade_type\": \"exam\",\n    \"type\": \"goal\",\n    \"for_subject\": {\n        \"_id\": \"{{subject_id}}\",\n        \"title\": \"minim pariatur\"\n    },\n    \"for_chapter\": {\n        \"title\": \"sit ad officia\",\n        \"_id\": \"{{chapter_id}}\"\n    },\n    \"for_class\": {\n        \"_id\": \"{{class_id}}\",\n        \"title\": \"ut ipsum velit est commodo\"\n    },\n    \"documents\": [],\n    \"students\": [\n        {\n            \"_id\": \"63a313f433ac01ba7b9c9a97\",\n            \"first_name\": \"dolor aliquip culpa\",\n            \"last_name\": \"aute nisi\"\n        },\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"first_name\": \"culpa aliqua\",\n            \"last_name\": \"reprehe\"\n        }\n    ]\n}",
+							"raw": "{\n    \"title\": \"voluptate ut fugiat do esse Updated\",\n    \"duration\": 34393406,\n    \"due_date\": \"1991-02-17\",\n    \"due_time\": \"18:45\",\n    \"content\": \"nulla reprehenderit veniam irure officia\",\n    \"grade_type\": \"exam\",\n    \"type\": \"goal\",\n    \"for_subject\": {\n        \"_id\": \"{{subject_id}}\",\n        \"title\": \"minim pariatur\"\n    },\n    \"for_chapter\": {\n        \"title\": \"sit ad officia\",\n        \"_id\": \"{{chapter_id}}\"\n    },\n    \"for_class\": {\n        \"_id\": \"{{class_id}}\",\n        \"title\": \"ut ipsum velit est commodo\"\n    },\n    \"documents\": [],\n    \"students\": [\n        {\n            \"_id\": \"63a313f433ac01ba7b9c9a97\",\n            \"first_name\": \"dolor aliquip culpa\",\n            \"last_name\": \"aute nisi\"\n        },\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"first_name\": \"culpa aliqua\",\n            \"last_name\": \"reprehe\"\n        }\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2751,47 +2751,47 @@
 	],
 	"variable": [
 		{
-			"id": "1d98fc70-d487-4733-87a5-8d6e89ac7d97",
+			"id": "0fd389ea-58de-4e0f-8fa6-6c80b246c079",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "ae46dfd8-7604-40cc-b705-72b10247eb9d",
+			"id": "88d7d3ca-dc7b-48a7-9f98-35a412fa9960",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "d4836723-d60b-4157-9458-4e699de20c42",
+			"id": "9c17dc68-05bb-4534-9d3d-8c3c079f415a",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "7f740dc8-12a4-4aec-bfe9-3c09b733aa44",
+			"id": "2263929e-45be-403a-8a80-434b5967b903",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "c39632fb-3dd8-492b-bba6-aff4bfb59568",
+			"id": "065d2dec-15b8-46a9-b113-e0491e4293c3",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "c61d8e4a-17c6-4e3c-9b47-ddb289b41359",
+			"id": "ecd8d06f-19a4-452a-af1e-b1cbb165968f",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "40ef6cdf-4c4b-4eb4-986e-cbcc7a5a5c97",
+			"id": "de603b9a-17c0-4de2-98eb-1da72397b105",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "2ab18767-0179-4f7b-89f2-a017eb57df33",
+			"id": "431b7d44-bd31-48a6-b06b-51471a3c1015",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "61f7030d-4af7-41d9-a6ec-8992d8b3d65b",
+			"id": "8e3ecdba-bacb-4a18-be0a-9dd8e06b54d6",
 			"key": "discussion_id",
 			"value": ""
 		}
