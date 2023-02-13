@@ -1788,6 +1788,158 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get Assigment Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "79377472-8d6b-4302-84ef-c53b30f93be8",
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Get Assignment ID\", function(){",
+									"    pm.collectionVariables.set('student_id', response.data.students[0]._id)",
+									"})",
+									"",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "7b528e84-fbcc-4a14-80e9-3c7d17b47ce3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/assignment/{{assignment_id}}"
+					},
+					"response": [
+						{
+							"id": "271dfc78-2cbb-41e6-96c8-b09bd10b06ba",
+							"name": "ValidationErrors",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/chapter?subjectId={{class_id}}&classId={{subject_id}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter"
+									],
+									"query": [
+										{
+											"key": "subjectId",
+											"value": "{{class_id}}"
+										},
+										{
+											"key": "classId",
+											"value": "{{subject_id}}"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "230"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:46:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"63d7eecf983de7ab13aecd29\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"subjectId\",\n            \"location\": \"query\"\n        },\n        {\n            \"value\": \"63ce4a8bf2d77a0756627509\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"classId\",\n            \"location\": \"query\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "5c1c8367-ebf3-42b1-9714-f32aa3008769",
+							"name": "Ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/chapter?subjectId={{subject_id}}&classId={{class_id}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter"
+									],
+									"query": [
+										{
+											"key": "subjectId",
+											"value": "{{subject_id}}"
+										},
+										{
+											"key": "classId",
+											"value": "{{class_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1009"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:49:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"chapters\": [\n        {\n            \"_id\": \"63dbb72febf1ed19013bdd84\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb740ebf1ed19013bdd96\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb786ebf1ed19013bdda8\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb79febf1ed19013bddbd\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbb8ba2abc9ddd6f7d5623\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        },\n        {\n            \"_id\": \"63dbbe84be6c1529295db4bd\",\n            \"title\": \"first chapter\",\n            \"parentId\": null,\n            \"subject\": {\n                \"_id\": \"63ce4a8bf2d77a0756627509\"\n            },\n            \"class\": {\n                \"_id\": \"63d7eecf983de7ab13aecd29\"\n            }\n        }\n    ],\n    \"assignments\": []\n}"
+						}
+					]
 				}
 			],
 			"id": "ace5518f-4bf4-4f50-950a-0d6ee6d88963"
@@ -2524,47 +2676,47 @@
 	],
 	"variable": [
 		{
-			"id": "f3652d7c-c554-41e3-a9f9-5b94b4a26789",
+			"id": "f72af038-27b5-4e76-99c7-63fc4b440551",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "8152b8a0-6b2f-4700-ac3f-52fa731e4a67",
+			"id": "fb1bbf42-adfd-49a3-aca0-f82bad4085f9",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "922e0360-de2e-4a9b-947b-3c56ac1edf7c",
+			"id": "0664d876-2442-49d5-b50d-a42141454a7c",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "9fb05dee-6937-4373-8157-704837438e60",
+			"id": "8eaf2d4c-7c7b-40dc-bd8c-2eea4e907b58",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "66e01fad-4caf-46ef-a4ab-3b7b3667ba95",
+			"id": "9a3a830b-3025-493d-9109-ab786ffeb81f",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "df7cc806-2765-4615-94dc-2ba1ec4e7d79",
+			"id": "fabbb31e-0bc2-4a66-874d-25812f022006",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "c0978084-d850-4b4d-8d31-75fcf15d6117",
+			"id": "25a8416d-0c52-4ff7-a597-768963482add",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "1c14f93f-53d5-4c52-8370-eb626e36bcb7",
+			"id": "71c3f16f-824c-4b86-8b5d-9d8152ee43d8",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "b0a5e78e-0cee-422f-80ff-4e22096e66a3",
+			"id": "06e8c22e-8779-4c08-a14c-351677b2c23a",
 			"key": "discussion_id",
 			"value": ""
 		}
