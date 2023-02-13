@@ -1980,7 +1980,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"content\": \"ullamco nulla elit \",\n  \"studyId\": \"{{assignment_id}}\"\n}",
+							"raw": "{\n  \"content\": \"ullamco nulla elit \",\n  \"assignmentId\": \"{{assignment_id}}\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2306,47 +2306,47 @@
 	],
 	"variable": [
 		{
-			"id": "abe1704b-d8f4-48c5-85a7-1e5f79b8b4d6",
+			"id": "3eabc6f5-0664-4516-b58e-b1879c15995f",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "2ecd69ae-ebdf-4ef5-88dc-706c64a8590f",
+			"id": "cc50d751-f516-49f5-8536-36088ff35ad0",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "c623de3d-54da-42f7-9067-d51e832f5695",
+			"id": "b27ceb87-2848-4f74-8640-0c12b1dd1017",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "53ad3e07-c0fe-45ee-b493-3154e4005b89",
+			"id": "6a4fb0af-0ec3-49c9-b3eb-076b550c8267",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "ddfd0faf-5249-4b4c-a4e4-975caa8d75f8",
+			"id": "59c3291c-777c-4616-9f60-360cec5415d3",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "a7b65637-2121-4bea-85b5-933392d442e7",
+			"id": "d4dd5613-bb3a-499d-9420-6ab8c4cba022",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "ccc00a70-6d92-4fc8-bc8c-a15854090e8c",
+			"id": "85c369aa-0ccf-4753-9b5d-7c65b25f7c01",
 			"key": "note_id",
 			"value": ""
 		},
 		{
-			"id": "f15a29a3-cb24-474e-aa57-35fd76be048c",
+			"id": "70c9fae2-5a12-4276-bf81-826980e6f157",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "23a81ce5-19fa-4465-9531-250c89dc2e86",
+			"id": "2ced05e7-cd0d-4dd3-98fe-3b385b43acb7",
 			"key": "grades",
 			"value": ""
 		}
