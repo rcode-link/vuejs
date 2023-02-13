@@ -2115,6 +2115,59 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Delete Discussion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e903ad42-9fda-421b-af6b-ab1630b37505",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "bb5566b6-fc6c-4e3d-8d1b-7828005accd4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\": \"This is update. Hello there\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/discussion/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"discussion",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "3701423b-c6ed-4278-ba9c-d50e94f556f0",
+									"key": "id",
+									"value": "{{discussion_id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "ed7c2261-7ac7-45ff-888d-6c7b8707b4d1"
@@ -2358,52 +2411,52 @@
 	],
 	"variable": [
 		{
-			"id": "796d4eb1-6165-4d91-8a20-3ccf042f85cd",
+			"id": "a833d298-6d82-44b5-980d-0f6f2508e2c2",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "39348471-a8e3-48af-b84e-a1bb5d56e005",
+			"id": "323ae5c6-874d-4457-929d-05979ed402f1",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "ec172eba-cf49-429d-a3e4-63067ac37807",
+			"id": "50ed69f3-7f96-45cb-bef7-d84aac6ed4c5",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "9da27713-0d84-4978-ab04-8c7975c62223",
+			"id": "10a6a689-09b4-4e1d-b054-595bb855591d",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "75cff851-3ba6-42e6-86b3-ac08075b40d6",
+			"id": "f34222b8-171c-4453-9204-86dc3b1ac5fd",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "e022e8cf-9fb6-4d04-a8eb-a7681da44917",
+			"id": "b754e207-9c93-4dff-911f-b7cb9a814f0b",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "d4a28f2a-8150-45d4-bd17-5206655adefc",
+			"id": "af70982c-e8d5-40fa-b9db-01c4874a6b52",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "b04a9e5c-0550-430c-82e6-90a5ef689b99",
+			"id": "c1354bd6-6e89-4ce3-b561-9dd10642cb7c",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "b135a897-31aa-44dd-bf69-e1f6e0570823",
+			"id": "c0ef5733-5b74-4d24-89e9-2a3709c3be77",
 			"key": "note_id",
 			"value": ""
 		},
 		{
-			"id": "2c025783-ae21-4166-a894-f945d10b1b06",
+			"id": "1c02634a-85c4-43ab-ba34-c19a949aef6a",
 			"key": "discussion_id",
 			"value": ""
 		}
