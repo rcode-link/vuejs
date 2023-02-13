@@ -2047,6 +2047,79 @@
 						"method": "GET",
 						"header": [],
 						"url": {
+							"raw": "{{baseUrl}}/discussion?assignmentId={{assignment_id}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"discussion"
+							],
+							"query": [
+								{
+									"key": "assignmentId",
+									"value": "{{assignment_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Discussion Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e903ad42-9fda-421b-af6b-ab1630b37505",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"var Ajv = require('ajv'),",
+									"    ajv = new Ajv({logger: console, allErrors: true});",
+									"",
+									"var schema = {",
+									"        \"type\": \"object\",",
+									"        \"properties\": {",
+									"          \"data\": {",
+									"            \"type\": \"array\",",
+									"            \"items\": {",
+									"              \"type\": \"object\",",
+									"              \"required\": [",
+									"                \"content\",",
+									"                \"studyId\",",
+									"                \"_id\",",
+									"                \"userId\"",
+									"              ],",
+									"            }",
+									"          }",
+									"        },",
+									"        \"required\": [",
+									"          \"data\"",
+									"        ]",
+									"      };",
+									"const response = pm.response.json();",
+									"    ",
+									"pm.test('Schema is valid', function () {",
+									"     pm.expect(ajv.validate(schema, response), JSON.stringify(ajv.errors)).to.be.true",
+									"});",
+									"",
+									"pm.test(\"Get note id\", function(){",
+									"    pm.collectionVariables.set('note_id', response.data[0]._id)",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "36eaa94b-ad10-4f58-87ef-a37a981ff81d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
 							"raw": "{{baseUrl}}/note?studyId={{assignment_id}}",
 							"host": [
 								"{{baseUrl}}"
@@ -2306,47 +2379,47 @@
 	],
 	"variable": [
 		{
-			"id": "584d6a39-7db5-4be3-ba01-73ec8f52aafa",
+			"id": "bc86b1aa-0760-4908-ba02-a50d383ac365",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "7feacc12-a745-4968-847c-27d35967bc20",
+			"id": "3029f6f6-bd34-4a6a-b3ef-8fae4907634a",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "eb0ce52f-cfcb-4f9c-bf41-da8fc723fb2a",
+			"id": "e97660aa-bff1-45dd-b376-48eec64448ff",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "ed908b5d-23cd-4635-88dd-7950c5b80955",
+			"id": "e74cc693-f696-4f3f-bf32-fd7b4f67aed0",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "77d6b0cf-dd1c-4672-a1ee-68aca6921700",
+			"id": "d1c4f306-062e-4161-b182-f0cfce9bde8a",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "ccb4dfb6-ecfd-46e4-8cfe-08785e4fbf11",
+			"id": "61f277c3-8ab2-4597-afb5-2763d270922d",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "6774c5a0-2ec5-4ec2-afbb-cc560912cfc2",
+			"id": "09abe7c8-f4fe-43f5-ad4e-1e22e69f92ed",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "3c3e98b6-8c76-47d6-9005-5989499663c2",
+			"id": "b57d4df7-2bfd-41ad-8bd9-3b9978dc332d",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "d13e630f-6f44-4127-976a-4bb8168c9260",
+			"id": "b55969dd-0ca7-4093-880c-179929af7d38",
 			"key": "note_id",
 			"value": ""
 		}
