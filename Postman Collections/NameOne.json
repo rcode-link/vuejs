@@ -2458,13 +2458,13 @@
 									"        }",
 									"    }",
 									"}",
-									"// var Ajv = require('ajv'),",
-									"//     ajv = new Ajv({logger: console, allErrors: true});",
+									"var Ajv = require('ajv'),",
+									"    ajv = new Ajv({logger: console, allErrors: true});",
 									"",
-									"// pm.test('Check properties', function(){",
-									"//       const response = pm.response.json();",
-									"//      pm.expect(ajv.validate(schema, response), JSON.stringify(ajv.errors)).to.be.true",
-									"// })"
+									"pm.test('Check properties', function(){",
+									"      const response = pm.response.json();",
+									"     pm.expect(ajv.validate(schema, response), JSON.stringify(ajv.errors)).to.be.true",
+									"})"
 								],
 								"type": "text/javascript"
 							}
@@ -2751,47 +2751,47 @@
 	],
 	"variable": [
 		{
-			"id": "d4c26dcc-6861-4088-9c6e-13236366a817",
+			"id": "b76f61d8-5157-421d-8aa9-a745e18c6771",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "5d289b38-8466-4092-8054-be7d24c44395",
+			"id": "ed4e08ec-4d7e-48d1-aec7-5aea1c5f1991",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "ceb0ceef-c7ea-4a21-8823-227f9ed94a59",
+			"id": "9c3fd66b-dfa4-463c-af68-196f661e5af2",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "ed7768bb-cce9-4089-8415-73e528135443",
+			"id": "7c447391-4e5d-4867-a918-b58ff6be42be",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "7a6ff59e-496f-4aa6-ac0f-ee47ad89c5a8",
+			"id": "e4f5c13a-9e95-4222-8266-7cece565ddc1",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "1365510a-d782-48df-8b41-8cbe12694077",
+			"id": "9549930f-8706-401c-ae8a-891bdf39d9be",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "60627b8d-4fb8-4e31-ab1c-5afa1e6f3f58",
+			"id": "7210a2b9-5c2f-472d-8f31-465bcfe86c33",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "6b2c5b30-e627-47b3-a3d8-1df35ae4080e",
+			"id": "c7b62c42-e40c-43b5-bc9a-f0cbeb78a728",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "83723575-d017-42e7-bb2b-46091fbdd312",
+			"id": "a5fb903a-a575-49c3-b39d-43946e14e14f",
 			"key": "discussion_id",
 			"value": ""
 		}
