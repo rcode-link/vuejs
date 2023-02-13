@@ -1723,7 +1723,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"assigmentId\": \"{{assignment_id}}\",\n  \"students\": [\n    {\n      \"_id\": \"{{student_id}}\",\n      \"first_name\": \"string\",\n      \"last_name\": \"string\"\n    }\n  ]\n}",
+							"raw": "{\n  \"assigmentId\": \"63e661e2041d2cc9b053cdf5\",\n  \"students\": [\n    {\n      \"_id\": \"{{student_id}}\",\n      \"first_name\": \"string\",\n      \"last_name\": \"string\"\n    }\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2306,47 +2306,47 @@
 	],
 	"variable": [
 		{
-			"id": "69e2101e-55b4-4333-80ae-095f788c18cf",
+			"id": "858249e3-36f0-44c9-9aff-241d242f398a",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "0b1dccf5-7f00-47b3-89aa-c8f1c8121f8a",
+			"id": "2aae4c40-e5a9-482f-81e6-54715487ae8c",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "334ef1bf-8f1f-44be-82cc-07a0020960c2",
+			"id": "6558f501-e125-44d3-a0aa-fd6cf0e60380",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "993ab4db-fb4f-452a-a345-e2705bebd4f6",
+			"id": "acfc57d5-fd15-4b03-b8f1-07a0d8446ec5",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "44b55cd6-4906-4525-ad0c-7ece4732ec4b",
+			"id": "0cae7d0e-2ebb-46a1-97ed-470d61cb6402",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "1a0189f5-e9d9-4785-b3ab-d8b039c9adb4",
+			"id": "cdb2b13d-69c6-491d-a8ea-cd2dd7d68887",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "5bfe1d81-5aed-4994-bdd1-e0a5ace36b5c",
+			"id": "694ac344-6b29-4331-bf4f-5940b54b8723",
 			"key": "note_id",
 			"value": ""
 		},
 		{
-			"id": "c7d9228b-b9b0-46b1-bbda-ebe6bc1ee12b",
+			"id": "0551bd2e-2547-411d-bdf5-0929c3e2dd0a",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "7ab00a81-2325-4df8-bc9a-9a3b17293f20",
+			"id": "8f85931c-305d-4f9f-9819-2909225c1303",
 			"key": "grades",
 			"value": ""
 		}
