@@ -1791,26 +1791,6 @@
 				},
 				{
 					"name": "Get Assigment Copy",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "79377472-8d6b-4302-84ef-c53b30f93be8",
-								"exec": [
-									"const response = pm.response.json();",
-									"pm.test(\"Get Assignment ID\", function(){",
-									"    pm.collectionVariables.set('student_id', response.data.students[0]._id)",
-									"})",
-									"",
-									"",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
 					"id": "7b528e84-fbcc-4a14-80e9-3c7d17b47ce3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -2676,47 +2656,47 @@
 	],
 	"variable": [
 		{
-			"id": "f72af038-27b5-4e76-99c7-63fc4b440551",
+			"id": "d6a7b10b-8742-4f3d-beff-6e3c02e973cd",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "fb1bbf42-adfd-49a3-aca0-f82bad4085f9",
+			"id": "72f371d0-ea44-43d8-b3a9-1e2d9bf33e50",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "0664d876-2442-49d5-b50d-a42141454a7c",
+			"id": "23fe2ef3-b1fa-40ee-8a5e-f489fc80701b",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "8eaf2d4c-7c7b-40dc-bd8c-2eea4e907b58",
+			"id": "09721084-db5f-4ef8-a62f-16d737bcfcde",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "9a3a830b-3025-493d-9109-ab786ffeb81f",
+			"id": "28072eaa-d51c-4498-9ff2-dbbfb11a3651",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "fabbb31e-0bc2-4a66-874d-25812f022006",
+			"id": "a411c52c-63d8-468f-9981-3652fa5f92e0",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "25a8416d-0c52-4ff7-a597-768963482add",
+			"id": "da43efd5-e34e-4957-a5df-aa00a1533553",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "71c3f16f-824c-4b86-8b5d-9d8152ee43d8",
+			"id": "40a6fa7c-4edb-49bb-bc5b-51ee3638516b",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "06e8c22e-8779-4c08-a14c-351677b2c23a",
+			"id": "093e7714-7ad1-4999-b20f-6bfebaf1ea78",
 			"key": "discussion_id",
 			"value": ""
 		}
