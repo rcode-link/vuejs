@@ -2510,47 +2510,47 @@
 	],
 	"variable": [
 		{
-			"id": "8bb6613e-7191-4686-a847-dffab806918c",
+			"id": "a432b136-ee87-4d69-98d3-5f8e23d2e380",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "bcc5b773-4edb-4464-8d3e-357b80f80f25",
+			"id": "9609dea0-5a92-44e8-ab86-0123b4b95808",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "edc1df16-5d64-4908-a4cf-e8832c9dac47",
+			"id": "81e6ea33-5cba-4d76-93c6-54967824db9d",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "b64ba860-5426-4428-b8c3-387970afa038",
+			"id": "e1c27a9d-2eea-4cd9-806c-47d759f96093",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "6edf13cd-da35-4bc5-bb99-0f6a1a0aabeb",
+			"id": "2449d834-7fdc-44e8-9751-490b2e28f79e",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "71429046-f788-403a-acf1-e2b12ff57963",
+			"id": "1dd57af9-02d9-41a4-b314-4c8f52cef352",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "3f3b56ea-575d-40a3-94ba-ea6263d3dd11",
+			"id": "3ed50c61-307c-414a-b921-1f9623feed9c",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "a640974f-ec4e-4386-82e4-dbc054131b25",
+			"id": "00127bf3-71bf-457b-a54f-d43a92749b7b",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "5eb3ecd4-68ce-4681-a23d-ed4279738106",
+			"id": "b8b6f858-1d18-40f9-a7f5-43c814e95e12",
 			"key": "discussion_id",
 			"value": ""
 		}
