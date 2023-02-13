@@ -1741,8 +1741,37 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearerToken}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/assignment/status/:assignment_id?is_completed=true",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"assignment",
+								"status",
+								":assignment_id"
+							],
+							"query": [
+								{
+									"key": "is_completed",
+									"value": "true"
+								}
+							],
+							"variable": [
+								{
+									"key": "assignment_id",
+									"value": "{{assignment_id}}"
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -2481,47 +2510,47 @@
 	],
 	"variable": [
 		{
-			"id": "75d61a89-93f1-4a65-b1e8-bc81fdf1e271",
+			"id": "d8c43819-bf8e-4701-a70c-db899d12e577",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "67ffd936-5677-4723-9b71-e9533bdff1f4",
+			"id": "7f72e8be-f416-42a7-8821-f82548f02f56",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "168b1a70-112e-4bcb-82d4-7f6d2a356d23",
+			"id": "d753a505-d918-4a0d-9ac3-a06a8b9d1ebb",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "0f50bf43-1e64-43d5-87cb-ff2b207f7691",
+			"id": "73dcb8cd-5b12-442d-9ee5-5364c3c1cffa",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "6a02181a-11b2-4e8c-a939-fd1ba5308159",
+			"id": "841dcc15-b076-4a5e-a9f7-8b232f440a5b",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "8ff17b13-af13-4291-87d3-8d338ee44d78",
+			"id": "38069f55-f978-4b7a-b4d5-68e804ed0acf",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "756bcf4f-3e36-4a9f-b6a5-2dfeb6722494",
+			"id": "80c3637b-04fd-44ba-913c-f4920293e08a",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "e0cd2b4f-f1a5-482a-9af3-9dff48334f41",
+			"id": "d3f3f893-6054-4285-87e7-d340ed93266a",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "36af6e64-044d-4be8-be9b-257f18accd03",
+			"id": "c2edf328-d603-4f48-af25-faee2f9e1b0a",
 			"key": "discussion_id",
 			"value": ""
 		}
