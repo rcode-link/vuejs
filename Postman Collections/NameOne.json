@@ -2392,6 +2392,84 @@
 			"item": [
 				{
 					"name": "Get Dashboard",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fbf1e004-2d1d-4aa1-a19d-47cb09020bdc",
+								"exec": [
+									"const schema = {",
+									"    type: 'array',",
+									"    items: ",
+									"        {",
+									"        \"type\": \"object\",",
+									"        required: [",
+									"'_id',",
+									"'grading',",
+									"'order',",
+									"'task_title',",
+									"'task_type',",
+									"'students',",
+									"'class_id',",
+									"'class_title',",
+									"'overdue',",
+									"'total_students',",
+									"'submissions',",
+									"'is_completed',",
+									"        ],",
+									"        \"properties\": {",
+									"          \"_id\": {",
+									"            \"description\": \"some item here\",",
+									"            \"type\": \"string\"",
+									"          },",
+									"          \"grading\": {",
+									"            \"type\": \"string\"",
+									"          },",
+									"          \"order\": {",
+									"            \"type\": \"integer\"",
+									"          },",
+									"          \"task_title\": {",
+									"            \"type\": \"string\"",
+									"          },",
+									"          \"task_type\": {",
+									"            \"type\": \"string\"",
+									"          },",
+									"          \"students\": {",
+									"            \"type\": \"array\"",
+									"          },",
+									"          \"class_id\": {",
+									"            \"type\": \"string\"",
+									"          },",
+									"          \"class_title\": {",
+									"            \"type\": \"string\"",
+									"          },",
+									"          \"overdue\": {",
+									"            \"type\": \"integer\"",
+									"          },",
+									"          \"total_students\": {",
+									"            \"type\": \"integer\"",
+									"          },",
+									"          \"submissions\": {",
+									"            \"type\": \"integer\"",
+									"          },",
+									"          \"is_completed\": {",
+									"            \"type\": \"integer\"",
+									"          }",
+									"        }",
+									"    }",
+									"}",
+									"// var Ajv = require('ajv'),",
+									"//     ajv = new Ajv({logger: console, allErrors: true});",
+									"",
+									"// pm.test('Check properties', function(){",
+									"//       const response = pm.response.json();",
+									"//      pm.expect(ajv.validate(schema, response), JSON.stringify(ajv.errors)).to.be.true",
+									"// })"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "213b90f1-5c5a-4d86-89f8-b536726cda0b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -2673,47 +2751,47 @@
 	],
 	"variable": [
 		{
-			"id": "61865397-2842-42a2-9b54-6630dfd6d3ca",
+			"id": "92be69fd-332a-45d7-bf03-c592224ed087",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "dbce7c43-e873-46fd-9123-a7b5489e579c",
+			"id": "84dfd09a-84e0-4a48-aee0-cc9aa9dd459b",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "a753ad45-3031-4d99-b53e-2e8abce34900",
+			"id": "04f4bc19-b05e-4576-9d5b-5e48d4db4f11",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "6f5412bb-dfd8-4370-a1ce-b689f8709baa",
+			"id": "fead84aa-e712-4480-a8b9-d9465932483e",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "2b96b3f4-f15e-41cd-af26-f4f821c6692d",
+			"id": "512144a4-e0e8-4cf2-8a44-69ac8b82d742",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "3cf7bfb1-b76a-4205-aedc-e97a29dc19cf",
+			"id": "82fa6ffa-aa73-4288-b6f2-d7d85fb76202",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "0d2a34c1-74ba-4bf1-9697-b0db64cfadf2",
+			"id": "c7976523-72ff-4b24-a398-9fab1e5a49d9",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "7d5ab63e-a5aa-4a22-b5a5-ac8ae45a106d",
+			"id": "bc55da9f-1660-4458-acee-cc8f8bcea27d",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "66fe4a39-2618-4768-9118-03b4e1871451",
+			"id": "1ceacca7-0bdb-4cf2-a89c-ed052f545298",
 			"key": "discussion_id",
 			"value": ""
 		}
