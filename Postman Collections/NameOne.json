@@ -6,6 +6,24 @@
 	},
 	"item": [
 		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "25a014f8-6140-450f-bc7b-346a32dafd66",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"id": "3ee0f41b-e06b-48db-9f44-599c36f00fa8"
+		},
+		{
 			"name": "User",
 			"item": [
 				{
@@ -2485,11 +2503,6 @@
 			"id": "823c9c92-8e36-4a5a-a62c-24fef803688e"
 		},
 		{
-			"name": "Login",
-			"item": [],
-			"id": "3ee0f41b-e06b-48db-9f44-599c36f00fa8"
-		},
-		{
 			"name": "Check Image",
 			"event": [
 				{
@@ -2756,47 +2769,47 @@
 	],
 	"variable": [
 		{
-			"id": "03143bbc-9130-4a02-8a37-8b5a614fbd12",
+			"id": "4c0440b6-b6ef-4c9a-8ace-a4a5479f81a0",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "42d5d24c-54b1-4020-8f9b-54741887ceba",
+			"id": "07411665-591d-43c6-adfc-03b717173450",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "bca86965-0f3d-44ef-acdf-72511f9b17a1",
+			"id": "3b079c87-4a0c-4e68-a6d6-f80fe18bdf6e",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "dc1c63b5-bd23-4e1e-86cf-ee5dc6c48707",
+			"id": "97e5af0f-c8de-48ff-afb4-cab0683138a9",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "a5f4a160-dce6-46eb-8ef3-40b5214324c1",
+			"id": "a8e53612-a64e-4353-a043-590103d9be95",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "89661397-9bf6-47df-bf92-1ae127bf319a",
+			"id": "f6044cb8-bd12-4cc5-8788-2e1ea5b8b0f1",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "826f856f-5551-45a5-b71d-852b27ded40c",
+			"id": "1bf27440-a039-403b-9540-64b05fa485ad",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "93f936da-351e-4806-a5e4-931dfe08d6e9",
+			"id": "c0832e41-88ca-42cc-a27b-703c527c64e9",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "e850786b-657d-4e7a-9469-1a16831d76dc",
+			"id": "74fe9c19-63a9-4a96-8292-03c046fdbde6",
 			"key": "discussion_id",
 			"value": ""
 		}
