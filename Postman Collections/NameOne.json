@@ -10,6 +10,22 @@
 			"item": [
 				{
 					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "089fd75d-1542-49c1-860e-39ad78990aea",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    const data = response.json();",
+									"    pm.collectionVariables.set(\"bearerToken\", data.data);",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "25a014f8-6140-450f-bc7b-346a32dafd66",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -2779,47 +2795,47 @@
 	],
 	"variable": [
 		{
-			"id": "5e0bdcb1-9efb-47ee-91e0-0b4e62386ff8",
+			"id": "4b350ca9-af32-4b79-8fb1-eded5312bf20",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "921baa8f-7480-448b-b2f0-4d2a90fd2bf1",
+			"id": "baebda73-b9f7-412f-b59b-69baf84dff75",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "e8ee60b0-cec8-41f1-ab1a-6d268bad165a",
+			"id": "ee5acfcd-d781-400c-9abe-21a339f9a840",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "21aa992c-697b-4f75-8b36-d29c8cedf134",
+			"id": "f71a741d-7256-4a20-a3b6-e582d197f641",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "3dd66f0f-af9a-4c78-95a3-e419a59b5bd7",
+			"id": "76c5be83-ae41-41e6-8911-4852f505018f",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "680699a3-b181-475c-9d99-eb7ed1390671",
+			"id": "abb80b1d-6fb5-4434-82e1-e7b0bfffbbd5",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "f3d7b047-05aa-4370-b88c-9e2998d39f9a",
+			"id": "f5d71919-11cf-4e24-8d1c-068ec4b99bcf",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "c88efab4-02b4-4319-96d9-5535854ab598",
+			"id": "c377aec5-13e3-4776-9b7f-d8999515c728",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "501a9633-5b79-4a2e-93df-021604d1f540",
+			"id": "bf2b648f-f892-4b44-893f-ca4ec55cb6e1",
 			"key": "discussion_id",
 			"value": ""
 		}
