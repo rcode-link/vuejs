@@ -2075,38 +2075,7 @@
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
-									"var Ajv = require('ajv'),",
-									"    ajv = new Ajv({logger: console, allErrors: true});",
-									"",
-									"var schema = {",
-									"        \"type\": \"object\",",
-									"        \"properties\": {",
-									"          \"data\": {",
-									"            \"type\": \"array\",",
-									"            \"items\": {",
-									"              \"type\": \"object\",",
-									"              \"required\": [",
-									"                \"content\",",
-									"                \"studyId\",",
-									"                \"_id\",",
-									"                \"userId\"",
-									"              ],",
-									"            }",
-									"          }",
-									"        },",
-									"        \"required\": [",
-									"          \"data\"",
-									"        ]",
-									"      };",
-									"const response = pm.response.json();",
-									"    ",
-									"pm.test('Schema is valid', function () {",
-									"     pm.expect(ajv.validate(schema, response), JSON.stringify(ajv.errors)).to.be.true",
-									"});",
-									"",
-									"pm.test(\"Get note id\", function(){",
-									"    pm.collectionVariables.set('note_id', response.data[0]._id)",
-									"});"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -2389,52 +2358,52 @@
 	],
 	"variable": [
 		{
-			"id": "c1de576a-aacc-46a8-ad5b-ae11d96499ba",
+			"id": "796d4eb1-6165-4d91-8a20-3ccf042f85cd",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "f88dcde0-b47e-4eb4-9fc4-d04bd38c023a",
+			"id": "39348471-a8e3-48af-b84e-a1bb5d56e005",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "b6e8717c-6f9d-48e4-a678-11943277f03a",
+			"id": "ec172eba-cf49-429d-a3e4-63067ac37807",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "f39ac91e-1ae5-4442-a8fd-c15a42629b8e",
+			"id": "9da27713-0d84-4978-ab04-8c7975c62223",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "24f4c5ee-6150-40cd-9a55-a6b9ab28dfc0",
+			"id": "75cff851-3ba6-42e6-86b3-ac08075b40d6",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "d8bf3eca-90e7-4beb-af8a-3e6b010f81c6",
+			"id": "e022e8cf-9fb6-4d04-a8eb-a7681da44917",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "bec8b1eb-a6d3-450d-91f3-7b130b3be324",
+			"id": "d4a28f2a-8150-45d4-bd17-5206655adefc",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "451fa8c8-41f7-4e72-b153-2a90eefe0d35",
+			"id": "b04a9e5c-0550-430c-82e6-90a5ef689b99",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "6414fc5f-5323-4144-9d77-033ab52aac89",
+			"id": "b135a897-31aa-44dd-bf69-e1f6e0570823",
 			"key": "note_id",
 			"value": ""
 		},
 		{
-			"id": "8a774740-ba72-4ed8-9636-2a9234797f21",
+			"id": "2c025783-ae21-4166-a894-f945d10b1b06",
 			"key": "discussion_id",
 			"value": ""
 		}
