@@ -2119,6 +2119,15 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\": \"This is update. Hello there\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{baseUrl}}/discussion/:id",
 							"host": [
@@ -2131,7 +2140,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": null
+									"value": "{{discussion_id}}"
 								}
 							]
 						}
@@ -2380,52 +2389,52 @@
 	],
 	"variable": [
 		{
-			"id": "4f777693-0754-4447-abe6-e7fd384c9e49",
+			"id": "f3729545-8739-402e-89b8-9d9bc20a01f2",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "d22e4410-85ff-43fd-b459-e1c81f3d11af",
+			"id": "a576d78d-1312-4bde-b7ba-a09564263a04",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "c38df6ae-0c47-428c-a38d-36a5293faf3e",
+			"id": "0aa35cd1-d922-4461-bcb4-ba9ead1fa152",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "6186459b-c6be-4c61-8d76-f107109c04db",
+			"id": "705ebf38-6c45-4854-82cb-47d7ffa1f47a",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "0f91aedc-1e18-47e6-93c8-6ccc225f9d93",
+			"id": "c40da823-12d8-412e-a74a-b4e08d7b5e12",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "fdece366-8d9e-498a-8ae4-00b2b6e7716c",
+			"id": "77c40f9f-ebea-418c-a8c9-93d064ede5d6",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "df19038b-640e-4db5-9613-1bdbead8d5c7",
+			"id": "f6915d94-295f-4950-bbbb-98228b92eb32",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "b8d87815-57e1-46d7-8ffc-afb1c45509ff",
+			"id": "32ff3123-9a8e-4a4b-920f-d8f9b45ccc78",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "3c16fb3c-fb0e-4a97-acac-ce1a57dd49ff",
+			"id": "5c4dff83-0f46-42fc-81fa-aad31e187834",
 			"key": "note_id",
 			"value": ""
 		},
 		{
-			"id": "16467c83-3f8f-441b-9c72-3bc8ae82f4a5",
+			"id": "d40d9450-87fe-452f-87da-22d6ecc867ee",
 			"key": "discussion_id",
 			"value": ""
 		}
