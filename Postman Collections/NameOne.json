@@ -2117,20 +2117,21 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/note?studyId={{assignment_id}}",
+							"raw": "{{baseUrl}}/discussion/:id",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
-								"note"
+								"discussion",
+								":id"
 							],
-							"query": [
+							"variable": [
 								{
-									"key": "studyId",
-									"value": "{{assignment_id}}"
+									"key": "id",
+									"value": null
 								}
 							]
 						}
@@ -2379,47 +2380,47 @@
 	],
 	"variable": [
 		{
-			"id": "bc86b1aa-0760-4908-ba02-a50d383ac365",
+			"id": "b273083e-e5da-41dc-8f4f-ef5df7d89e12",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1"
 		},
 		{
-			"id": "3029f6f6-bd34-4a6a-b3ef-8fae4907634a",
+			"id": "9b3e8647-1b2f-4530-a775-b5b4c2bdc35b",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "e97660aa-bff1-45dd-b376-48eec64448ff",
+			"id": "95d41ec5-9e38-4a4f-a9aa-267a0d076585",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "e74cc693-f696-4f3f-bf32-fd7b4f67aed0",
+			"id": "8b9a6af0-a465-432d-85c3-9210ab869963",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "d1c4f306-062e-4161-b182-f0cfce9bde8a",
+			"id": "18435b0c-4978-48d5-a1c5-1995ff98b2f9",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "61f277c3-8ab2-4597-afb5-2763d270922d",
+			"id": "aa0c758d-bd97-49b5-bfe7-1726d13c31c9",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "09abe7c8-f4fe-43f5-ad4e-1e22e69f92ed",
+			"id": "4814c56e-57d6-410e-b390-43bbcb9c7bd7",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "b57d4df7-2bfd-41ad-8bd9-3b9978dc332d",
+			"id": "7e6bfc96-f557-4818-956c-2b836cacea09",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "b55969dd-0ca7-4093-880c-179929af7d38",
+			"id": "19a223ca-94c8-4da6-91c8-6820422a8526",
 			"key": "note_id",
 			"value": ""
 		}
