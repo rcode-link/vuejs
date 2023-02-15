@@ -454,6 +454,11 @@
 									"    'headTeacher'",
 									"  ],",
 									"  properties: {",
+									"      data: {",
+									"          type: \"array\",",
+									"          items: {",
+									"              type: \"object\",",
+									"                properties: {",
 									"    subjects: {",
 									"      type: 'array',",
 									"      items: {",
@@ -483,6 +488,9 @@
 									"        required: ['_id', 'first_name', 'last_name', 'type']",
 									"      }",
 									"    }",
+									"  }",
+									"          }",
+									"      }",
 									"  }",
 									"}",
 									"",
@@ -2794,48 +2802,48 @@
 	],
 	"variable": [
 		{
-			"id": "31578da5-c7a0-47c2-ac14-c721d6b2675c",
+			"id": "93e02c91-6971-4256-a1c3-7245529fdb8a",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "908a0d59-cf15-4b89-82fa-c6aa01e122f3",
+			"id": "9c2a5ab7-5492-475d-bb09-f195cf63fc7b",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "8b422206-39f2-43ac-bfc3-fa20aa0c0403",
+			"id": "de43c563-868e-4263-a74f-6edd56ba5e55",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "6e9c401d-121b-4b22-9d2e-7d38fdae06d6",
+			"id": "6176be10-c2cf-4dd1-9e24-d97f7bee5782",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "3aceba6f-a911-4a79-9e79-44f49df5c2a7",
+			"id": "8d2c9253-fe30-4b0f-bbd4-562b26bf673f",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "a77d143b-644b-490d-8465-eaf3009672ba",
+			"id": "eb242808-fa12-4d9c-be55-b101dda2a4d6",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "496ca81a-e815-41e7-b077-876e93eee37d",
+			"id": "d5096c79-7abf-4140-b0da-055b791539d6",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "bf3564a1-69a6-4fe3-8cb1-953e0deb6a0e",
+			"id": "1c98d34e-90f7-44dc-a97c-15f12521ca5e",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "d75c22af-34e0-454e-a049-aad2b5b59d86",
+			"id": "68a36b54-e4ec-4af4-85bf-cbe38ee6d1ae",
 			"key": "discussion_id",
 			"value": ""
 		}
