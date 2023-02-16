@@ -1097,8 +1097,9 @@
 									"});",
 									"",
 									"pm.test(\"check params\", function(){",
-									"    pm.collectionVariables.set('chapter_id', response.chapters[0]._id)",
-									"    pm.collectionVariables.set('assignment_id', response.assignments[assignments.length - 1]._id)",
+									"        const assignments = response.assignments;",
+									"        pm.collectionVariables.set('chapter_id', response.chapters[0]._id)",
+									"    pm.collectionVariables.set('assignment_id', assignments[assignments.length - 1]._id)",
 									"    pm.expect(response.chapters).to.be.an('array')",
 									"    pm.expect(response.assignments).to.be.an('array')",
 									"})",
@@ -5344,48 +5345,48 @@
 	],
 	"variable": [
 		{
-			"id": "1f025ed4-51dc-4a82-8448-1b94dec48f7c",
+			"id": "de4de8fa-32ee-45f2-bb94-4ec90dd175af",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "84c66042-7c0d-4ce7-88f7-53d429dfecaa",
+			"id": "f91c26c7-9c98-461e-830b-9817258307c0",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "0d51c01d-1aab-4ece-9a0f-a9c47bb007f5",
+			"id": "62f816fc-e78e-494e-b647-aa6a6e10700d",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "42cd9b21-2031-43a2-9a78-afafe490ef28",
+			"id": "07c2cf6d-3a01-4af3-a88a-4348102a842d",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "1b1e3ae8-cd32-40e9-b9b3-b6a0196e5ff1",
+			"id": "32743518-aaf9-4701-b584-659a4e723388",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "2c011cbd-01b6-444c-9c5f-772887d74fb8",
+			"id": "265ced99-b7bc-488d-96ef-2dd3b5d90662",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "eeb32084-6db8-445f-a6be-c9f909ff8453",
+			"id": "a6ff0f5e-028a-433c-9b61-7359f1804087",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "b39f20eb-af68-44fc-a65a-1f22d4a41b58",
+			"id": "f0c10a46-9185-4a7d-9528-64775c5424e1",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "a4969681-7398-4c39-8753-368db3dd6a4f",
+			"id": "3d620997-972f-48df-92d8-01231c955eb5",
 			"key": "discussion_id",
 			"value": ""
 		}
