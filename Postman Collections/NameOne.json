@@ -4089,7 +4089,63 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "ac491072-3b42-4d0f-bf6e-472cc2806398",
+							"name": "Get Discussion",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/discussion?assignmentId={{assignment_id}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"discussion"
+									],
+									"query": [
+										{
+											"key": "assignmentId",
+											"value": "{{assignment_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.2"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 10:19:52 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "404"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"63ee033db810f49324a4657d\",\n            \"assignmentId\": \"63ee02f5b810f49324a46567\",\n            \"title\": \"this is my title\",\n            \"content\": \"ullamco nulla elit \",\n            \"parentId\": null,\n            \"createdBy\": {\n                \"_id\": \"63a31e1a703f4fb1c6b02485\",\n                \"avatar_url\": \"/files/1675767929025-Image1.png\",\n                \"first_name\": \"ipsum velit\",\n                \"last_name\": \"Excepteur velit dolore magna\"\n            },\n            \"createdAt\": \"2023-02-16T10:19:41.000Z\",\n            \"updatedAt\": \"2023-02-16T10:19:41.000Z\"\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Update Discussion",
@@ -4561,48 +4617,48 @@
 	],
 	"variable": [
 		{
-			"id": "dd3802cf-4c4e-462b-89f5-0e80ff79978a",
+			"id": "4dd2b040-b066-457a-87fd-00adeafd00da",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "5ef96cfb-9540-4f99-9167-7c53953be54a",
+			"id": "ce5aeb93-b7b7-402f-b34c-450a03971c3f",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "ff1b3ae6-06cb-4f38-8d99-47cf0ba8af40",
+			"id": "5f4cc92c-4a9e-46cc-84d3-71366c98ec94",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "5af75def-adaf-46fc-a885-f8cd49ed7fb2",
+			"id": "0e1a26e7-700b-4262-8ba9-2d6780cd4f1b",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "07f84501-d611-4374-aaa3-6466ae80027a",
+			"id": "bab3996c-52a6-4cdf-9802-d51ddb70d07d",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "a6a78546-69b7-4aec-a559-843f03012227",
+			"id": "0106f958-73b7-406a-a380-47611d4cb3a2",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "f88810e4-ee37-4e94-b0e3-a2242d8aa81f",
+			"id": "8a01b036-b33d-49f6-949c-4cc4a3ea1051",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "8678e94b-39fd-419a-96b7-0f020c4535cc",
+			"id": "ae547483-0be5-4c61-b44f-d5087d2607da",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "85efa05e-53ed-4c16-b47c-b07e22f9c0dc",
+			"id": "fe7c0c56-dcf5-488c-bb77-1724760fae14",
 			"key": "discussion_id",
 			"value": ""
 		}
