@@ -4144,6 +4144,106 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"63ee033db810f49324a4657d\",\n            \"assignmentId\": \"63ee02f5b810f49324a46567\",\n            \"title\": \"this is my title\",\n            \"content\": \"ullamco nulla elit \",\n            \"parentId\": null,\n            \"createdBy\": {\n                \"_id\": \"63a31e1a703f4fb1c6b02485\",\n                \"avatar_url\": \"/files/1675767929025-Image1.png\",\n                \"first_name\": \"ipsum velit\",\n                \"last_name\": \"Excepteur velit dolore magna\"\n            },\n            \"createdAt\": \"2023-02-16T10:19:41.000Z\",\n            \"updatedAt\": \"2023-02-16T10:19:41.000Z\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "3584a98e-8099-4bec-9c50-e4642689946f",
+							"name": "ValidationErrors Copy 5",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/chapter?subjectId={{class_id}}&classId={{subject_id}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter"
+									],
+									"query": [
+										{
+											"key": "subjectId",
+											"value": "{{class_id}}"
+										},
+										{
+											"key": "classId",
+											"value": "{{subject_id}}"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "230"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:46:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"63d7eecf983de7ab13aecd29\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"subjectId\",\n            \"location\": \"query\"\n        },\n        {\n            \"value\": \"63ce4a8bf2d77a0756627509\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"classId\",\n            \"location\": \"query\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "414916de-919e-494e-9d2c-e59ff9d30628",
+							"name": "Forbidden Copy 9",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/me"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:27:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"Forbidden\"\n}"
 						}
 					]
 				},
@@ -4197,7 +4297,73 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "871ca0bc-f72f-4349-939b-d2633ae51350",
+							"name": "Update Discussion",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"content\": \"This is update. Hello there\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/discussion/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"discussion",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{discussion_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.2"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 10:20:05 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "13"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"ok\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Delete Discussion",
@@ -4617,48 +4783,48 @@
 	],
 	"variable": [
 		{
-			"id": "b7e2b3dc-0c69-4533-9b92-d4a5bd6d2c0c",
+			"id": "0a00bcf2-edf8-4a41-9339-a76ded1556c0",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "7e1774fc-24c8-4e28-a19e-573d7184c556",
+			"id": "87e0ace8-f023-4b55-beff-f0ecf8cd3e20",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "4f24eaf7-8201-45bb-9505-12580fa248f4",
+			"id": "fe9c90d1-830d-4571-ae04-940e41b1892b",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "471d86d1-9199-41c9-b4a8-9ee85718499c",
+			"id": "447aa110-f8c7-40aa-a0b4-f543fc975163",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "826ca989-5c18-43f8-ba2d-e32730c60f73",
+			"id": "8c4b9e10-383d-466b-9f7e-f6cc9990b5c2",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "6c8b4ed5-4218-4950-b6eb-0d68e0012d5a",
+			"id": "e04c5b41-c44e-4112-acb2-443a47f8740e",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "03f54c92-07a9-4caa-98c2-bd11c739a69b",
+			"id": "f0dee247-1ce4-444d-8702-b7aff1caca92",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "a0c4c07d-ecce-45dd-855d-5267a92fb829",
+			"id": "aa1c7ea3-bc92-4ba9-9db5-ade1dad9cbf3",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "65e02d6b-6a6f-413b-ab3c-9b13e2f1903a",
+			"id": "8856ffdf-569c-494d-b875-e3945a55798f",
 			"key": "discussion_id",
 			"value": ""
 		}
