@@ -3509,6 +3509,106 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"data\": \"ok\"\n}"
+						},
+						{
+							"id": "aa7d60f5-e49e-437a-95ce-5893df250cd0",
+							"name": "Forbidden Copy 6",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/me"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:27:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"Forbidden\"\n}"
+						},
+						{
+							"id": "f711e741-8f3a-480b-a23d-8dc3cee761cd",
+							"name": "ValidationErrors Copy 2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/chapter?subjectId={{class_id}}&classId={{subject_id}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter"
+									],
+									"query": [
+										{
+											"key": "subjectId",
+											"value": "{{class_id}}"
+										},
+										{
+											"key": "classId",
+											"value": "{{subject_id}}"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "230"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:46:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"63d7eecf983de7ab13aecd29\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"subjectId\",\n            \"location\": \"query\"\n        },\n        {\n            \"value\": \"63ce4a8bf2d77a0756627509\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"classId\",\n            \"location\": \"query\"\n        }\n    ]\n}"
 						}
 					]
 				},
@@ -4153,54 +4253,49 @@
 	],
 	"variable": [
 		{
-			"id": "3234dcdf-e23a-43c9-a421-d2fa2bebb928",
+			"id": "a6e8bf48-ac2f-4f66-95be-8e636e7544d1",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "57ab1d81-4168-4086-b741-0f218f025ae1",
+			"id": "261a717d-4801-46f3-bf4d-9d25b4f9e428",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "9adf1aa0-6487-42b7-81e2-4047d57a839d",
+			"id": "82b073e0-81d5-4062-8b48-665487ae611e",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "6738fc6d-1330-4cc1-bb70-f1fd9a6180a3",
+			"id": "47ca5500-d682-401d-96e0-0ac2b6d6a353",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "1de6a0ff-9682-45d4-87a5-19df11a0c37f",
+			"id": "22b6056a-a8c8-4ced-b966-56c22bf32c69",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "437371ce-d805-44e0-8cb7-1e424fc3ce55",
+			"id": "76b4fca4-d906-46e1-8b3d-e72a19187155",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "48d88eca-6d4d-470a-84c6-c091840bdd57",
+			"id": "7b940cac-3d9c-41be-b928-b57846e6717f",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "2e9e2eae-303d-43b4-b74d-05cf8231d86c",
+			"id": "86a99c9f-b549-42b6-a39e-a07eee62ab05",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "25820767-d495-48d6-b33f-cd90ec8988e8",
+			"id": "70fd089c-39f2-40ae-a467-413095e0aa76",
 			"key": "discussion_id",
-			"value": ""
-		},
-		{
-			"id": "3739a7ac-4265-4759-9420-9f2a83b09bba",
-			"key": "note_id",
 			"value": ""
 		}
 	]
