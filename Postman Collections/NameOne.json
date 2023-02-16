@@ -35,7 +35,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"teacher_one@email.com\",\n    \"password\": \"password_123\"\n}",
+							"raw": "{\n    \"email\": \"teacher_one@email.com\",\n    \"password\": \"password_1233\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2845,48 +2845,48 @@
 	],
 	"variable": [
 		{
-			"id": "e7cf23a6-88ce-422f-8738-2847c023a6bc",
+			"id": "9fe379b9-bc3a-4814-90a6-ae19d23c90a5",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "8ab7b80a-5e49-4270-814a-694c2b2642d9",
+			"id": "409af097-a9dc-44e0-b5f2-e0b2bc37d91c",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "72b38508-b6a8-41e9-97fa-da2f05f65d8e",
+			"id": "24ed5896-fa23-48b5-b7ae-237d46903359",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "8104bb27-4f63-471e-8dec-209b443ac0f7",
+			"id": "d2b7dbd2-cadb-428f-adf4-0ca064f568c5",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "5af57429-618e-40d3-bc48-90d0c6954691",
+			"id": "373b78cc-f48b-4252-a422-8f6cb4583677",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "874b51ca-d7e8-4119-bdcf-d1b78ec56c5f",
+			"id": "77f59e6d-7eea-4126-ba1c-b02fd18c96de",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "1070735f-279b-4a17-b02f-c25d1fbe0085",
+			"id": "f7d61dc8-7dfa-434e-9795-057cfaa29c23",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "548a7448-43b4-47b3-a7e6-911b8eae677f",
+			"id": "ec2a6faf-86b0-4512-8501-89c8398d560e",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "e62e7a94-ac1e-4ed3-bc89-308fb34fb045",
+			"id": "3db29454-9c72-41a6-93c0-11ae25bf1417",
 			"key": "discussion_id",
 			"value": ""
 		}
