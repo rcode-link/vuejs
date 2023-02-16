@@ -94,6 +94,56 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"data\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2EzMWUxYTcwM2Y0ZmIxYzZiMDI0ODUiLCJ1c2VyX2hhc2giOiIkMmIkMTUkV0N1aEpERTVidUViVWhUU3YzRDkxdXNYNE0xL0htMnZudllOYnVwcXYxL04yR2dEZno5djIiLCJlbWFpbCI6InRlYWNoZXJfb25lQGVtYWlsLmNvbSIsImZpcnN0X25hbWUiOiJpcHN1bSB2ZWxpdCIsInR5cGUiOiJ0ZWFjaGVyIiwibGFzdF9uYW1lIjoiRXhjZXB0ZXVyIHZlbGl0IGRvbG9yZSBtYWduYSIsInByb2ZpbGVfaW1hZ2VfaWQiOiI2M2MwMTE4NDQ5NDhjODM5NTBmZjQ3ODMiLCJhcmVhIjoiZG9sb3JlIGVpdXNtb2QiLCJjaXR5IjoiZGVzZXJ1bnQgYXV0ZSB1dCIsImNvdW50cnkiOiJMb3JlbSBjb25zZXF1YXQgcXVpIGFsaXF1YSIsImNvdW50cnlfY29kZSI6Im1vbGxpdCBhbGlxIiwibGFuZ3VhZ2UiOiJlbiIsInBob25lX251bWJlciI6ImN1bHBhIiwicG9zdGFsX2NvZGUiOiJlbmltIER1aXMiLCJzdHJlZXQiOiJTZXNhbXkiLCJ1cGRhdGVkX2F0IjoxNjc2NTIzNTk1OTI1LCJhdmF0YXJfdXJsIjoiL2ZpbGVzLzE2NzU3Njc5MjkwMjUtSW1hZ2UxLnBuZyIsImlhdCI6MTY3NjU0MjM5MywiZXhwIjoxNjc2NTYzOTkzfQ.TVp72oXN8Xs5zQ3e2phwPOcHBKAIhBVkOq0jzhrG5tg\"\n}"
+						},
+						{
+							"id": "4fd98f94-56fe-4917-98bd-fcef9f447a77",
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"teacher_one@email.com\",\n    \"password\": \"password_1233\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.2"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 10:13:28 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"Email or password are wrong\"\n}"
 						}
 					]
 				}
@@ -2845,48 +2895,48 @@
 	],
 	"variable": [
 		{
-			"id": "5b241ab0-547e-40f3-8499-a721ab7de2a1",
+			"id": "dbd0a4d9-e6ab-41df-9ff8-e0f884d4560b",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "3bca3352-b6f5-4f32-9fe7-a0a2d8c78840",
+			"id": "ba050288-df55-4ebe-8562-fbf3d309c5d4",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "83e93fb3-3a7b-4733-83d1-f3f5eb8d19b4",
+			"id": "e2421177-ec43-471c-9f21-f2921bc5363a",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "c62bb0a4-9f8d-44a3-9119-86d2b4a88385",
+			"id": "92d45d82-e0ac-4686-857f-255d97db1157",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "b53855ae-3e5a-416e-b0d2-df7ce2266ebb",
+			"id": "e5d305fb-55dd-4cfd-9037-8a7a2f321973",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "0fe64812-6dc1-4c9c-a096-8326f47affea",
+			"id": "daad25ef-61ed-40b9-b9de-772f97e41772",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "6b2cee3f-701b-4d59-bf2e-79e4e2cd689b",
+			"id": "3580ca5f-a4ba-4405-8173-3c4e9d77dd4c",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "88bbd098-dab8-4eb5-ba21-4acdbfc7b2ab",
+			"id": "c10f4753-d9ce-4280-b1ed-8bc178f6c485",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "6daca2d0-0af9-4bda-ba77-f48f4408fa7a",
+			"id": "df99bca8-0e2e-44a9-b333-79af604b8a54",
 			"key": "discussion_id",
 			"value": ""
 		}
