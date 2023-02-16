@@ -3230,7 +3230,63 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "c5929b50-640e-4aa5-ad7f-1d78014fa0ab",
+							"name": "Get Notes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/note?assignmentId={{assignment_id}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"note"
+									],
+									"query": [
+										{
+											"key": "assignmentId",
+											"value": "{{assignment_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.2"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 10:18:48 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "155"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"63ee02fbb810f49324a46577\",\n            \"assignmentId\": \"63ee02f5b810f49324a46567\",\n            \"content\": \"ullamco nulla elit \",\n            \"userId\": \"63a31e1a703f4fb1c6b02485\"\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Update",
@@ -3931,53 +3987,53 @@
 	],
 	"variable": [
 		{
-			"id": "135c1919-e9d9-4c89-b23d-9be91c44b988",
+			"id": "2d2c2b34-c6f8-4f2d-a5a1-0d69d496e547",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "ed881f99-2497-40cf-b584-f4adf408a542",
+			"id": "6af8d617-3196-41d4-a777-6630bb18de7e",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "f2c72ead-915b-4bac-b40d-8a122dd3d0f4",
+			"id": "13422a67-d001-46bf-83e6-9cca98a10458",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "7bfab513-ed5f-4ed1-a30e-e11e1d309dfd",
+			"id": "81d99dbd-8124-47c3-8857-d71855760f40",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "5e6c0208-d405-4a28-a324-84cc2014eff7",
+			"id": "4d1e3635-140c-4cee-8d60-a2f561d4ba58",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "c6d0d4b8-b32b-4217-85f2-4301d406bc39",
+			"id": "5861a56b-137b-479d-b040-52a228b234df",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "c0b0f676-0a19-4730-b2a8-81ecc378fba4",
+			"id": "2f2f6f4d-7544-4f0e-83a5-091455f94053",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "55589eda-81f8-4b75-af9d-ba9645272a34",
+			"id": "a8f28ae2-c4de-4820-be14-2c1de08292b8",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "d6b11426-e05d-45ec-8ac4-d2717e107ab4",
+			"id": "1bd307e2-de8b-4021-b07a-c39b8a811d75",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "6b3ecbb6-15d4-4ba8-b1a7-7686cda04b0b",
+			"id": "ac2d1f71-8b64-4be2-83b9-4af7dbedfea3",
 			"key": "note_id",
 			"value": ""
 		}
