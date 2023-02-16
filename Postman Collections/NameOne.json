@@ -3653,7 +3653,64 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "253b04d5-26e9-458a-9f3b-fbad69ea7224",
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/note/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"note",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{note_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.2"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 10:19:20 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "13"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"ok\"\n}"
+						}
+					]
 				}
 			],
 			"id": "5cf903d6-a228-4a01-8b70-ba4d748ab5b0"
@@ -4253,48 +4310,48 @@
 	],
 	"variable": [
 		{
-			"id": "a6e8bf48-ac2f-4f66-95be-8e636e7544d1",
+			"id": "60027e66-cec8-4bcc-b812-61fdeaf66c22",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "261a717d-4801-46f3-bf4d-9d25b4f9e428",
+			"id": "4009c88e-57cf-4a3f-adfd-52c42f1e6046",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "82b073e0-81d5-4062-8b48-665487ae611e",
+			"id": "5257f832-cf87-47d3-8a4c-413bebbe239a",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "47ca5500-d682-401d-96e0-0ac2b6d6a353",
+			"id": "45cd481e-193a-46ce-bf52-1aef400a19c7",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "22b6056a-a8c8-4ced-b966-56c22bf32c69",
+			"id": "710bf85c-3695-46ea-968b-2d44ad044086",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "76b4fca4-d906-46e1-8b3d-e72a19187155",
+			"id": "7b80620a-5885-4f04-917d-3ae76aae2f8f",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "7b940cac-3d9c-41be-b928-b57846e6717f",
+			"id": "b972265a-a085-495f-9e57-bff876680b71",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "86a99c9f-b549-42b6-a39e-a07eee62ab05",
+			"id": "ebe0606f-e646-4b19-953d-43ffe2a0de4d",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "70fd089c-39f2-40ae-a467-413095e0aa76",
+			"id": "62154b9e-05bf-4952-b161-ee795faa1ee4",
 			"key": "discussion_id",
 			"value": ""
 		}
