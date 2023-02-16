@@ -2161,6 +2161,71 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"63ec9bc48345b4c4dfd8d039\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"id\",\n            \"location\": \"params\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "645836e1-81c5-4f7d-b99d-c2579b18801f",
+							"name": "Update Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"voluptate ut fugiat do esse Updated\",\n    \"duration\": 34393406,\n    \"due_date\": \"1991-02-17\",\n    \"due_time\": \"18:45\",\n    \"content\": \"nulla reprehenderit veniam irure officia\",\n    \"grade_type\": \"exam\",\n    \"type\": \"goal\",\n    \"for_subject\": {\n        \"_id\": \"{{subject_id}}\",\n        \"title\": \"minim pariatur\"\n    },\n    \"for_chapter\": {\n        \"title\": \"sit ad officia\",\n        \"_id\": \"{{chapter_id}}\"\n    },\n    \"for_class\": {\n        \"_id\": \"{{class_id}}\",\n        \"title\": \"ut ipsum velit est commodo\"\n    },\n    \"documents\": [],\n    \"students\": [\n        {\n            \"_id\": \"63a313f433ac01ba7b9c9a97\",\n            \"first_name\": \"dolor aliquip culpa\",\n            \"last_name\": \"aute nisi\"\n        },\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"first_name\": \"culpa aliqua\",\n            \"last_name\": \"reprehe\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/assignment/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"assignment",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{assignment_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.2"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 10:16:20 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "13"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"ok\"\n}"
 						}
 					]
 				},
@@ -3236,48 +3301,48 @@
 	],
 	"variable": [
 		{
-			"id": "d512a942-2973-4815-8eb4-b7dacdb2794d",
+			"id": "2e73a94b-4fa9-4b42-ab9b-b81af1f4eab0",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "2f246add-1021-465b-afc3-1aa62fcd5384",
+			"id": "18a23cd3-e1ae-4bc5-8170-35ef67957e6c",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "db646d5d-8831-4b60-abd9-ba4af27e555d",
+			"id": "b74eec80-7555-4c25-bbb4-05daf076c001",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "46ab46c5-1a61-4579-847e-eaef23e80a3d",
+			"id": "1f063754-241a-468b-a4cd-9f19230bed62",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "b8386ce8-ce6d-4313-9071-56f8a9ec3790",
+			"id": "015836a9-181e-4a8a-8ce5-24b1fd5d0cbf",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "bc29d58d-cdab-4e2e-a252-01215e825721",
+			"id": "e23cb4bc-8826-4703-a4f0-d6bad20b3999",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "4f11225d-7b3c-47c4-8f3d-c1074eea1833",
+			"id": "cee8d4eb-8376-42c1-86f2-99dc897744ca",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "2032e419-d616-4488-a7a7-a27956272dbc",
+			"id": "2bdd1f7d-4ac9-42c1-ad95-cad10c895551",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "d6b9699d-9b02-489c-acc6-064008170396",
+			"id": "6178cc06-a37f-4e77-93eb-aded8bda502f",
 			"key": "discussion_id",
 			"value": ""
 		}
