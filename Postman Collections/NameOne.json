@@ -1572,7 +1572,58 @@
 						},
 						"url": "{{baseUrl}}/assignment"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "79722666-31be-4023-9d97-6cca0e81a267",
+							"name": "Create Assigmnet",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"voluptate ut fugiat do esse\",\n    \"duration\": 60,\n    \"due_date\": \"1991-02-17\",\n    \"due_time\": \"18:44\",\n    \"content\": \"nulla reprehenderit veniam irure officia\",\n    \"grade_type\": \"exam\",\n    \"type\": \"goal\",\n    \"for_subject\": {\n        \"_id\": \"{{subject_id}}\",\n        \"title\": \"minim pariatur\"\n    },\n    \"for_chapter\": {\n        \"title\": \"sit ad officia\",\n        \"_id\": \"{{chapter_id}}\"\n    },\n    \"for_class\": {\n        \"_id\": \"{{class_id}}\",\n        \"title\": \"ut ipsum velit est commodo\"\n    },\n    \"documents\": [],\n    \"students\": [\n        {\n            \"_id\": \"63a313f433ac01ba7b9c9a97\",\n            \"first_name\": \"dolor aliquip culpa\",\n            \"last_name\": \"aute nisi\"\n        },\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"first_name\": \"culpa aliqua\",\n            \"last_name\": \"reprehe\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/assignment"
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.2"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 10:14:55 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "214"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"null\",\n            \"msg\": \"The id is not valid\",\n            \"param\": \"for_class._id\",\n            \"location\": \"body\"\n        },\n        {\n            \"value\": \"63ea1fcaca0401ca204e782c\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"for_chapter._id\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "GetChapter Copy",
@@ -3025,48 +3076,48 @@
 	],
 	"variable": [
 		{
-			"id": "772ac900-f4f7-425e-b1f4-9ee572aa1753",
+			"id": "1b5b2754-d604-471b-97a9-d20028a03b59",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "b667eecd-c30c-4fa7-9afa-550b486be788",
+			"id": "988332eb-4de6-4ec6-b4fe-394d6b349ac4",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "3c687341-9ecf-4702-a943-52781f201d29",
+			"id": "63c7e36b-44dd-4832-ac13-6b5a1d6d1987",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "0d028434-6ec1-409b-bba1-b7a9e15f247f",
+			"id": "0569a61f-80b2-42e1-8ce4-6ecbd7e25141",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "35a2bc47-825f-4ee9-a12a-4e415459a988",
+			"id": "187a0c04-12d8-4542-aec7-87a90a9db12f",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "64898d0d-a485-46b3-b2c9-f18f2a7de579",
+			"id": "a9435047-f9a2-4240-8ad4-caf781bbae4e",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "7077af27-4353-4612-9f3a-f28caeacaad3",
+			"id": "6b159168-e08c-4061-9ec5-4748a37478f7",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "d310e2c2-84fc-403b-8204-c03a420531f1",
+			"id": "927dda9d-3a31-475d-b85b-2fc0b6e9a4b4",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "e435d7fe-df9e-459c-b9cc-8be779340528",
+			"id": "67b742bc-0f3d-4f7b-ac69-48d456b2a1c1",
 			"key": "discussion_id",
 			"value": ""
 		}
