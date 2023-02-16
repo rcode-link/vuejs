@@ -2976,11 +2976,12 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "d6002b86-9c7c-4b08-9b2c-bdff8be72278",
+						"id": "1795bac9-5b38-4cce-930f-8102f16fd34c",
 						"type": "text/javascript",
 						"exec": [
 							"postman.setNextRequest('Get Class')",
 							"postman.setNextRequest('GetChapter')",
+							"postman.setNextRequest('GetClassById')",
 							""
 						]
 					}
@@ -2988,7 +2989,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6874fdef-36ac-4a56-b0aa-ccdcd0a95f14",
+						"id": "dbc2f5ad-2ed0-4817-8924-f37897400d43",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -5336,48 +5337,48 @@
 	],
 	"variable": [
 		{
-			"id": "cab9f547-d355-4116-9e60-ca66ee29d422",
+			"id": "d42e4de2-3586-4f7e-b479-04f6d9402c1d",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "e01ddda7-6b91-4b30-8fb8-2f229a60f758",
+			"id": "890828f0-3e0e-4aa6-900b-40b1b6bf2162",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "3fc6350c-50f4-4b11-9948-5706181e8553",
+			"id": "248f2d25-d090-4a61-bf2a-7a4fc07d0a1d",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "20505604-2b6a-47d4-b671-15ab08681af0",
+			"id": "5bf3557a-0a8b-4dea-9986-d03ee4ad1e91",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "d4fa958e-0872-44ab-ada8-b9b61aed8c22",
+			"id": "5fc8e8e4-a5a9-4ff3-a4ad-2b3fe790f49e",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "c657a919-407a-4927-b2ca-11a85941ba2e",
+			"id": "fd413d93-3494-48cc-a51e-2ff4aa420d7f",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "d56a7eb3-af5e-453f-b6be-28f18784d34d",
+			"id": "5afbf28e-6900-409c-afa7-f2c03582abf6",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "3212da2f-87b9-47da-8e9e-6e134c2cc358",
+			"id": "bb026e72-f856-45ec-a443-7bc9f311e166",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "905f36d1-253f-4850-a764-87fc38930476",
+			"id": "1f5fa44c-2a44-4651-a17e-21d3f6e14c38",
 			"key": "discussion_id",
 			"value": ""
 		}
