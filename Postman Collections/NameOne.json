@@ -4847,7 +4847,7 @@
 					"response": [
 						{
 							"id": "5112ced3-116c-4b84-94a7-66178a8e75a8",
-							"name": "Get Dashboard",
+							"name": "Ok",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -4885,6 +4885,47 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "[\n    {\n        \"_id\": \"63ea0f674393b2df0571d5f4\",\n        \"grading\": \"Grading\",\n        \"order\": 1,\n        \"task_title\": \"voluptate ut fugiat do esse\",\n        \"task_type\": \"exam\",\n        \"students\": [\n            {\n                \"_id\": \"63a313f433ac01ba7b9c9a97\",\n                \"first_name\": \"dolor aliquip culpa\",\n                \"last_name\": \"aute nisi\",\n                \"grade\": {\n                    \"_id\": null,\n                    \"title\": null,\n                    \"value\": null,\n                    \"description\": null\n                }\n            },\n            {\n                \"_id\": \"63a31df4703f4fb1c6b0247f\",\n                \"first_name\": \"culpa aliqua\",\n                \"last_name\": \"reprehe\",\n                \"grade\": {\n                    \"_id\": null,\n                    \"title\": null,\n                    \"value\": null,\n                    \"description\": null\n                }\n            }\n        ],\n        \"class_id\": \"63e5e173f91a6001811fb455\",\n        \"class_title\": \"ut ipsum velit est commodo\",\n        \"overdue\": 1009466974339,\n        \"total_students\": 2,\n        \"submissions\": 0,\n        \"is_completed\": false\n    },\n    {\n        \"_id\": \"63ea0f8c4393b2df0571d618\",\n        \"grading\": \"Grading\",\n        \"order\": 1,\n        \"task_title\": \"voluptate ut fugiat do esse\",\n        \"task_type\": \"exam\",\n        \"students\": [\n            {\n                \"_id\": \"63a313f433ac01ba7b9c9a97\",\n                \"first_name\": \"dolor aliquip culpa\",\n                \"last_name\": \"aute nisi\",\n                \"grade\": {\n                    \"_id\": null,\n                    \"title\": null,\n                    \"value\": null,\n                    \"description\": null\n                }\n            },\n            {\n                \"_id\": \"63a31df4703f4fb1c6b0247f\",\n                \"first_name\": \"culpa aliqua\",\n                \"last_name\": \"reprehe\",\n                \"grade\": {\n                    \"_id\": null,\n                    \"title\": null,\n                    \"value\": null,\n                    \"description\": null\n                }\n            }\n        ],\n        \"class_id\": \"63e5e173f91a6001811fb455\",\n        \"class_title\": \"ut ipsum velit est commodo\",\n        \"overdue\": 1009466974339,\n        \"total_students\": 2,\n        \"submissions\": 0,\n        \"is_completed\": true\n    },\n    {\n        \"_id\": \"63ea1bfc0cbfe809bd064e6c\",\n        \"grading\": \"Grading\",\n        \"order\": 1,\n        \"task_title\": \"voluptate ut fugiat do esse\",\n        \"task_type\": \"exam\",\n        \"students\": [\n            {\n                \"_id\": \"63a313f433ac01ba7b9c9a97\",\n                \"first_name\": \"dolor aliquip culpa\",\n                \"last_name\": \"aute nisi\",\n                \"grade\": {\n                    \"_id\": null,\n                    \"title\": null,\n                    \"value\": null,\n                    \"description\": null\n                }\n            },\n            {\n                \"_id\": \"63a31df4703f4fb1c6b0247f\",\n                \"first_name\": \"culpa aliqua\",\n                \"last_name\": \"reprehe\",\n                \"grade\": {\n                    \"_id\": null,\n                    \"title\": null,\n                    \"value\": null,\n                    \"description\": null\n                }\n            }\n        ],\n        \"class_id\": \"63e5e173f91a6001811fb455\",\n        \"class_title\": \"ut ipsum velit est commodo\",\n        \"overdue\": 1009466974339,\n        \"total_students\": 2,\n        \"submissions\": 0,\n        \"is_completed\": false\n    },\n    {\n        \"_id\": \"63ea1c390cbfe809bd064e97\",\n        \"grading\": \"Grading\",\n        \"order\": 1,\n        \"task_title\": \"voluptate ut fugiat do esse Updated\",\n        \"task_type\": \"exam\",\n        \"students\": [\n            {\n                \"_id\": \"63a313f433ac01ba7b9c9a97\",\n                \"first_name\": \"dolor aliquip culpa\",\n                \"last_name\": \"aute nisi\",\n                \"grade\": {\n                    \"_id\": null,\n                    \"title\": null,\n                    \"value\": null,\n                    \"description\": null\n                }\n            },\n            {\n                \"_id\": \"63a31df4703f4fb1c6b0247f\",\n                \"first_name\": \"culpa aliqua\",\n                \"last_name\": \"reprehe\",\n                \"grade\": {\n                    \"_id\": null,\n                    \"title\": null,\n                    \"value\": null,\n                    \"description\": null\n                }\n            }\n        ],\n        \"class_id\": \"63e5e173f91a6001811fb455\",\n        \"class_title\": \"ut ipsum velit est commodo\",\n        \"overdue\": 1009466914339,\n        \"total_students\": 2,\n        \"submissions\": 0,\n        \"is_completed\": true\n    },\n    {\n        \"_id\": \"63ea1f4f168dda89db01b33d\",\n        \"grading\": \"Grading\",\n        \"order\": 1,\n        \"task_title\": \"voluptate ut fugiat do esse Updated\",\n        \"task_type\": \"exam\",\n        \"students\": [\n            {\n                \"_id\": \"63a313f433ac01ba7b9c9a97\",\n                \"first_name\": \"dolor aliquip culpa\",\n                \"last_name\": \"aute nisi\",\n                \"grade\": {\n                    \"_id\": \"63d10011f32afba32ac26506\",\n                    \"title\": \"Grade One\",\n                    \"value\": \"1\",\n                    \"description\": \"Description\"\n                }\n            },\n            {\n                \"_id\": \"63a31df4703f4fb1c6b0247f\",\n                \"first_name\": \"culpa aliqua\",\n                \"last_name\": \"reprehe\",\n                \"grade\": {\n                    \"_id\": null,\n                    \"title\": null,\n                    \"value\": null,\n                    \"description\": null\n                }\n            }\n        ],\n        \"class_id\": \"63e5e173f91a6001811fb455\",\n        \"class_title\": \"ut ipsum velit est commodo\",\n        \"overdue\": 1009466914339,\n        \"total_students\": 2,\n        \"submissions\": 1,\n        \"is_completed\": false\n    },\n    {\n        \"_id\": \"63ec9a9fc0c485c2f0d3a57f\",\n        \"grading\": \"Grading\",\n        \"order\": 1,\n        \"task_title\": \"voluptate ut fugiat do esse Updated\",\n        \"task_type\": \"exam\",\n        \"students\": [\n            {\n                \"_id\": \"63a313f433ac01ba7b9c9a97\",\n                \"first_name\": \"dolor aliquip culpa\",\n                \"last_name\": \"aute nisi\",\n                \"grade\": {\n                    \"_id\": \"63d10011f32afba32ac26506\",\n                    \"title\": \"Grade One\",\n                    \"value\": \"1\",\n                    \"description\": \"Description\"\n                }\n            },\n            {\n                \"_id\": \"63a31df4703f4fb1c6b0247f\",\n                \"first_name\": \"culpa aliqua\",\n                \"last_name\": \"reprehe\",\n                \"grade\": {\n                    \"_id\": null,\n                    \"title\": null,\n                    \"value\": null,\n                    \"description\": null\n                }\n            }\n        ],\n        \"class_id\": \"63e5e173f91a6001811fb455\",\n        \"class_title\": \"ut ipsum velit est commodo\",\n        \"overdue\": 1009466914339,\n        \"total_students\": 2,\n        \"submissions\": 1,\n        \"is_completed\": true\n    }\n]"
+						},
+						{
+							"id": "1b63e72c-ddbe-4a01-9e32-f69ebadacc37",
+							"name": "Forbidden Copy 12",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/me"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:27:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": \"Forbidden\"\n}"
 						}
 					]
 				}
@@ -5123,7 +5164,120 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "b990d5bf-d6fe-4917-be48-603cda6af882",
+					"name": "Ok Copy",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/chapter/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"chapter",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{chapter_id}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Feb 2023 16:05:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"data\": \"ok\"\n}"
+				},
+				{
+					"id": "749da83e-1413-4acd-9acb-97290229d565",
+					"name": "ValidationError Copy",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/chapter/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"chapter",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{chapter_id}}"
+								}
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "116"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Feb 2023 16:08:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"errors\": [\n        {\n            \"value\": \"63dbdff812f07578e540d576\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"id\",\n            \"location\": \"params\"\n        }\n    ]\n}"
+				}
+			]
 		}
 	],
 	"auth": {
@@ -5156,48 +5310,48 @@
 	],
 	"variable": [
 		{
-			"id": "ad8bc775-804b-49cf-ba11-31689328b148",
+			"id": "0b468449-b07d-4540-a633-033d97f5df7b",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "f27bdae9-c5ac-4430-958d-afbd6536a7de",
+			"id": "88f51775-129c-4eec-aa78-2e69b83c4e90",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "ef29b42c-4451-46fa-bc72-eebd5e1b8e55",
+			"id": "2298de8b-8325-4c64-9a8e-b23c8850b716",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "67f53790-45df-436d-9996-1ef2b7b44c26",
+			"id": "7d680537-4a77-418f-a822-637ae6e6f90a",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "b0d90ba5-7546-4471-b92e-e6760ac61aea",
+			"id": "92ad98c5-03f7-4857-8857-16c28dbf7d6e",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "9d35d9ed-b33a-4977-bc34-d4b75b4d0089",
+			"id": "45e37d48-dcb4-4cd0-8d30-21da45316c54",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "6abe3faf-e379-40a5-a975-cb5625b7af02",
+			"id": "0a3c48ad-e319-4525-90d9-43a30292b827",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "65bbaaf1-af20-4b5b-90c5-fa5e4bd72fa5",
+			"id": "69b29139-d991-4a66-a2c3-8451dd2bdbff",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "f6512f47-f330-4170-8da8-df7ea581ebc5",
+			"id": "980a31dd-c107-4a88-84e2-cceab383db82",
 			"key": "discussion_id",
 			"value": ""
 		}
