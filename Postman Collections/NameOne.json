@@ -571,7 +571,49 @@
 						"header": [],
 						"url": "{{baseUrl}}/class"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "2f2bf9c1-3082-4aa0-9420-71ef711454f1",
+							"name": "Get",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/class"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.2"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 10:14:23 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3310"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"63e5e173f91a6001811fb455\",\n            \"class_name\": \"6\",\n            \"class_letter\": \"B\",\n            \"subjects\": [\n                {\n                    \"_id\": \"63ce4a8bf2d77a0756627509\",\n                    \"icon\": \"english\",\n                    \"color\": \"#D53A3A\",\n                    \"name\": \"English A\",\n                    \"id\": \"63ce4a8bf2d77a0756627509\",\n                    \"teacher\": {\n                        \"_id\": \"63a31e1a703f4fb1c6b02485\",\n                        \"email\": \"teacher_one@email.com\",\n                        \"first_name\": \"VG\",\n                        \"type\": \"teacher\",\n                        \"last_name\": \"VG\",\n                        \"profile_image_id\": \"63c011844948c83950ff4783\"\n                    }\n                },\n                {\n                    \"_id\": \"63ce4afef2d77a075662750a\",\n                    \"icon\": \"Chemistry\",\n                    \"color\": \"green\",\n                    \"name\": \"Chemistry\",\n                    \"teacher\": {\n                        \"email\": \"teacher_four@email.com\",\n                        \"first_name\": \"Michale\",\n                        \"last_name\": \"Scott\",\n                        \"_id\": \"63ce4500b939fb02f7a63529\",\n                        \"type\": \"teacher\"\n                    }\n                },\n                {\n                    \"_id\": \"63e4bd45537c1870d8be7c85\",\n                    \"name\": \"Biology\",\n                    \"icon\": \"biology\",\n                    \"color\": \"#EEB340\",\n                    \"teacher\": {\n                        \"_id\": \"63a31e12703f4fb1c6b02483\",\n                        \"email\": \"teacher_two@email.com\",\n                        \"first_name\": \"V\",\n                        \"type\": \"teacher\",\n                        \"last_name\": \"G\",\n                        \"profile_image_id\": \"63c011844948c83950ff4783\"\n                    }\n                },\n                {\n                    \"_id\": \"63e4bd6f537c1870d8be7c8b\",\n                    \"name\": \"Literature\",\n                    \"icon\": \"literature\",\n                    \"color\": \"#AA71F4\",\n                    \"teacher\": {\n                        \"_id\": \"63c679e8c24f8ec5c3f3c705\",\n                        \"email\": \"email@email.com\",\n                        \"first_name\": \"et irure eu\",\n                        \"type\": \"teacher\",\n                        \"last_name\": \"incididunt labore consectetur\"\n                    }\n                }\n            ],\n            \"classroom_no\": \"234234\",\n            \"class_color\": \"#EEB340\",\n            \"headTeacher\": {\n                \"_id\": \"63a31e76bf4285b1e04d3224\",\n                \"first_name\": \"V\",\n                \"last_name\": \"G\",\n                \"type\": \"teacher\"\n            },\n            \"students\": [\n                {\n                    \"_id\": \"63a313f433ac01ba7b9c9a97\",\n                    \"email\": \"user@email.com\",\n                    \"first_name\": \"V\",\n                    \"type\": \"student\",\n                    \"last_name\": \"G\",\n                    \"profile_image_id\": \"63c011844948c83950ff4783\"\n                },\n                {\n                    \"_id\": \"63cfadf897fcc318b1139868\",\n                    \"email\": \"denji@email.com\",\n                    \"first_name\": \"Denji\",\n                    \"type\": \"student\",\n                    \"last_name\": \"Chainsow\"\n                }\n            ]\n        },\n        {\n            \"_id\": \"63e5e1b3f91a6001811fb476\",\n            \"class_name\": \"12\",\n            \"class_letter\": \"A\",\n            \"subjects\": [\n                {\n                    \"_id\": \"63ce4a8bf2d77a0756627509\",\n                    \"icon\": \"english\",\n                    \"color\": \"#D53A3A\",\n                    \"name\": \"English A\",\n                    \"id\": \"63ce4a8bf2d77a0756627509\",\n                    \"teacher\": {\n                        \"_id\": \"63a31e1a703f4fb1c6b02485\",\n                        \"email\": \"teacher_one@email.com\",\n                        \"first_name\": \"VG\",\n                        \"type\": \"teacher\",\n                        \"last_name\": \"VG\",\n                        \"profile_image_id\": \"63c011844948c83950ff4783\"\n                    }\n                }\n            ],\n            \"classroom_no\": \"fsdds\",\n            \"class_color\": \"#213960\",\n            \"headTeacher\": {\n                \"_id\": \"63a31e1a703f4fb1c6b02485\",\n                \"first_name\": \"VG\",\n                \"last_name\": \"VG\",\n                \"type\": \"teacher\"\n            },\n            \"students\": [\n                {\n                    \"_id\": \"63a313f433ac01ba7b9c9a97\",\n                    \"email\": \"user@email.com\",\n                    \"first_name\": \"V\",\n                    \"type\": \"student\",\n                    \"last_name\": \"G\",\n                    \"profile_image_id\": \"63c011844948c83950ff4783\"\n                },\n                {\n                    \"_id\": \"63a31e03703f4fb1c6b02481\",\n                    \"email\": \"student_two@email.com\",\n                    \"first_name\": \"V\",\n                    \"type\": \"student\",\n                    \"last_name\": \"G\",\n                    \"profile_image_id\": \"63c011844948c83950ff4783\"\n                },\n                {\n                    \"_id\": \"63cfadf897fcc318b1139868\",\n                    \"email\": \"denji@email.com\",\n                    \"first_name\": \"Denji\",\n                    \"type\": \"student\",\n                    \"last_name\": \"Chainsow\"\n                }\n            ]\n        },\n        {\n            \"_id\": \"63ecc357b810f49324a45d29\",\n            \"class_name\": \"2\",\n            \"class_letter\": \"r\",\n            \"subjects\": [\n                {\n                    \"_id\": \"63ce4a8bf2d77a0756627509\",\n                    \"icon\": \"english\",\n                    \"color\": \"#D53A3A\",\n                    \"name\": \"English A\",\n                    \"id\": \"63ce4a8bf2d77a0756627509\",\n                    \"teacher\": {\n                        \"_id\": \"63a31e1a703f4fb1c6b02485\",\n                        \"email\": \"teacher_one@email.com\",\n                        \"first_name\": \"VG\",\n                        \"type\": \"teacher\",\n                        \"last_name\": \"VG\",\n                        \"profile_image_id\": \"63c011844948c83950ff4783\"\n                    }\n                }\n            ],\n            \"classroom_no\": \"34\",\n            \"class_color\": \"#90D13C\",\n            \"headTeacher\": {\n                \"_id\": \"63c679e8c24f8ec5c3f3c705\",\n                \"first_name\": \"et irure eu\",\n                \"last_name\": \"incididunt labore consectetur\",\n                \"type\": \"teacher\"\n            },\n            \"students\": [\n                {\n                    \"_id\": \"63a31df4703f4fb1c6b0247f\",\n                    \"email\": \"student_one@email.com\",\n                    \"first_name\": \"V updated\",\n                    \"type\": \"student\",\n                    \"last_name\": \"G\",\n                    \"profile_image_id\": \"63c011844948c83950ff4783\"\n                }\n            ]\n        }\n    ],\n    \"totalCount\": 3\n}"
+						}
+					]
 				},
 				{
 					"name": "GetClassById",
@@ -2945,48 +2987,48 @@
 	],
 	"variable": [
 		{
-			"id": "3f6363fe-8542-45bc-bada-222b2f95c6e3",
+			"id": "ef25e926-dbaf-4ebb-8ee1-bcaa54ccd700",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "33dd1b45-5031-4ef3-9040-3de3f86e78fb",
+			"id": "7ad9fc6d-e826-453e-a980-bb64c0ca09a9",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "143654c5-63b7-4a21-bd09-67b15468b9c0",
+			"id": "1ad86bea-0516-44dc-9f14-cba02c604635",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "90c7c8df-0aad-46db-b8be-0d9df0d287f0",
+			"id": "47e56c2c-bf8b-41a3-9280-20742f297faf",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "0320a647-fd0a-445b-aea7-f9a51f5e01ab",
+			"id": "8f2421c6-bd0e-4528-a93e-268df7371199",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "c618e3ef-75f6-4f57-be58-95a8c15a4607",
+			"id": "eddeca8b-ab34-40ae-8e0c-d68d494a6ac3",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "cf48d3e5-df1f-413f-ad3c-2a3a23132c54",
+			"id": "8f0c47ae-3cf2-4d25-9ced-4fe03c8d534c",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "9c2093d4-a41c-463a-b81a-3a2219a5e486",
+			"id": "92ad92ce-03e9-4cad-9f7a-0ce700e415d5",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "f9ce2419-23d0-4d43-aefd-b00a3c5e3a98",
+			"id": "4f5499e3-1be0-4054-8b02-f213b8dc3319",
 			"key": "discussion_id",
 			"value": ""
 		}
