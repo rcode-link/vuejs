@@ -2275,7 +2275,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"assignmentId\": \"{{assignment_id}}\",\n    \"student\": {\n        \"_id\": \"{{student_id}}\",\n        \"first_name\": \"string\",\n        \"last_name\": \"string\",\n        \"grade\": {\n            \"_id\": \"63d10011f32afba32ac26506\",\n            \"description\": \"Description\",\n            \"title\": \"Grade One\",\n            \"value\": \"1\"\n        }\n    }\n}",
+							"raw": "{\n    \"assignmentId\": \"{{assignment_id}}\",\n    \"student\": {\n        \"_id\": \"{{student_id}}\",\n        \"first_name\": \"string\",\n        \"last_name\": \"string\",\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3352,48 +3352,48 @@
 	],
 	"variable": [
 		{
-			"id": "86573468-559c-4083-bec3-47600accd228",
+			"id": "84079d92-ed81-486d-9ced-877feb172df5",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "78b47c21-a884-497f-8c35-e08422969ace",
+			"id": "4d06858a-ee96-4528-a8d9-d61381caa883",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "032e06f9-06ce-4f5f-bab6-3b06becaa619",
+			"id": "99e14141-e262-4ef4-9c58-a217a170d582",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "fc763d17-28ec-42bb-b033-48c9fc222b4b",
+			"id": "c00e9870-38de-465c-8897-ea3c846412b1",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "bc4244f1-e9f7-47d5-a6d1-52c5a1cad354",
+			"id": "c21095cd-f33b-45a7-8743-81ecb8e348e0",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "95258eee-90bb-458c-9e96-5c6306532f16",
+			"id": "64ecb37d-17bf-4fb5-8ae4-4744bb934454",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "14bef296-7629-41d5-b2a1-69bb56b05bfa",
+			"id": "0610bf33-5d87-495a-b967-e91790a4c2d9",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "9b9d6a10-1e98-44c3-b054-5ec62302d902",
+			"id": "18c3bffb-7576-46ac-ad94-1aa195a7e9a9",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "9ba9d3ce-08f5-4c55-9e79-6c5825f47ad9",
+			"id": "db3bcdba-5ac0-4dd2-b549-d4cab07d47e3",
 			"key": "discussion_id",
 			"value": ""
 		}
