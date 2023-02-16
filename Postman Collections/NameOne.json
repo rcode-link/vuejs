@@ -2334,6 +2334,65 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"data\": \"ok\"\n}"
+						},
+						{
+							"id": "a972e0ea-233b-4ad0-b34d-e75708a228a7",
+							"name": "ValidationErrors",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/chapter?subjectId={{class_id}}&classId={{subject_id}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"chapter"
+									],
+									"query": [
+										{
+											"key": "subjectId",
+											"value": "{{class_id}}"
+										},
+										{
+											"key": "classId",
+											"value": "{{subject_id}}"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "230"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Feb 2023 15:46:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"63d7eecf983de7ab13aecd29\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"subjectId\",\n            \"location\": \"query\"\n        },\n        {\n            \"value\": \"63ce4a8bf2d77a0756627509\",\n            \"msg\": \"The record does not exist\",\n            \"param\": \"classId\",\n            \"location\": \"query\"\n        }\n    ]\n}"
 						}
 					]
 				},
@@ -3352,48 +3411,48 @@
 	],
 	"variable": [
 		{
-			"id": "af1c15ae-eba6-415e-a249-d9ee9f77c1f6",
+			"id": "bce32bea-dcd5-470f-9f0e-9b40730b1d1b",
 			"key": "baseUrl",
 			"value": "http://localhost:3001/api/v1",
 			"disabled": true
 		},
 		{
-			"id": "6f17b1a6-9a4f-4215-90c8-71d94303922a",
+			"id": "25b4ea5a-edff-4b36-bc0a-360641864a33",
 			"key": "bearerToken",
 			"value": ""
 		},
 		{
-			"id": "bcb5bb8b-4f4f-4684-84e5-2f88f03baa5a",
+			"id": "e8bad4b1-7050-418b-98f4-92a40a481049",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "edc6ea3a-7b0f-40f7-9b74-154cf56d494b",
+			"id": "94a661de-872c-4716-9246-c91ddffd6dd2",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "3cc10a1e-3e8f-446e-b05c-d264cfe830ad",
+			"id": "b49b106c-49c2-44fa-89bb-e7b1d6fca0b6",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "ff431f62-a4c0-4fb2-a290-f18805b6bc28",
+			"id": "0c2619d0-b9e0-417d-bdb8-608f72421bc7",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "0bbe7196-b87a-4e97-85d3-bf01fe1ff61b",
+			"id": "96ac071a-614b-4f31-a3a8-8bc052f571cc",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "3642dadd-ca88-4319-8d64-50fc3806299a",
+			"id": "0cbd6f0d-f381-4e4c-baae-874ca9b71b48",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "9a15c42b-eee3-4d1d-9a27-b3b8f1fcd17b",
+			"id": "b2db5f52-b568-4d4a-82f2-d0da912d502f",
 			"key": "discussion_id",
 			"value": ""
 		}
