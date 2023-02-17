@@ -1979,7 +1979,7 @@
 								"id": "937e10b0-15a5-4305-a09b-ed7b1e12f5ae",
 								"exec": [
 									"const loginRequest = {",
-									"    url: pm.environment.get(\"baseUrl\")+ '/grade',",
+									"    url: pm.environment.get(\"baseUrl\") + '/grade',",
 									"    method: 'GET',",
 									"    header: 'Authorization: Bearer ' + pm.environment.get(\"bearerToken\"),",
 									"",
@@ -1990,9 +1990,8 @@
 									"    console.error(err, data)",
 									"    pm.collectionVariables.set('grade_id', data.data[0]._id)",
 									"    pm.collectionVariables.set('grade_title', data.data[0].title)",
-									"    pm.collectionVariables.set('grade_id', data.data[0]._id)",
-									"    pm.collectionVariables.set('grade_id', data.data[0]._id)",
-									"    pm.collectionVariables.set('grade_id', data.data[0]._id)",
+									"    pm.collectionVariables.set('grade_description', data.data[0].description)",
+									"    pm.collectionVariables.set('grade_value', data.data[0].value)",
 									"});"
 								],
 								"type": "text/javascript"
@@ -4967,37 +4966,37 @@
 	],
 	"variable": [
 		{
-			"id": "b6d51795-b8ee-4556-aa7b-520107526a96",
+			"id": "f2cc5c82-6952-4533-8482-738f12a2b3fd",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "c1dea97c-8d33-462b-b880-f2ebc9cd0eca",
+			"id": "1d73df84-cdb0-4089-8f4d-e996201b5db4",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "c0d24f82-6d5f-4fe8-b3dd-52c687c49bd9",
+			"id": "2a6e30e3-e800-4f5c-8e4b-6e4922d446db",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "e9f46ac9-2d98-4a5f-9d12-61924ae68e91",
+			"id": "62169fc4-33c4-4a6e-86eb-6cde2673ed1c",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "f07ea2be-ad5f-4c9c-8d8b-a19f86f22c25",
+			"id": "0c866694-51a9-47e6-b882-d3ce1d13159d",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "055043a7-db55-4c05-8954-d301ec8b6f98",
+			"id": "2ac71bbf-cd3e-44ce-a421-9809278c09ca",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "11c21c44-a6ef-4fe0-8243-50dd58a6c4d6",
+			"id": "3fd294a1-69dc-4e18-8150-f9711ab30812",
 			"key": "discussion_id",
 			"value": ""
 		}
