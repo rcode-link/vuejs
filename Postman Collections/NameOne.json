@@ -6,201 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "Login",
-			"item": [
-				{
-					"name": "Login",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "089fd75d-1542-49c1-860e-39ad78990aea",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    const data =pm.response.json();",
-									"    pm.collectionVariables.set(\"bearerToken\", data.data);",
-									"    pm.response.to.have.status(200);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "25a014f8-6140-450f-bc7b-346a32dafd66",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"email\": \"teacher_one@email.com\",\n    \"password\": \"password_123\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseUrl}}/login"
-					},
-					"response": [
-						{
-							"id": "45e01f23-d247-4ba3-a81f-eb38232a7d1d",
-							"name": "Ok",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"email\": \"teacher_one@email.com\",\n    \"password\": \"password_123\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{baseUrl}}/login"
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Server",
-									"value": "nginx/1.23.2"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 16 Feb 2023 10:13:13 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "870"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"data\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2EzMWUxYTcwM2Y0ZmIxYzZiMDI0ODUiLCJ1c2VyX2hhc2giOiIkMmIkMTUkV0N1aEpERTVidUViVWhUU3YzRDkxdXNYNE0xL0htMnZudllOYnVwcXYxL04yR2dEZno5djIiLCJlbWFpbCI6InRlYWNoZXJfb25lQGVtYWlsLmNvbSIsImZpcnN0X25hbWUiOiJpcHN1bSB2ZWxpdCIsInR5cGUiOiJ0ZWFjaGVyIiwibGFzdF9uYW1lIjoiRXhjZXB0ZXVyIHZlbGl0IGRvbG9yZSBtYWduYSIsInByb2ZpbGVfaW1hZ2VfaWQiOiI2M2MwMTE4NDQ5NDhjODM5NTBmZjQ3ODMiLCJhcmVhIjoiZG9sb3JlIGVpdXNtb2QiLCJjaXR5IjoiZGVzZXJ1bnQgYXV0ZSB1dCIsImNvdW50cnkiOiJMb3JlbSBjb25zZXF1YXQgcXVpIGFsaXF1YSIsImNvdW50cnlfY29kZSI6Im1vbGxpdCBhbGlxIiwibGFuZ3VhZ2UiOiJlbiIsInBob25lX251bWJlciI6ImN1bHBhIiwicG9zdGFsX2NvZGUiOiJlbmltIER1aXMiLCJzdHJlZXQiOiJTZXNhbXkiLCJ1cGRhdGVkX2F0IjoxNjc2NTIzNTk1OTI1LCJhdmF0YXJfdXJsIjoiL2ZpbGVzLzE2NzU3Njc5MjkwMjUtSW1hZ2UxLnBuZyIsImlhdCI6MTY3NjU0MjM5MywiZXhwIjoxNjc2NTYzOTkzfQ.TVp72oXN8Xs5zQ3e2phwPOcHBKAIhBVkOq0jzhrG5tg\"\n}"
-						},
-						{
-							"id": "4fd98f94-56fe-4917-98bd-fcef9f447a77",
-							"name": "Wrong credentials",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"email\": \"teacher_one@email.com\",\n    \"password\": \"password_1233\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{baseUrl}}/login"
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Server",
-									"value": "nginx/1.23.2"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 16 Feb 2023 10:13:28 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "38"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"data\": \"Email or password are wrong\"\n}"
-						},
-						{
-							"id": "d5419fc4-e6bc-4452-8979-92da34cf4aa0",
-							"name": "Validation",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"email\": \"teacher_one@email.com\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{baseUrl}}/login"
-							},
-							"status": "Unprocessable Entity",
-							"code": 422,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Server",
-									"value": "nginx/1.23.2"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 16 Feb 2023 10:13:47 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "73"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"errors\": [\n        {\n            \"msg\": \"Invalid value\",\n            \"param\": \"password\",\n            \"location\": \"body\"\n        }\n    ]\n}"
-						}
-					]
-				}
-			],
-			"id": "3ee0f41b-e06b-48db-9f44-599c36f00fa8"
-		},
-		{
 			"name": "User",
 			"item": [
 				{
@@ -5133,37 +4938,37 @@
 	],
 	"variable": [
 		{
-			"id": "ba5e4ac3-6e44-4acd-a142-4aa5500e22dd",
+			"id": "a4c23d13-ade7-4860-99a2-47737e192046",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "748d872b-4090-46c2-b118-68aef2a7d69e",
+			"id": "77e7f8b6-442d-4fcd-8572-16859f7ff472",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "c76ccb05-12b6-4a99-ba26-5c1ff4809208",
+			"id": "2f70341e-e289-4b84-b6c8-5e1f61541d34",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "4faa2b3e-8109-4047-bfd8-e6dacf149eaa",
+			"id": "fc900055-81b4-439c-9eab-7294663baf30",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "47b50acc-5846-4997-8c76-2edc3c0b4368",
+			"id": "1421d41b-5d4f-4b28-bd96-2473754079be",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "0f3c7994-d956-47d8-803a-a1c0618ca261",
+			"id": "d450bd91-e001-41db-b46b-2e567a24c46c",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "1e2c4442-06c7-48a8-981c-6ae8e256e738",
+			"id": "52b58ec8-7abd-454d-a215-e2c7a647c36b",
 			"key": "discussion_id",
 			"value": ""
 		}
