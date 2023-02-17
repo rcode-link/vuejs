@@ -1987,7 +1987,6 @@
 									"",
 									"pm.sendRequest(loginRequest, function (err, response) {",
 									"    const data = response.json();",
-									"    console.log(err, data.data[0])",
 									"    pm.collectionVariables.set('grade_id', data.data[0]._id)",
 									"    pm.collectionVariables.set('grade_title', data.data[0].title)",
 									"    pm.collectionVariables.set('grade_description', data.data[0].description)",
@@ -4966,57 +4965,57 @@
 	],
 	"variable": [
 		{
-			"id": "f8decb8e-961c-47f3-bffd-207073b2ffe0",
+			"id": "209fe2b7-f0b9-4635-813d-9bb8d7b39083",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "6f6aefe4-261e-4c16-a2b9-9d6837883a23",
+			"id": "e958e8db-9c4d-4922-839b-1c16dd89678f",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "2ba1cf1b-ecdd-4060-a8f5-6321dfefdd8b",
+			"id": "38c6b044-02c7-4e29-ad8f-a6f338bedee7",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "8f20c81a-4b81-491c-a4fa-f1ef52e26c1c",
+			"id": "96399a58-a9e8-44bd-8185-a34bcd5c1e85",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "4bd0cf6b-ae6a-4e13-a3ef-3459874eaee7",
+			"id": "92dc1b45-e994-4529-9ee1-cdb4a2ef6a7c",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "1bfebfa5-f04a-4e3b-b751-81cabf3e3998",
+			"id": "2a9319dc-1586-4346-b619-9f75d1adac95",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "2685f1fb-46ee-4e47-b975-ae88827cae14",
+			"id": "7b279ffc-01b1-4720-bd1d-6e36385be08c",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "8635dafc-b33e-4c36-9bf0-4247969acfad",
+			"id": "a8e27749-57ef-45ea-b973-b1abd6a296a8",
 			"key": "grade_id",
 			"value": ""
 		},
 		{
-			"id": "0f8ca550-88a3-4120-9b28-8dd36faa2f9f",
+			"id": "d07a0087-9ff9-4b44-9499-effb09828d7c",
 			"key": "grade_title",
 			"value": ""
 		},
 		{
-			"id": "fb0814e3-1b43-4ee5-bf01-158a7051640d",
+			"id": "b3a8e175-f929-483a-af50-15c53820e4d5",
 			"key": "grade_description",
 			"value": ""
 		},
 		{
-			"id": "84fb8bb5-1564-47c1-9d85-21e5e1914501",
+			"id": "34e954f0-52bf-4a45-88f9-dba77eb572db",
 			"key": "grade_value",
 			"value": ""
 		}
