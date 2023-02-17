@@ -4918,12 +4918,30 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "e34ca9b9-b2f5-4ad6-86d5-4fd3cf66246e",
+				"id": "b8a9cd88-82a1-47fe-91a5-a7110cc49698",
 				"type": "text/javascript",
 				"exec": [
 					"if ( !pm.variables.has(\"TotalCF\") ) {",
 					"    pm.variables.set(\"TotalCF\",0);",
-					"    console.log(\"Initialize collection error counter\");",
+					" var myHeaders = new Headers();",
+					"myHeaders.append(\"Content-Type\", \"application/json\");",
+					"",
+					"var raw = JSON.stringify({",
+					"  \"email\": \"teacher_one@email.com\",",
+					"  \"password\": \"password_123\"",
+					"});",
+					"",
+					"var requestOptions = {",
+					"  method: 'POST',",
+					"  headers: myHeaders,",
+					"  body: raw,",
+					"  redirect: 'follow'",
+					"};",
+					"",
+					"fetch(\"http://localhost:3001/api/v1/login\", requestOptions)",
+					"  .then(response => response.text())",
+					"  .then(result => console.log(result))",
+					"  .catch(error => console.log('error', error));",
 					"}"
 				]
 			}
@@ -4931,7 +4949,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ea94c314-8fa1-4915-a42d-8d27e18043a4",
+				"id": "f8de83a5-34bc-4145-aad4-1f02b3885e85",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -4941,37 +4959,37 @@
 	],
 	"variable": [
 		{
-			"id": "c0f87396-bae1-48db-9d30-66cbdcbda3c8",
+			"id": "c80f39d1-dddf-4976-a087-c57ee41f352d",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "50adb6e1-b768-4811-aae1-8d1295e27438",
+			"id": "a685474e-daa4-4b65-8521-3c1e6df53ff6",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "17bda4fa-4f44-4771-a5eb-df7eb1ea8dd4",
+			"id": "4916f64f-cae3-4477-b23a-b0a5fba24ee8",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "4a50bf41-768e-47d7-a5f6-1ba369cc79a7",
+			"id": "2cc6414b-f0fe-4fe4-80b7-8481c3815b86",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "3bd32b23-fe0e-4784-869b-284aa088b43c",
+			"id": "20e1cfec-25ab-4178-8120-d29a70312d70",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "d6bcc94c-f100-4547-b05e-78762ff2a258",
+			"id": "945b8a80-ed6c-4a14-b958-8e0ebbd276d4",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "6d4b0662-8f5d-4fbe-9d23-b15d7f20ce18",
+			"id": "0da643b8-9a48-42ec-9bb1-1470fc235b97",
 			"key": "discussion_id",
 			"value": ""
 		}
