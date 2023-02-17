@@ -2013,7 +2013,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"assignmentId\": \"{{assignment_id}}\",\n    \"student\": {\n        \"_id\": \"{{student_id}}\",\n        \"first_name\": \"string\",\n        \"last_name\": \"string\",\n        \"grade\": {\n            \"_id\": \"{{grade_id}}\",\n            \"description\": \"Description\",\n            \"title\": \"Grade One\",\n            \"value\": \"1\"\n        }\n    }\n}",
+							"raw": "{\n    \"assignmentId\": \"{{assignment_id}}\",\n    \"student\": {\n        \"_id\": \"{{student_id}}\",\n        \"first_name\": \"string\",\n        \"last_name\": \"string\",\n        \"grade\": {\n            \"_id\": \"{{grade_id}}\",\n            \"description\": \"{{grade_description}}\",\n            \"title\": \"{{grade_title}}\",\n            \"value\": \"{{grade_value}}\"\n        }\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4966,57 +4966,57 @@
 	],
 	"variable": [
 		{
-			"id": "59090c89-9af7-4e0f-9b9d-6de6f4ba939d",
+			"id": "3021b55f-371a-4f60-a41b-80c63dba63a4",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "a1a32d8c-9d8a-4c38-913d-e1c6a67c6d12",
+			"id": "7d12203e-c400-47ca-abc2-ff88daa9b692",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "e3859f3c-0297-4452-8609-473ad90755f7",
+			"id": "dd0a3c4a-d4c1-4fe9-8fe9-a5a7553d2c83",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "d38f5ea7-8711-4300-ae6e-fbefb697cf4d",
+			"id": "72e3d8fe-899f-4cef-9268-a99ecbcd2f9d",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "b6259a9a-c9ac-46a3-b41e-faed8f4a246c",
+			"id": "84566373-780f-4df4-bba6-c47c5d5d7219",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "1e19cf10-3898-4e00-abfb-7a8ce8645693",
+			"id": "fb22cc43-a23a-4060-adc3-417a2c829719",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "88d1946e-546c-40a4-a7f8-5b43559dec99",
+			"id": "2509b569-fefd-4242-a5c3-49850227219d",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "14d51e83-dd8f-4045-b79e-7e9bbf97ac73",
+			"id": "554115f8-c7a4-4bb4-8c1a-221e21c21bdf",
 			"key": "grade_id",
 			"value": ""
 		},
 		{
-			"id": "9eaf500b-c28f-4776-9fb3-26880041f866",
+			"id": "efc0222c-f3ba-4057-8575-64972d091d9a",
 			"key": "grade_title",
 			"value": ""
 		},
 		{
-			"id": "324edd11-2265-4bf8-8329-b4f9d9773bbc",
+			"id": "90911bb7-9915-45cd-a5f0-277d9bf2ab1f",
 			"key": "grade_description",
 			"value": ""
 		},
 		{
-			"id": "30bbd7ad-c7f2-41a2-80a7-1760742b3f26",
+			"id": "05d62d95-911f-404c-b154-81851ff482ed",
 			"key": "grade_value",
 			"value": ""
 		}
