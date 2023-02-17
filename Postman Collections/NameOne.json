@@ -1992,6 +1992,7 @@
 									"    pm.collectionVariables.set('grade_title', data.data[0].title)",
 									"    pm.collectionVariables.set('grade_description', data.data[0].description)",
 									"    pm.collectionVariables.set('grade_value', data.data[0].value)",
+									"    pm.collectionVariables.set('grade_id', data.data[0]._id)",
 									"});"
 								],
 								"type": "text/javascript"
@@ -4966,37 +4967,37 @@
 	],
 	"variable": [
 		{
-			"id": "f2cc5c82-6952-4533-8482-738f12a2b3fd",
+			"id": "8a67439b-bc9f-4b0e-943a-121edd28ac14",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "1d73df84-cdb0-4089-8f4d-e996201b5db4",
+			"id": "b5f97659-351e-4024-b10c-9fd1d937ced9",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "2a6e30e3-e800-4f5c-8e4b-6e4922d446db",
+			"id": "905c4c54-6d39-4feb-9be5-ab5a0b9c6a65",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "62169fc4-33c4-4a6e-86eb-6cde2673ed1c",
+			"id": "bbdc300d-4fb4-4bff-bc59-d9ce5661d997",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "0c866694-51a9-47e6-b882-d3ce1d13159d",
+			"id": "75d0407c-bae4-4fb9-a5db-9c71df2ddb90",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "2ac71bbf-cd3e-44ce-a421-9809278c09ca",
+			"id": "03b21654-8ff7-4028-a682-5ab7a6d8d147",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "3fd294a1-69dc-4e18-8150-f9711ab30812",
+			"id": "829f3521-2d71-4a92-82e5-1d2ac7521480",
 			"key": "discussion_id",
 			"value": ""
 		}
