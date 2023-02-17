@@ -4918,7 +4918,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f2da6810-652a-4767-8e67-5702884b1205",
+				"id": "fbd2e646-7194-45e4-b498-bc8ff35e7b4c",
 				"type": "text/javascript",
 				"exec": [
 					"if ( !pm.variables.has(\"TotalCF\") ) {",
@@ -4934,6 +4934,12 @@
 					"            'Content-Type': 'application/json'",
 					"        }",
 					"    };",
+					"",
+					"    pm.sendRequest(getTaxAccessToken, function (err, response) {",
+					"  console.log(\"get accesstoken\");",
+					"  console.log(response.access_Token);",
+					"  pm.environment.set(\"bearerToken\", response.access_Token);",
+					"});",
 					"}"
 				]
 			}
@@ -4941,7 +4947,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9645a219-cc6a-4611-b5aa-3a1d2028c64e",
+				"id": "c8ccb026-3f6b-42a4-8ddd-c87d2d8e6ffa",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -4951,37 +4957,37 @@
 	],
 	"variable": [
 		{
-			"id": "b3b4fad7-3d48-47ee-83f8-d8236d8e61fa",
+			"id": "fa6495c8-b724-42ed-86f5-98c6da114b7a",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "00ef4763-d760-4af2-9ea7-681826bc9b67",
+			"id": "fbf4510b-0901-4379-9c82-889d97efb380",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "dad1e7f8-b2ed-417c-aa4c-29fd92214049",
+			"id": "1db32a15-467d-4932-aea9-19d7103f187f",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "c72f603f-0c7d-458d-9dcf-426b007f0d73",
+			"id": "7765fc14-cdd1-4a57-a923-b7a743761436",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "67121190-0b6a-4802-b71e-e8a4e89812c5",
+			"id": "8463af6c-7567-4650-be06-5aabb1665e33",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "61658e27-1227-4919-8092-e2af67a2a459",
+			"id": "59d08b00-238f-4cc6-9fef-ce68cef4c66f",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "39c01d80-1605-49d1-ba28-dd1532c6d19d",
+			"id": "b43c764d-b87d-4eb3-be8c-86d4d987ab89",
 			"key": "discussion_id",
 			"value": ""
 		}
