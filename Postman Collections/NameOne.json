@@ -4966,62 +4966,62 @@
 	],
 	"variable": [
 		{
-			"id": "26ec4eaa-24d1-4a9c-adcd-0a07f84a62b2",
+			"id": "48410912-61a1-4102-ba78-f73d672b457c",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "5f8c5b3e-31f5-4072-8dce-60adb488010c",
+			"id": "56edb4d6-4d63-4851-b674-db2aec471ec3",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "826eface-8651-4998-aec9-3bae583cfe2c",
+			"id": "6ee6819e-f068-4edd-b66d-912ed05cba7e",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "24130b5d-47c9-4f96-a744-e1de0cd95da0",
+			"id": "e1fa5fdd-1d91-4ad3-84e5-dac476f70a18",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "9029f2c6-3b72-47f7-816b-cfcb52814c6f",
+			"id": "dc8b2542-66d6-402a-b9dd-f713cf236f22",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "97601885-95e8-4198-a1ca-81d2342084e1",
+			"id": "f210394c-4831-45e7-af79-f073b528cae9",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "738487fd-45d0-49e9-b36a-aa1a1ec94c9a",
+			"id": "325c5358-e723-4a06-8df6-07c095b291f5",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "4e80d2f7-db37-4258-bfe3-c02b0f303df7",
+			"id": "34e99039-318f-4d07-b145-f85adfd5b85b",
 			"key": "grade_id",
 			"value": ""
 		},
 		{
-			"id": "56474061-1383-40ca-bd11-d4bae04e0c2d",
+			"id": "9b498518-75dd-475e-897e-fddec5094078",
 			"key": "grade_title",
 			"value": ""
 		},
 		{
-			"id": "8bd145b5-1235-4c15-84fe-7ff4b5887506",
+			"id": "b3b1afd2-718d-415e-a2c7-888a581f88d2",
 			"key": "grade_description",
 			"value": ""
 		},
 		{
-			"id": "52a3ffaa-f9d5-4819-8d68-9ccc6cc774ea",
+			"id": "f55723fb-4082-4491-9ba3-ded058c6cd80",
 			"key": "grade_value",
 			"value": ""
 		},
 		{
-			"id": "9677aa3f-0e31-4aab-8395-15d32b9c93ae",
+			"id": "0e2ebc82-b200-473c-b0d2-95f805be9c66",
 			"key": "teacher_id",
 			"value": ""
 		}
