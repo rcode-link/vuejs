@@ -477,7 +477,8 @@
 									"    pm.expect(data._id).to.be.eql(pm.collectionVariables.get('class_id'))",
 									"",
 									"    pm.collectionVariables.set(\"subject_id\", data.subjects[0]._id)",
-									"    pm.collectionVariables.set(\"student_id\", data.subjects[0]._id)",
+									"    pm.collectionVariables.set(\"student_id\", data.students[0]._id)",
+									"    pm.collectionVariables.set(\"teacher_id\", data.subjects[0]._id)",
 									"",
 									"",
 									"})",
@@ -4964,57 +4965,57 @@
 	],
 	"variable": [
 		{
-			"id": "5b08bdf5-9a92-45ef-96c2-8a4797edbf02",
+			"id": "9f3147f8-f1ea-4bef-aa4d-8d958fa1b327",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "8ee7c76e-b55c-4222-b845-dcf9ba0730c3",
+			"id": "220db7e5-3be3-4c4f-bb13-aa84dadc1f98",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "dd6ebf0a-c73d-4c8f-8c50-5cb39bb2236a",
+			"id": "a75a9816-adf7-41cb-adff-ae215ad8ba4b",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "2054db25-a5f9-4a96-928b-639ee5463b6d",
+			"id": "006a8f8c-89af-48af-913e-73a19fad60fd",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "9f6e3030-391a-4194-9868-d7093e7e1ef1",
+			"id": "df6468ce-7726-4a93-9e1b-86bc604c34d5",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "042fdf4f-3abe-4a20-b3e3-c83c7715a53f",
+			"id": "40b75285-4125-4f1c-821e-2ec9966a625c",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "e09c7ff1-c051-4329-9f29-7c54c4c408a0",
+			"id": "0d73afb5-70e7-45a5-89de-56e96d3ea776",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "f7872ad0-6643-4d70-985f-596bf057e3e7",
+			"id": "dc4e03ac-77ca-4ebe-96b8-8fe4f8a36449",
 			"key": "grade_id",
 			"value": ""
 		},
 		{
-			"id": "14358bf2-4b3f-4024-9566-5beb6b355186",
+			"id": "1a598b1a-f4eb-4aff-87d0-082c776a7228",
 			"key": "grade_title",
 			"value": ""
 		},
 		{
-			"id": "2bf0c640-01e3-4d4b-9488-77d2adc0b2e0",
+			"id": "5060298a-bd8c-40f5-8b1a-dc8fe9564579",
 			"key": "grade_description",
 			"value": ""
 		},
 		{
-			"id": "a82d6825-ca5c-4fea-b577-948bbd677ca0",
+			"id": "0a87cc8a-243e-4ac3-826c-579083029649",
 			"key": "grade_value",
 			"value": ""
 		}
