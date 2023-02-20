@@ -901,7 +901,6 @@
 									"});",
 									"",
 									"pm.test(\"check params\", function(){",
-									"        const assignments = response.assignments;",
 									"        pm.collectionVariables.set('chapter_id', response.chapters[0]._id)",
 									"    pm.expect(response.chapters).to.be.an('array')",
 									"    pm.expect(response.assignments).to.be.an('array')",
@@ -4963,57 +4962,57 @@
 	],
 	"variable": [
 		{
-			"id": "18082d76-807d-4770-8b21-221cc9cc6969",
+			"id": "70c11d6d-a21a-47fd-9e73-fa003d3204b6",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "a9a8d519-1a0a-41fd-b666-583b12d05644",
+			"id": "7b823637-3928-4540-b7a9-c38930312111",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "42235a37-3334-42db-81f4-3b93ac967806",
+			"id": "d457a0ff-9a39-4a93-bbb4-97d99098ba2b",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "7710622e-a167-416a-893a-5cf8e0cdf40f",
+			"id": "c5ef6a20-a040-47af-a4f1-bb0be3c868e8",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "db573dbd-272e-47f9-99d4-4c73d253a601",
+			"id": "80098532-6b05-4b54-96b9-15f7436a249c",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "d44f922f-d2d0-4cdf-81f1-2ffc8f783add",
+			"id": "dc9cb58d-f366-4dd1-a7db-c41b58feba4e",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "eff38940-3cb7-44ad-897e-92d554d1ba3f",
+			"id": "78100889-a404-4323-8124-e2b470040877",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "10ec99bd-8a67-48c2-8407-98725ac108ac",
+			"id": "d2a3be32-99e0-41cb-9a5d-efd30ec658b7",
 			"key": "grade_id",
 			"value": ""
 		},
 		{
-			"id": "1e0e3710-83ac-486e-baea-69cf9e0fc8fb",
+			"id": "ac5c69cf-23f0-483d-8a7e-9843a80522ee",
 			"key": "grade_title",
 			"value": ""
 		},
 		{
-			"id": "4f11e52e-f00b-43d2-8dcc-307abb0ed0e7",
+			"id": "b960ce02-bab4-40f0-a92d-3c919a9f2475",
 			"key": "grade_description",
 			"value": ""
 		},
 		{
-			"id": "b71ec639-cc0c-454e-b7a8-d391d0f2e788",
+			"id": "9f8c5f28-cfcc-4432-b580-1e9b5105d347",
 			"key": "grade_value",
 			"value": ""
 		}
