@@ -478,7 +478,7 @@
 									"",
 									"    pm.collectionVariables.set(\"subject_id\", data.subjects[0]._id)",
 									"    pm.collectionVariables.set(\"student_id\", data.students[0]._id)",
-									"    pm.collectionVariables.set(\"teacher_id\", data.subjects[0]._id)",
+									"    pm.collectionVariables.set(\"teacher_id\", data.subjects[0].teacher._id)",
 									"",
 									"",
 									"})",
@@ -4965,57 +4965,57 @@
 	],
 	"variable": [
 		{
-			"id": "9f3147f8-f1ea-4bef-aa4d-8d958fa1b327",
+			"id": "84297e91-80c9-4bf2-8adc-e1ad71741e70",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "220db7e5-3be3-4c4f-bb13-aa84dadc1f98",
+			"id": "b1e8dcc4-4fc0-4acf-a66b-b1ee3aa0f7cd",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "a75a9816-adf7-41cb-adff-ae215ad8ba4b",
+			"id": "e1470b28-e7db-489a-a8b9-4de0c4811ca7",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "006a8f8c-89af-48af-913e-73a19fad60fd",
+			"id": "e11241c0-d039-4048-8eb2-b00cfef89984",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "df6468ce-7726-4a93-9e1b-86bc604c34d5",
+			"id": "9936b0aa-bc12-4425-8dbe-1a0ce65d0018",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "40b75285-4125-4f1c-821e-2ec9966a625c",
+			"id": "7fbc89d6-f0d6-4e23-8cc9-c8647075406b",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "0d73afb5-70e7-45a5-89de-56e96d3ea776",
+			"id": "2e2eb9d8-ce7c-46fa-b512-6d1cedd8fff6",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "dc4e03ac-77ca-4ebe-96b8-8fe4f8a36449",
+			"id": "283a108a-c61b-48a7-8dc4-49e02a1a0151",
 			"key": "grade_id",
 			"value": ""
 		},
 		{
-			"id": "1a598b1a-f4eb-4aff-87d0-082c776a7228",
+			"id": "bc6ed1e4-8fb8-4989-ae14-a27821c84e94",
 			"key": "grade_title",
 			"value": ""
 		},
 		{
-			"id": "5060298a-bd8c-40f5-8b1a-dc8fe9564579",
+			"id": "d611caa9-5978-42a7-8624-d924b6bea5a4",
 			"key": "grade_description",
 			"value": ""
 		},
 		{
-			"id": "0a87cc8a-243e-4ac3-826c-579083029649",
+			"id": "7831452a-71e9-4ff0-a85e-e5c52c0b4af7",
 			"key": "grade_value",
 			"value": ""
 		}
