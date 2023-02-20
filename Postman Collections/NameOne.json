@@ -477,6 +477,8 @@
 									"    pm.expect(data._id).to.be.eql(pm.collectionVariables.get('class_id'))",
 									"",
 									"    pm.collectionVariables.set(\"subject_id\", data.subjects[0]._id)",
+									"    pm.collectionVariables.set(\"student_id\", data.subjects[0]._id)",
+									"",
 									"",
 									"})",
 									"",
@@ -4962,57 +4964,57 @@
 	],
 	"variable": [
 		{
-			"id": "fbcf2233-edbf-48b8-bd96-c941b0f2483c",
+			"id": "5b08bdf5-9a92-45ef-96c2-8a4797edbf02",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "949253f0-bc73-499f-be1b-2bf96f38d444",
+			"id": "8ee7c76e-b55c-4222-b845-dcf9ba0730c3",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "46def283-6aa9-46d0-b3f1-0c6d617b1545",
+			"id": "dd6ebf0a-c73d-4c8f-8c50-5cb39bb2236a",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "dd068bea-79dd-4c9c-9a3a-95117f526257",
+			"id": "2054db25-a5f9-4a96-928b-639ee5463b6d",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "b4dacf43-e363-4db0-abfc-8f2ad2d9ba9b",
+			"id": "9f6e3030-391a-4194-9868-d7093e7e1ef1",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "6660a59a-4935-4cbf-9c85-a084425d729f",
+			"id": "042fdf4f-3abe-4a20-b3e3-c83c7715a53f",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "785a61be-9ffb-4abf-b219-22ea9253ba86",
+			"id": "e09c7ff1-c051-4329-9f29-7c54c4c408a0",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "46653efa-7e2b-41a5-b9c1-e46bff3d37bb",
+			"id": "f7872ad0-6643-4d70-985f-596bf057e3e7",
 			"key": "grade_id",
 			"value": ""
 		},
 		{
-			"id": "fb7bb89c-3a4c-44c0-8d9f-6d99e9c96542",
+			"id": "14358bf2-4b3f-4024-9566-5beb6b355186",
 			"key": "grade_title",
 			"value": ""
 		},
 		{
-			"id": "61116b4f-b833-4bac-9343-976127957ebf",
+			"id": "2bf0c640-01e3-4d4b-9488-77d2adc0b2e0",
 			"key": "grade_description",
 			"value": ""
 		},
 		{
-			"id": "dfea001e-31f3-4082-85cd-3ed4406f313a",
+			"id": "a82d6825-ca5c-4fea-b577-948bbd677ca0",
 			"key": "grade_value",
 			"value": ""
 		}
