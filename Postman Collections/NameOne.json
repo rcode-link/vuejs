@@ -4439,7 +4439,7 @@
 									"          \"students\": {",
 									"            \"type\": \"array\"",
 									"          },",
-									"          \"class_id\": {",
+									"          \"classId\": {",
 									"            \"type\": \"string\"",
 									"          },",
 									"          \"class_title\": {",
@@ -4966,62 +4966,62 @@
 	],
 	"variable": [
 		{
-			"id": "acd1a16e-5ed1-49e8-b838-967ae3aee9cf",
+			"id": "4d1b0de5-d1fc-4def-a698-f5b0c327aaee",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "18929673-59cc-42a5-87d4-3f128d53a8dc",
+			"id": "1836d893-1172-4470-b671-40b8815e1786",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "a05f0004-9dd2-431b-8063-5aac053178f1",
+			"id": "fdad1279-454c-40e9-affc-b96b49cbb457",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "a3752d87-3297-4efc-bea6-501da8e2e574",
+			"id": "1521180d-ac6d-41df-814b-46ea35b20d88",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "60faf27e-6364-4775-b90e-4ce32be7b7da",
+			"id": "3cff06ae-4e91-480f-82b1-be0f78604f62",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "6c5e2ea2-1513-479a-af66-ae4610581f78",
+			"id": "240154d2-b7c4-412a-8271-2fced3969686",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "b912e208-81d3-4d9d-b79a-acde0bf9bd3b",
+			"id": "1180808d-1868-4cce-a0e2-7504479eeb22",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "fbb21d5d-24f8-4bba-a9b0-3207055cd561",
+			"id": "0e026348-cb00-4040-a9a2-28bba7c05e1d",
 			"key": "grade_id",
 			"value": ""
 		},
 		{
-			"id": "db3e81ab-215b-4b1c-aff3-e5b574fd5bbe",
+			"id": "af3792eb-d48d-45d3-8870-90138dacc6ca",
 			"key": "grade_title",
 			"value": ""
 		},
 		{
-			"id": "c4e1542b-50ee-44f0-97d8-be24ea1de83e",
+			"id": "e8de8a4c-8fc8-4ee2-892a-76a9fec04984",
 			"key": "grade_description",
 			"value": ""
 		},
 		{
-			"id": "0e4ee90f-8662-48cb-b93e-4ada0c7106f5",
+			"id": "ca36ae97-4e55-4c04-845b-41f6a68deda4",
 			"key": "grade_value",
 			"value": ""
 		},
 		{
-			"id": "847665f7-015b-4ec4-ad19-1e18e2080784",
+			"id": "204d3dc9-4f06-47bd-8477-02a2418a8170",
 			"key": "teacher_id",
 			"value": ""
 		}
