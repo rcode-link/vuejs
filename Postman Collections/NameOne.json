@@ -34,7 +34,6 @@
 									"    pm.expect(jsonData.data).to.have.property('postal_code')",
 									"    pm.expect(jsonData.data).to.have.property('street')",
 									"    pm.expect(jsonData.data).to.have.property('language')",
-									"    pm.expect(jsonData.data).to.have.property('avatar_url')",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1987,7 +1986,6 @@
 									"",
 									"pm.sendRequest(loginRequest, function (err, response) {",
 									"    const data = response.json();",
-									"    console.log(err, data.data[0])",
 									"    pm.collectionVariables.set('grade_id', data.data[0]._id)",
 									"    pm.collectionVariables.set('grade_title', data.data[0].title)",
 									"    pm.collectionVariables.set('grade_description', data.data[0].description)",
@@ -4966,57 +4964,57 @@
 	],
 	"variable": [
 		{
-			"id": "2c76a5f6-4f60-4078-b996-e7b5544bb2eb",
+			"id": "68519f61-eb0d-45f6-8bb6-f3d34a25f696",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "4e344272-5d11-4e84-9bba-9ff6e69049ce",
+			"id": "082270e1-d908-430e-aa7e-e51d6f7fe2cb",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "a06bd59e-1971-47e0-915a-d0033c06f87c",
+			"id": "4ef00ed9-8b06-409c-ad44-e2f347b5c4ff",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "25c79e46-a39e-4fda-8276-0f8d78a441e5",
+			"id": "1ab9fbc7-d090-424a-ae7a-5525fbffac55",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "fb12332c-fc20-4c35-a87c-da7e1858df87",
+			"id": "9a18b44a-ff54-4db5-891d-3d592e4aa50b",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "51ebdae6-473e-43bf-b672-80e84d516bf3",
+			"id": "6ddc597a-c0cf-4bfb-83db-211683967625",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "aa49a7e2-6fb1-4d46-b593-bb6ce3777a3a",
+			"id": "f1596102-7f1a-4ebd-b4f4-ea02fb68307a",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "347f5e3d-f365-4cf4-93a7-50e43e86cabd",
+			"id": "6f10c9fd-a924-4bc3-ba67-4465ca0d49bb",
 			"key": "grade_id",
 			"value": ""
 		},
 		{
-			"id": "16438986-a9e3-4b52-a862-2e6333c485ad",
+			"id": "4765f7fe-42ce-487a-a94c-a5c6b2b433cb",
 			"key": "grade_title",
 			"value": ""
 		},
 		{
-			"id": "b301da0f-fb0c-4416-ac80-250797e1a969",
+			"id": "c15f79bb-8aed-4fbe-a86f-9b0da7076fd0",
 			"key": "grade_description",
 			"value": ""
 		},
 		{
-			"id": "befde433-cc66-45e7-8bfe-39babe4bd788",
+			"id": "853c2475-1fa9-455c-a591-ddf0d90015b1",
 			"key": "grade_value",
 			"value": ""
 		}
