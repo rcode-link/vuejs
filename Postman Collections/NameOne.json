@@ -4412,7 +4412,7 @@
 									"'task_title',",
 									"'task_type',",
 									"'students',",
-									"'class_id',",
+									"'classId',",
 									"'class_title',",
 									"'overdue',",
 									"'total_students',",
@@ -4966,62 +4966,62 @@
 	],
 	"variable": [
 		{
-			"id": "4d1b0de5-d1fc-4def-a698-f5b0c327aaee",
+			"id": "bbba543f-b921-491f-aa07-da52cb771a19",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "1836d893-1172-4470-b671-40b8815e1786",
+			"id": "2c32095b-27df-4e81-920a-7a6d737c3ee1",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "fdad1279-454c-40e9-affc-b96b49cbb457",
+			"id": "a3de9b4e-664c-408a-98aa-58e341bc6ad4",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "1521180d-ac6d-41df-814b-46ea35b20d88",
+			"id": "64ed4f5c-61d9-4c06-9f0f-db38e0df9539",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "3cff06ae-4e91-480f-82b1-be0f78604f62",
+			"id": "a1645f89-6e7b-42b2-9d97-1dd954625484",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "240154d2-b7c4-412a-8271-2fced3969686",
+			"id": "ef0fd278-b996-4446-8e3f-da3c627a2259",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "1180808d-1868-4cce-a0e2-7504479eeb22",
+			"id": "bac899bf-2dcf-4840-b217-f83ef69234df",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "0e026348-cb00-4040-a9a2-28bba7c05e1d",
+			"id": "120bc105-04c3-4a67-9f4a-5ba88f38f7ed",
 			"key": "grade_id",
 			"value": ""
 		},
 		{
-			"id": "af3792eb-d48d-45d3-8870-90138dacc6ca",
+			"id": "991f9371-24e0-4760-a1ba-dd2272201a33",
 			"key": "grade_title",
 			"value": ""
 		},
 		{
-			"id": "e8de8a4c-8fc8-4ee2-892a-76a9fec04984",
+			"id": "cfda053d-45c3-44de-b874-8878ea4ba100",
 			"key": "grade_description",
 			"value": ""
 		},
 		{
-			"id": "ca36ae97-4e55-4c04-845b-41f6a68deda4",
+			"id": "258681ca-f847-46dc-af77-4ce2052642ed",
 			"key": "grade_value",
 			"value": ""
 		},
 		{
-			"id": "204d3dc9-4f06-47bd-8477-02a2418a8170",
+			"id": "a00e049a-0e01-46e7-bf9b-40328b7e91b4",
 			"key": "teacher_id",
 			"value": ""
 		}
