@@ -477,8 +477,8 @@
 									"    pm.expect(data._id).to.be.eql(pm.collectionVariables.get('class_id'))",
 									"",
 									"    pm.collectionVariables.set(\"subject_id\", data.subjects[0]._id)",
-									"    pm.collectionVariables.set(\"student_id\", data.students[0]._id)",
-									"    pm.collectionVariables.set(\"teacher_id\", data.subjects[0].teacher._id)",
+									"    pm.collectionVariables.set(\"student_id\", data.subjects[0]._id)",
+									"    pm.collectionVariables.set(\"teacher_id\", data.subjects[0]._id)",
 									"",
 									"",
 									"})",
@@ -1357,7 +1357,6 @@
 									"",
 									"pm.test('Check if response is Ok', function(){",
 									"    const data = pm.response.json()",
-									"    pm.collectionVariables.set('assignment_id', data.id);",
 									"    pm.expect(data.data).to.eql('ok')",
 									"})",
 									""
@@ -1761,7 +1760,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"voluptate ut fugiat do esse Updated\",\n    \"duration\": 34393406,\n    \"due_date\": \"1991-02-17\",\n    \"due_time\": \"18:45\",\n    \"content\": \"nulla reprehenderit veniam irure officia\",\n    \"grade_type\": \"exam\",\n    \"type\": \"goal\",\n    \"for_subject\": {\n        \"_id\": \"{{subject_id}}\",\n        \"title\": \"minim pariatur\"\n    },\n    \"for_chapter\": {\n        \"title\": \"sit ad officia\",\n        \"_id\": \"{{chapter_id}}\"\n    },\n    \"for_class\": {\n        \"_id\": \"{{class_id}}\",\n        \"title\": \"ut ipsum velit est commodo\"\n    },\n    \"documents\": [],\n    \"students\": [\n        {\n            \"_id\": \"{{student_id}}\",\n            \"first_name\": \"dolor aliquip culpa\",\n            \"last_name\": \"aute nisi\"\n        }\n    ]\n}",
+							"raw": "{\n    \"title\": \"voluptate ut fugiat do esse Updated\",\n    \"duration\": 34393406,\n    \"due_date\": \"1991-02-17\",\n    \"due_time\": \"18:45\",\n    \"content\": \"nulla reprehenderit veniam irure officia\",\n    \"grade_type\": \"exam\",\n    \"type\": \"goal\",\n    \"for_subject\": {\n        \"_id\": \"{{subject_id}}\",\n        \"title\": \"minim pariatur\"\n    },\n    \"for_chapter\": {\n        \"title\": \"sit ad officia\",\n        \"_id\": \"{{chapter_id}}\"\n    },\n    \"for_class\": {\n        \"_id\": \"{{class_id}}\",\n        \"title\": \"ut ipsum velit est commodo\"\n    },\n    \"documents\": [],\n    \"students\": [\n        {\n            \"_id\": \"63a313f433ac01ba7b9c9a97\",\n            \"first_name\": \"dolor aliquip culpa\",\n            \"last_name\": \"aute nisi\"\n        },\n        {\n            \"_id\": \"63a31df4703f4fb1c6b0247f\",\n            \"first_name\": \"culpa aliqua\",\n            \"last_name\": \"reprehe\"\n        }\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4412,7 +4411,7 @@
 									"'task_title',",
 									"'task_type',",
 									"'students',",
-									"'classId',",
+									"'class_id',",
 									"'class_title',",
 									"'overdue',",
 									"'total_students',",
@@ -4439,7 +4438,7 @@
 									"          \"students\": {",
 									"            \"type\": \"array\"",
 									"          },",
-									"          \"classId\": {",
+									"          \"class_id\": {",
 									"            \"type\": \"string\"",
 									"          },",
 									"          \"class_title\": {",
@@ -4966,63 +4965,58 @@
 	],
 	"variable": [
 		{
-			"id": "aad1788a-b279-49cb-b354-1bcefe82e3db",
+			"id": "b4673447-d7a2-434f-8a37-c56657167ce0",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "8e762856-5231-495c-ac81-67ecdafb0417",
+			"id": "1584830e-014b-4071-beb6-6fcfa832df14",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "a36a6c4a-5cf7-4fa4-baf7-6dacd2794f59",
+			"id": "f2fc1651-65de-4f1b-a310-1add466efb58",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "f000a094-b7ea-4003-b810-735a9b490656",
+			"id": "fff4f997-cbc0-4f7f-b18c-20e66204770c",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "a7923336-77a8-483e-9ae3-6a9c46e41cd2",
+			"id": "11a3e20e-66df-49b6-b38a-3eef01b4c6f8",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "46c3d6db-da24-4efc-a1a6-2d9e045f45a1",
+			"id": "9d056f13-0e52-4c62-9a4d-72430277a1d6",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "b6f9013d-ef8c-4d17-8cfd-90d6d21e7adc",
+			"id": "98001100-a036-4dd6-8c25-0984308ebf0a",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "f8cc3970-8a43-47dd-b71f-a8b66cebaf4d",
+			"id": "a0337cb5-037b-4f85-89cf-18cb884aa087",
 			"key": "grade_id",
 			"value": ""
 		},
 		{
-			"id": "f12a829b-1198-4b43-8dad-f100297e5e43",
+			"id": "100c6e64-5468-45d3-bcc6-5bf1a226c6b1",
 			"key": "grade_title",
 			"value": ""
 		},
 		{
-			"id": "0e4ef6e6-f8fc-468c-adff-8745ea6dea4b",
+			"id": "7f2a6dbe-4da3-4d41-88e5-5b28b20567d8",
 			"key": "grade_description",
 			"value": ""
 		},
 		{
-			"id": "f4b46da8-0414-41f4-a29b-67bf0705bb7a",
+			"id": "3179a434-6ea0-406d-abbc-de19c4dc2c34",
 			"key": "grade_value",
-			"value": ""
-		},
-		{
-			"id": "d69c5b3d-f04f-418c-9248-c92d0b4178a9",
-			"key": "teacher_id",
 			"value": ""
 		}
 	]
