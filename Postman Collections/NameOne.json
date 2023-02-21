@@ -4643,7 +4643,22 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{baseUrl}}/files/1673531780925-avatar-1.jpg"
+				"url": {
+					"raw": "{{baseUrl}}/files/:file",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"files",
+						":file"
+					],
+					"variable": [
+						{
+							"key": "file",
+							"value": null
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -5013,62 +5028,62 @@
 	],
 	"variable": [
 		{
-			"id": "54d751a4-5d9d-4515-881b-ddc10f26b7db",
+			"id": "8dc06bb2-821b-4c8d-bff6-8da54f03a3d2",
 			"key": "class_id",
 			"value": ""
 		},
 		{
-			"id": "45894292-8f32-453d-a377-dbf0b5ff2b48",
+			"id": "4e371293-aa1b-4cce-bb78-3007c4da2905",
 			"key": "subject_id",
 			"value": ""
 		},
 		{
-			"id": "d1b10c78-6d2e-4e6e-8a73-2199ab63afb7",
+			"id": "af002b87-d66d-4d09-aa06-a5f7ac546f5f",
 			"key": "chapter_id",
 			"value": ""
 		},
 		{
-			"id": "5eb140cd-8e75-438b-8133-a468eac8fc94",
+			"id": "bf9767a4-0f6c-42d8-b734-46e196ea94fd",
 			"key": "assignment_id",
 			"value": ""
 		},
 		{
-			"id": "e0476b31-0e97-490f-a7a1-2de9702d9cc3",
+			"id": "147aaf09-f711-4ab3-913b-b60290d3e6ee",
 			"key": "student_id",
 			"value": ""
 		},
 		{
-			"id": "c08ff479-5382-4200-ab06-f2670739429e",
+			"id": "c23a0cdd-26f1-4510-b951-6569bfb5760f",
 			"key": "grades",
 			"value": ""
 		},
 		{
-			"id": "454c4699-5e78-4563-b00b-3c0115e79fcf",
+			"id": "94c8de86-aead-4316-827b-77c28ee5665a",
 			"key": "discussion_id",
 			"value": ""
 		},
 		{
-			"id": "1855ef39-02d7-43a6-909b-ea4458f9afe0",
+			"id": "00d52f40-65c3-404c-9c5f-9b1726187973",
 			"key": "grade_id",
 			"value": ""
 		},
 		{
-			"id": "78f52d4c-13e5-4b3d-8c73-d42ffb758cbf",
+			"id": "fe3560b2-65ce-449f-b8e4-ef85b8e81543",
 			"key": "grade_title",
 			"value": ""
 		},
 		{
-			"id": "e02ffdb9-d910-4b10-9d5b-1f1cd1201cf6",
+			"id": "e86089bd-5a45-438d-98c8-595c2fb35a98",
 			"key": "grade_description",
 			"value": ""
 		},
 		{
-			"id": "f8be3f91-cc63-4e7c-96c5-4bd7db9f5ebb",
+			"id": "b0e701fc-c7c0-442b-a4cd-4b5e5e30aa96",
 			"key": "grade_value",
 			"value": ""
 		},
 		{
-			"id": "8cc682ac-eaa6-4696-984a-0777ce115e8a",
+			"id": "8eea66e9-09a5-4bce-a966-efce77238ff1",
 			"key": "teacher_id",
 			"value": ""
 		}
